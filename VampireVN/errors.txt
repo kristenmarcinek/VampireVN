@@ -1,0 +1,26 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 16: expected statement.
+    “You’re not sure why, but things feel different today. Today. Is it still even today?”
+                        ^
+
+File "game/script.rpy", line 18: expected statement.
+    “You sit up from your bed and look behind you, and although your drapes are drawn tight you can tell it’s dark out. Did you… did you sleep for a whole day?”
+                                       ^
+
+File "game/script.rpy", line 20: expected statement.
+    “You try to remember what happened last night. There was that party out in the woods. And that strange woman and- was there a bite?”
+                                                 ^
+
+File "game/script.rpy", line 22: expected statement.
+    “You raise your hand to your neck and, sure enough, you feel two small indents, as if someone bit you.”
+                                         ^
+
+File "game/script.rpy", line 24: expected statement.
+    “You stand from your bed and all at once everything hurts. Every muscle screams out, demanding you lay back down. Your vision swims and you drop to your knees. You realize now that your mouth is so dry.”
+                                     ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Thu Jun 22 09:41:33 2023
