@@ -1,0 +1,48 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 655, in prepare_screen
+    screen file_slots(title):
+  File "game/screens.rpy", line 655, in prepare
+    screen file_slots(title):
+  File "game/screens.rpy", line 660, in prepare
+    imagemap:
+  File "game/screens.rpy", line 660, in prepare
+    imagemap:
+  File "game/screens.rpy", line 665, in prepare
+    hotspot (282, 97, 338, 190) clicked FileAction(1):
+  File "game/screens.rpy", line 665, in prepare
+    hotspot (282, 97, 338, 190) clicked FileAction(1):
+Exception: A screen named load_save_slot does not exist.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/Applications/renpy-7.4.6-sdk/renpy/bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "/Applications/renpy-7.4.6-sdk/renpy/main.py", line 670, in main
+    run(restart)
+  File "/Applications/renpy-7.4.6-sdk/renpy/main.py", line 93, in run
+    renpy.display.screen.prepare_screens()
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 1003, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 655, in prepare_screen
+    screen file_slots(title):
+  File "game/screens.rpy", line 655, in prepare
+    screen file_slots(title):
+  File "game/screens.rpy", line 660, in prepare
+    imagemap:
+  File "game/screens.rpy", line 660, in prepare
+    imagemap:
+  File "game/screens.rpy", line 665, in prepare
+    hotspot (282, 97, 338, 190) clicked FileAction(1):
+  File "game/screens.rpy", line 665, in prepare
+    hotspot (282, 97, 338, 190) clicked FileAction(1):
+  File "/Applications/renpy-7.4.6-sdk/renpy/sl2/slast.py", line 2015, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named load_save_slot does not exist.
+
+macOS-13.2.1-arm64-arm-64bit arm64
+Ren'Py 8.1.1.23060707
+Crimson Nights 1.0
+Tue Jun 27 13:38:36 2023

@@ -9,10 +9,80 @@ define c = Character("Cassandra", color="#5ba84c")
 define a = Character("Anne", color="#b55151")
 define h = Character("Han", color="#b55151")
 
+#---LAILA---
+
+image l angry = "/laila/l angry.png"
+image l away = "/laila/l away.png"
+image l excited = "/laila/l excited.png"
+image l neutral = "/laila/l neutral.png"
+image l smile = "/laila/l smile.png"
+
+#---CASS---
+
+image c confident = "/cassandra/c confident.png"
+image c doubt = "/cassandra/c doubt.png"
+image c neutral = "/cassandra/c neutral.png"
+image c smile = "/cassandra/c smile.png"
+image c wink = "/cassandra/c wink.png"
+
+#---ANNE---
+
+image a angry = "/anne/a angry.png"
+image a annoyed = "/anne/a annoyed.png"
+image a confused = "/anne/a confused.png"
+image a frown = "/anne/a frown.png"
+image a neutral = "/anne/a neutral.png"
+
+#---HAN---
+
+image h neutral = "/han/h neutral.png"
+image h sigh = "/han/h sigh.png"
+image h smile = "/han/h smile.png"
+image h surprise = "/han/h surprise.png"
+image h unsure = "/han/h unsure.png"
+
+#---BACKGROUNDS---
+
+image apartment = "/bg/apartment.png"
+image cellar = "/bg/cellar.png"
+image church = "/bg/church.png"
+image clinic = "/bg/clinic.png"
+image creepy house = "/bg/creepy house.png"
+image diner = "/bg/diner.png"
+image dungeon = "/bg/dungeon.png"
+image forest = "/bg/forest.png"
+image hideout = "/bg/hideout.png"
+image library = "/bg/library.png"
+image mansion ext = "/bg/mansion ext.png"
+image mansion int = "/bg/mansion int.png"
+image street = "/bg/street.png"
+
+#---CODE UPKEEP---
+
+define right = Position(xalign=0.8)
+define left = Position(xalign=0.2)
+define easeoutleft = ComposeTransition(dissolve, before=easeoutleft)
+define easeinleft = ComposeTransition(dissolve, after=easeinleft)
+define easeoutright = ComposeTransition(dissolve, before=easeoutright)
+define easeinright = ComposeTransition(dissolve, after=easeinright)
+define easeouttop = ComposeTransition(dissolve, before=easeouttop)
+define easeintop = ComposeTransition(dissolve, after=easeintop)
+define easeoutbottom = ComposeTransition(dissolve, before=easeoutbottom)
+define easeinbottom = ComposeTransition(dissolve, after=easeinbottom)
+define dissolve = Dissolve(.3)
+define quickdissolve= Dissolve(.2)
+
+init:
+    $ menu_variable = 0
+    $ laila_affection = 0
+    $ cass_affection = 0
+
+
 
 # The game starts here.
 
 label start:
+
     "You’re not sure why, but things feel different today. Today. Is it still even today?"
 
     "You sit up from your bed and look behind you, and although your drapes are drawn tight you can tell it’s dark out. Did you… did you sleep for a whole day?"
@@ -41,9 +111,6 @@ label c1a:
     "Well, that’s how it happens doesn’t it? You drink so much you don't remember… And yet…"
 
     "Something seems off… But before you have time to think of what you hear an overjoyed shriek"
-
-    
-        
 
 
     return

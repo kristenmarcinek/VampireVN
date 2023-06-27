@@ -351,57 +351,116 @@ style navigation_button_text:
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
+    if menu_variable == 1:
+        use cass_menu
+
+    elif menu_variable == 2:
+        use laila_menu
+
+    elif menu_variable == 3:
+        use han_menu
+
+    elif menu_variable == 4:
+        use anne_menu
+
+    else:
+        use default_menu
+
+
+
+screen default_menu:
     tag menu
 
-    add gui.main_menu_background
+    imagemap:
+        ground "gui/menu default.png"
+        hover "gui/menu default h.png"
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+screen laila_menu:
+    tag menu
 
-    if gui.show_name:
+    imagemap:
+        ground "gui/menu laila.png"
+        hover "gui/menu laila h.png"
 
-        vbox:
-            style "main_menu_vbox"
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
 
-            text "[config.name!t]":
-                style "main_menu_title"
+screen cass_menu:
+    tag menu
 
-            text "[config.version]":
-                style "main_menu_version"
+    imagemap:
+        ground "gui/menu cass.png"
+        hover "gui/menu cass h.png"
+
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+
+screen anne_menu:
+    tag menu
+
+    imagemap:
+        ground "gui/menu anne.png"
+        hover "gui/menu anne h.png"
+
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+
+screen han_menu:
+    tag menu
+
+    imagemap:
+        ground "gui/menu han.png"
+        hover "gui/menu han h.png"
+
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
 
 
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
+# style main_menu_frame is empty
+# style main_menu_vbox is vbox
+# style main_menu_text is gui_text
+# style main_menu_title is main_menu_text
+# style main_menu_version is main_menu_text
+#
+# style main_menu_frame:
+#     xsize 420
+#     yfill True
+#
+#     background "gui/overlay/main_menu.png"
+#
+# style main_menu_vbox:
+#     xalign 1.0
+#     xoffset -30
+#     xmaximum 1200
+#     yalign 1.0
+#     yoffset -30
+#
+# style main_menu_text:
+#     properties gui.text_properties("main_menu", accent=True)
+#
+# style main_menu_title:
+#     properties gui.text_properties("title")
+#
+# style main_menu_version:
+#     properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################
@@ -596,90 +655,48 @@ screen load():
 screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    use navigation
 
-    use game_menu(title):
+    imagemap:
+        ground "gui/save.png"
+        hover "gui/save h.png"
+        selected_idle "gui/save h.png"
 
-        fixed:
+        hotspot (282, 97, 338, 190) clicked FileAction(1):
+            use load_save_slot(number=1)
+        hotspot (659, 98, 337, 189) clicked FileAction(2):
+            use load_save_slot(number=2)
+        hotspot (282, 334, 339, 190) clicked FileAction(3):
+            use load_save_slot(number=3)
+        hotspot (659, 334, 337, 189) clicked FileAction(4):
+            use load_save_slot(number=4)
 
-            ## This ensures the input will get the enter event before any of the
-            ## buttons do.
-            order_reverse True
+        hotspot (76, 585, 209, 71) action Return()
+        hotspot (287, 588, 165, 72) action ShowMenu("preferences")
+        hotspot (462, 588, 169, 70) action ShowMenu("save")
+        hotspot (642, 591, 168, 68) action ShowMenu("load")
+        hotspot (821, 583, 173, 75) action MainMenu()
+        hotspot (996, 586, 165, 74) action Quit(confirm=True)
 
-            ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
+        hotspot (485, 28, 148, 38) action FilePagePrevious()
+        hotspot (383, 29, 85, 39) action FilePage("auto")
+        hotspot (646, 32, 27, 28) action FilePage(1)
+        hotspot (673, 32, 25, 31) action FilePage(2)
+        hotspot (701, 26, 23, 38) action FilePage(3)
+        hotspot (724, 29, 31, 37) action FilePage(4)
+        hotspot (755, 29, 28, 34) action FilePage(5)
+        hotspot (798, 31, 89, 32) action FilePageNext()
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+screen load_save_slot:
+#    $ file_text = "%2s. %s\n  %s" % (
+#                        FileSlotName(number, 4),
+#                        FileTime(number, empty=_("Empty Slot.")),
+#                        FileSaveName(number))
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+    add FileScreenshot(number) xalign 1.0 yalign .1
+#    text file_text xpos 65 ypos 100 size 18 color "#ffffff"
 
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-
-                xalign 0.5
-                yalign 0.5
-
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
-
-            ## Buttons to access other pages.
-            vbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                hbox:
-                    xalign 0.5
-
-                    spacing gui.page_spacing
-
-                    textbutton _("<") action FilePagePrevious()
-
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
-
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                    ## range(1, 10) gives the numbers from 1 to 9.
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
-
-                    textbutton _(">") action FilePageNext()
-
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
+    key "save_delete" action FileDelete(number)
 
 
 style page_label is gui_label
