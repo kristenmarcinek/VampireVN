@@ -662,30 +662,28 @@ screen file_slots(title):
         hover "gui/save h.png"
         selected_idle "gui/save h.png"
 
-        hotspot (282, 97, 338, 190) clicked FileAction(1):
+        hotspot (709, 262, 501, 280) clicked FileAction(1):
             use load_save_slot(number=1)
-        hotspot (659, 98, 337, 189) clicked FileAction(2):
+        hotspot (1275, 264, 500, 278) clicked FileAction(2):
             use load_save_slot(number=2)
-        hotspot (282, 334, 339, 190) clicked FileAction(3):
+        hotspot (711, 617, 501, 280) clicked FileAction(3):
             use load_save_slot(number=3)
-        hotspot (659, 334, 337, 189) clicked FileAction(4):
+        hotspot (1275, 616, 500, 281) clicked FileAction(4):
             use load_save_slot(number=4)
 
-        hotspot (76, 585, 209, 71) action Return()
-        hotspot (287, 588, 165, 72) action ShowMenu("preferences")
-        hotspot (462, 588, 169, 70) action ShowMenu("save")
-        hotspot (642, 591, 168, 68) action ShowMenu("load")
-        hotspot (821, 583, 173, 75) action MainMenu()
-        hotspot (996, 586, 165, 74) action Quit(confirm=True)
+        hotspot (79, 301, 255, 69) action Return()
+        hotspot (76, 383, 199, 65) action ShowMenu("save")
+        hotspot (76, 463, 207, 66) action ShowMenu("load")
+        hotspot (72, 539, 302, 75) action ShowMenu("preferences")
+        hotspot (77, 626, 205, 63) action MainMenu()
+        hotspot (77, 703, 201, 77) action Quit(confirm=True)
 
-        hotspot (485, 28, 148, 38) action FilePagePrevious()
-        hotspot (383, 29, 85, 39) action FilePage("auto")
-        hotspot (646, 32, 27, 28) action FilePage(1)
-        hotspot (673, 32, 25, 31) action FilePage(2)
-        hotspot (701, 26, 23, 38) action FilePage(3)
-        hotspot (724, 29, 31, 37) action FilePage(4)
-        hotspot (755, 29, 28, 34) action FilePage(5)
-        hotspot (798, 31, 89, 32) action FilePageNext()
+        hotspot (1031, 117, 150, 72) action FilePage("auto")
+        hotspot (1220, 123, 29, 57) action FilePage(1)
+        hotspot (1259, 127, 43, 53) action FilePage(2)
+        hotspot (1314, 127, 35, 52) action FilePage(3)
+        hotspot (1359, 125, 45, 52) action FilePage(4)
+        hotspot (1411, 118, 47, 66) action FilePage(5)
 
 screen load_save_slot:
 #    $ file_text = "%2s. %s\n  %s" % (
@@ -741,82 +739,33 @@ style slot_button_text:
 screen preferences():
 
     tag menu
+    use navigation
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    imagemap:
+        idle "gui/settings.png"
+        selected_idle "gui/settings h.png"
+        hover "gui/settings h.png"
+        ground "gui/settings.png"
 
-        vbox:
+        hotspot (79, 301, 255, 69) action Return()
+        hotspot (76, 383, 199, 65) action ShowMenu("save")
+        hotspot (76, 463, 207, 66) action ShowMenu("load")
+        hotspot (72, 539, 302, 75) action ShowMenu("preferences")
+        hotspot (77, 626, 205, 63) action MainMenu()
+        hotspot (77, 703, 201, 77) action Quit(confirm=True)
 
-            hbox:
-                box_wrap True
-
-                if renpy.variant("pc") or renpy.variant("web"):
-
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
-
-                    label _("Text Speed")
-
-                    bar value Preference("text speed")
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
-
-                vbox:
-
-                    if config.has_music:
-                        label _("Music Volume")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Sound Volume")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+        hotspot (691, 334, 294, 81) action Preference("display", "window")
+        hotspot (684, 252, 305, 81) action Preference("display", "fullscreen")
+        hotspot (1051, 257, 296, 76) action Preference("skip", "seen")
+        hotspot (1049, 334, 303, 79) action Preference("skip", "all")
+        hotspot (1391, 251, 422, 83) action Preference("after choices", "stop")
+        hotspot (1396, 336, 417, 77) action Preference("after choices", "skip")
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
 
-                        hbox:
-                            bar value Preference("voice volume")
-
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
-
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+        bar value Preference("music volume") at Position(xalign=.85, yalign=.54)
+        bar value Preference("sound volume") at Position (xalign=.85, yalign=.685)
+        bar value Preference("text speed") at Position (xalign=.85, yalign=.83)
 
 
 style pref_label is gui_label
@@ -1166,26 +1115,42 @@ screen confirm(message, yes_action, no_action):
 
     add "gui/overlay/confirm.png"
 
-    frame:
+    if message == layout.OVERWRITE_SAVE:
+        imagemap:
+            ground "gui/overwrite.png"
+            idle "gui/overwrite.png"
+            hover "gui/overwrite h.png"
 
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
+            hotspot (749, 582, 173, 106) action yes_action
+            hotspot (1004, 584, 167, 105) action no_action
 
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
 
-            hbox:
-                xalign 0.5
-                spacing 150
+    if message == layout.LOADING:
+        imagemap:
+            ground "gui/continue.png"
+            idle "gui/continue.png"
+            hover "gui/continue h.png"
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+            hotspot (749, 582, 173, 106) action yes_action
+            hotspot (1004, 584, 167, 105) action no_action
 
-    ## Right-click and escape answer "no".
-    key "game_menu" action no_action
+    if message == layout.QUIT:
+        imagemap:
+            ground "gui/quit.png"
+            idle "gui/quit.png"
+            hover "gui/quit h.png"
+
+            hotspot (749, 582, 173, 106) action yes_action
+            hotspot (1004, 584, 167, 105) action no_action
+
+    if message == layout.MAIN_MENU:
+        imagemap:
+            ground "gui/return.png"
+            idle "gui/return.png"
+            hover "gui/return h.png"
+
+            hotspot (749, 582, 173, 106) action yes_action
+            hotspot (1004, 584, 167, 105) action no_action
 
 
 style confirm_frame is gui_frame
@@ -1604,10 +1569,15 @@ style vscrollbar:
     thumb Frame("gui/phone/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
-    variant "small"
-    ysize gui.slider_size
-    base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/phone/slider/horizontal_[prefix_]thumb.png"
+    ysize 65
+    xsize 573
+
+    left_bar "gui/bar h.png"
+    right_bar "gui/bar.png"
+    thumb_offset 30
+
+    # base_bar Frame("GUI/slider.png", gui.slider_borders, tile=gui.slider_tile)
+    thumb "gui/bar slider.png"
 
 style vslider:
     variant "small"
