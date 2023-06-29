@@ -112,5 +112,47 @@ label c1a:
 
     "Something seems off… But before you have time to think of what you hear an overjoyed shriek"
 
+    c doubt "Oh my god! You’re awake! I was so worried about you!"
 
+    "Cassandra Kalluri. Of course she’s here. She’s always looking out for you."
+
+    "You’ve been inseparable since middle school. It was hard to find queer friends in a small Southern town like ____ but when you do the bond is unbreakable."
+
+    menu who_what_where:
+        "Where am I?":
+            jump c1b
+        "Who am I?":
+            jump c1c
+        "Why am I":
+            jump c1d
+
+label c1b:
+    c doubt "Where are you? You’re in your apartment! Are you ok? Oh my god, Oh my god, does it cause memory loss?"
+
+    c neutral "Quick, what’s your name?"
+
+    jump nameEntry
+
+label c1c:
+    c doubt "Oh god, please tell me you remember your own name!"
+    
+    "My name is..."
+
+    jump nameEntry
+
+label c1d:
+    c neutral "Don’t get philosophical on me! I’m worried about you, you lost a lot of blood!"
+
+    "A lot of blood? What the hell happened last night?"
+
+    "You feel dizzy and your mind feels clouded. You try to focus on a constant. Your name is…"
+
+    jump nameEntry
+
+label nameEntry
+    # CODE HERE
+
+    c "Ok, you remember your name is [player]. That’s good."
+
+    
     return
