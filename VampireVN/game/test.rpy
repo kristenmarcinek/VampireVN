@@ -820,38 +820,57 @@ label start:
                     jump to c2e
         
         label c2f
-        "Sad Cass" "Oh… i’m sorry."
-        "Cass looks really dejected."
-        "Sad Cass" "Let’s just get to the training."
-        jump to c2e
-        label c2e
-        c "Ok, so the powers the book mentions are hypnosis, bat transformation, and flight."  
-        c "Hypnosis is something Bran Velcant mentions a lot, but i’m not exactly sure what it entails or how to do it. He says something about looking people in the eye, so maybe try that on me?"
-        c "Don’t make me do anything weird, just test it out ok? I trust you"
-        "You do as she says and stare into her eyes. There's something so reassuring about those big purple eyes of hers."
-        "They remind you of fun talks after classes and giggles after watching a tv show."
-        "You try to concentrate, thinking of something to hypnotize her with.."
-        menu:
-        "/" "Do jumping jacks!"
+            c doubt "Oh… i’m sorry."
+            "Cass looks really dejected."
+            c doubt "Let’s just get to the training."
+            jump to c2e
+        
+        label c2e:
+            c "Ok, so the powers the book mentions are hypnosis, bat transformation, and flight."  
             
-        "/" "Punch yourself in the face!"
-            $ cass_affection-=1
-        "/" "Take a nap!"
-        c "Well, that didn’t work… let’s get back to that. I’m sure that we can figure more stuff out about hypnosis later. Next up is bat transformation. Velcant said he would visualize himself as a bat and it would just happen!"
-        "You give it a try, and as if slipping into a slumber you shrink. Your arms grow skinnier and turn into wings. You feel your clothes slip away around you as you fly out of them. You…"
-        menu:
-        "Fly around for a bit"
-            "You feel a wonderful breeze flow through you as you zoom through the forest. You feel so at peace. As you fly back to Cassandra you are shocked by how big she is compared to you. You go back into your clothes and visualize yourself as a human again."
-        "/""Go back into your clothes and turn back"
-        c "Wow. That’s so cool! I’m gonna be real, I didn't expect you to get that first try. How do you feel?
-        menu:
-        "/" "I feel great!"
-        "/" I feel nauseous…"
-        "/" "I feel nothing."
-        c "Ok, the only other thing I think you should try is floating. I was thinking you could jump off of that short tree and see if you can stay in the air! Don’t worry, I’ll be there to catch you.
-        menu:
-        "/"  "What? I’m not doing that!":
-        "/" "I got this, let’s do it!":
+            c "Hypnosis is something Bran Velcant mentions a lot, but i’m not exactly sure what it entails or how to do it. He says something about looking people in the eye, so maybe try that on me?"
+        
+            c "Don’t make me do anything weird, just test it out ok? I trust you"
+        
+            "You do as she says and stare into her eyes. There's something so reassuring about those big purple eyes of hers."
+        
+            "They remind you of fun talks after classes and giggles after watching a tv show."
+            
+            "You try to concentrate, thinking of something to hypnotize her with.."
+        
+            menu:
+                "Do jumping jacks!":
+                    pass
+                "Punch yourself in the face!":
+                    $ cass_affection -= 1
+                "Take a nap!":
+                    pass
+
+            c "Well, that didn’t work… let’s get back to that. I’m sure that we can figure more stuff out about hypnosis later. Next up is bat transformation. Velcant said he would visualize himself as a bat and it would just happen!"
+            
+            "You give it a try, and as if slipping into a slumber you shrink. Your arms grow skinnier and turn into wings. You feel your clothes slip away around you as you fly out of them. You…"
+            
+            menu:
+                "Fly around for a bit":
+                    "You feel a wonderful breeze flow through you as you zoom through the forest. You feel so at peace. As you fly back to Cassandra you are shocked by how big she is compared to you. You go back into your clothes and visualize yourself as a human again."
+                "Go back into your clothes and turn back":
+                    pass
+        
+            c "Wow. That’s so cool! I’m gonna be real, I didn't expect you to get that first try. How do you feel?"
+
+            menu:
+                "I feel great!":
+                    pass
+                "I feel nauseous…":
+                    pass
+                "I feel nothing.":
+                    pass
+
+            c "Ok, the only other thing I think you should try is floating. I was thinking you could jump off of that short tree and see if you can stay in the air! Don’t worry, I’ll be there to catch you."
+            
+            menu:
+                "/"  "What? I’m not doing that!":
+                "I got this, let’s do it!":
         c "I’ll be right below you, you’ll be fine!"
         "You climb up the tree, breathing heavily."
         "You try as hard as you can to visualize yourself floating, and gravity not affecting you. 
