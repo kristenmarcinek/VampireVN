@@ -34,4 +34,4 @@ Exception: config.check_conflicting_properties is not a known configuration vari
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Crimson Nights 1.0
-Fri Jun 30 10:31:39 2023
+Fri Jun 30 17:29:51 2023

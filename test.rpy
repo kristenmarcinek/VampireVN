@@ -874,6 +874,8 @@ label start:
                 "I got this, let’s do it!":
                     pass
 
+return
+
         c "I’ll be right below you, you’ll be fine!"
         "You climb up the tree, breathing heavily."
         "You try as hard as you can to visualize yourself floating, and gravity not affecting you. 
@@ -3725,7 +3727,7 @@ label start:
     END OF GAME MEDIUM ENDING
     label ardent
     C neutral "Pride and Predjudice?"
-    C smile "You’re really using pride and prejudice on me?
+    C smile "You’re really using pride and prejudice on me?"
     $ cass_affection+=10
     "Cassandra breaks out into laughter."
     # Romantic Music
@@ -3757,7 +3759,7 @@ label start:
 
 
 
-
+return
 
 
 
