@@ -869,8 +869,11 @@ label start:
             c "Ok, the only other thing I think you should try is floating. I was thinking you could jump off of that short tree and see if you can stay in the air! Don’t worry, I’ll be there to catch you."
             
             menu:
-                "/"  "What? I’m not doing that!":
+                "What? I’m not doing that!":
+                    pass
                 "I got this, let’s do it!":
+                    pass
+
         c "I’ll be right below you, you’ll be fine!"
         "You climb up the tree, breathing heavily."
         "You try as hard as you can to visualize yourself floating, and gravity not affecting you. 
