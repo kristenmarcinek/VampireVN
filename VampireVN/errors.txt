@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 686: is not terminated with a newline. (Check strings and parenthesis.)
-            hotspot ((1411, 118, 47, 66) action FilePage(5)
+File "game/script.rpy", line 192: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "This may be fun for you, but my whole life has been upended!"
+                                                                  ^
 
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Jun 27 15:55:05 2023
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Fri Jun 30 10:31:21 2023
