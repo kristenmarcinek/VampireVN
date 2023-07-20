@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 192, in script
-    "Blood? What do you mean blood? I don’t feel any blood.."(Single Choice)
-SyntaxError: unexpected EOF while parsing (game/script.rpy, line 192)
+  File "game/script.rpy", line 666, in script
+    jump chapter3
+ScriptError: could not find label 'chapter3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 192, in script
-    "Blood? What do you mean blood? I don’t feel any blood.."(Single Choice)
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 907, in execute
-    args, kwargs = self.arguments.evaluate()
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 342, in evaluate
-    value = renpy.python.py_eval(v, locals=scope)
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1090, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
-    raise e
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
-    raise orig_e
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: unexpected EOF while parsing (game/script.rpy, line 192)
+  File "game/script.rpy", line 666, in script
+    jump chapter3
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Applications/renpy-7.4.6-sdk/renpy/script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'chapter3'.
 
-Windows-10-10.0.22621 AMD64
-Ren'Py 8.0.3.22090809
+macOS-13.2.1-arm64-arm-64bit arm64
+Ren'Py 8.1.1.23060707
 Crimson Nights 1.0
-Fri Jun 30 17:38:12 2023
+Thu Jul 20 03:13:45 2023

@@ -372,14 +372,14 @@ screen default_menu:
     tag menu
 
     imagemap:
-        ground "gui/demo main.png"
-        hover "gui/demo main h.png"
+        ground "gui/menu default.png"
+        hover "gui/menu default h.png"
 
-        hotspot (253, 410, 251, 99)action Start()
-        hotspot (237, 507, 291, 92) action ShowMenu("load")
-        hotspot (212, 587, 333, 97) action ShowMenu("preferences")
-        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (234, 674, 272, 88) action Quit(confirm=True)
+        hotspot (247, 406, 273, 69) action Start()
+        hotspot (247, 487, 261, 68) action ShowMenu("load")
+        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
+        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (270, 741, 226, 79) action Quit(confirm=True)
 
 screen laila_menu:
     tag menu
