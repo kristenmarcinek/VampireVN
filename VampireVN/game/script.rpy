@@ -4,11 +4,11 @@
 # name of the character.
 
 define mc = Character("[player]", color="#dead71", image="mc")
-define l = Character("Laila", color="#b55151")
-define c = Character("Cassandra", color="#5ba84c")
-define a = Character("Anne", color="#b55151")
-define h = Character("Han", color="#b55151")
-define u = Character("Unknown", color="#b55151")
+define l = Character("Laila", color="#b55151", image="a")
+define c = Character("Cassandra", color="#5ba84c", image="mc")
+define a = Character("Anne", color="#b55151", image="a")
+define h = Character("Han", color="#b55151", image="h")
+define u = Character("Unknown", color="#b55151", image="u")
 
 #---LAILA---
 
@@ -189,7 +189,7 @@ label start:
             
             c "Look, you had an accident, there was blood everywhere… I thought you were dead but your heart was still beating and you seemed fine, your wounds healed before we could call 911, I took you home and now you’re awake and then you asked… and now we’re here."
             
-            "Blood? What do you mean blood? I don’t feel any blood.."(Single Choice)
+            "Blood? What do you mean blood? I don’t feel any blood.."
             
             "You notice a sharp pain in your neck. You reach up to feel it, two holes that seem to have healed up. They feel like decade old scars, and yet you definitely have not had them before today."
             
@@ -246,6 +246,8 @@ label start:
             c Doubt "Look, until we know how vampirism is, you need to stay here where it’s safe. I’m gonna run to the library and get every book I can on vampires and be right back."
             
             c smile "We’ll figure this out together!"
+
+            hide c with dissolve
             
             "As Cass leaves, you look behind her, a thousand thoughts running through your head."
             

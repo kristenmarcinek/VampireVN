@@ -1,37 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 15, in script
-    define config.check_conflicting_properties = True
-  File "game/gui.rpy", line 15, in script
-    define config.check_conflicting_properties = True
-  File "renpy/common/000namespaces.rpy", line 33, in set
-    setattr(self.nso, name, value)
-Exception: config.check_conflicting_properties is not a known configuration variable.
+  File "game/script.rpy", line 192, in script
+    "Blood? What do you mean blood? I don’t feel any blood.."(Single Choice)
+SyntaxError: unexpected EOF while parsing (game/script.rpy, line 192)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/gui.rpy", line 15, in script
-    define config.check_conflicting_properties = True
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/gui.rpy", line 15, in script
-    define config.check_conflicting_properties = True
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2441, in execute
-    self.set()
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2459, in set
-    ns.set(self.varname, value)
-  File "renpy/common/000namespaces.rpy", line 33, in set
-    setattr(self.nso, name, value)
-  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\defaultstore.py", line 105, in __setattr__
-    raise Exception('config.%s is not a known configuration variable.' % (name))
-Exception: config.check_conflicting_properties is not a known configuration variable.
+  File "game/script.rpy", line 192, in script
+    "Blood? What do you mean blood? I don’t feel any blood.."(Single Choice)
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 907, in execute
+    args, kwargs = self.arguments.evaluate()
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 342, in evaluate
+    value = renpy.python.py_eval(v, locals=scope)
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1090, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
+    raise e
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
+    raise orig_e
+  File "C:\Users\krist\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: unexpected EOF while parsing (game/script.rpy, line 192)
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Crimson Nights 1.0
-Fri Jun 30 17:29:51 2023
+Fri Jun 30 17:38:12 2023
