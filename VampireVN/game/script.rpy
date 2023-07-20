@@ -621,40 +621,40 @@ label start:
             "I got this, let's do it!":
                 pass
 
-        c "I’ll be right below you, you’ll be fine!"
+        c "I'll be right below you, you'll be fine!"
 
         "You climb up the tree, breathing heavily."
         "You try as hard as you can to visualize yourself floating, and gravity not affecting you."
         "You jump and…"
-        "It doesn’t work. You crash into Cassandra and both fall into the ground."
+        "It doesn't work. You crash into Cassandra and both fall into the ground."
 
         scene cass cg 1 with fade
 
         $ persistent.cass1 = True
 
         "You roll around for a bit before you open your eyes and see that you are on top of Cassandra in the grass."
-        "You’ve known Cassandra for a long time but you’ve never been this close physically. You feel her breathing push against you."
+        "You've known Cassandra for a long time but you've never been this close physically. You feel her breathing push against you."
         "You see the purple eyes you were staring at earlier, the smile you were thinking about earlier, and you are overwhelmed with emotion."
-        "You can’t tell if it's human or vampire, or both? But you feel a strange compulsion to…"
+        "You can't tell if it's human or vampire, or both? But you feel a strange compulsion to…"
 
         menu:
             "Lean in for a kiss.":
                 "You lean in, anxious but excited. Cassandra purses her lips and you slowly move closer together…"
                 "But Cass pulls away."
-                c "I… I’m sorry. I need to go back home, it's getting late."
+                c "I… I'm sorry. I need to go back home, it's getting late."
                 scene forest with fade
                 "You both get up, and you give each other a hug goodbye before heading home. As you walk back you run the situation in your head again and again."
                 "Do you have feelings for Cassandra? And does she have feelings for you?"
                 "The almost kiss pounded in your brain until you willed it to stop. As you arrived home, you lay down in bed, a million thoughts in your mind."
 
             "Lean in for a bite.":
-                "You lean in towards Cassandra’s neck, as a strange bloodlust comes over you."
+                "You lean in towards Cassandra's neck, as a strange bloodlust comes over you."
                 "You open your mouth and you feel two fangs you did not notice before."
                 "You feel a stange, intoxicating fear from Cassandra. The urge to bite consumes you, but you restrain yourself as best you can, jumping off of her."
                 scene forest with fade
 
                 menu:
-                    "I’m sorry, I don’t know what came over me.":
+                    "I'm sorry, I don't know what came over me.":
                         pass
 
                     "(Stay silent.)":
@@ -663,7 +663,7 @@ label start:
                     "Well… that just happened…":
                         pass
 
-                c "Woah… I… I’m sorry. I need to go back home, it's getting late."
+                c "Woah… I… I'm sorry. I need to go back home, it's getting late."
                 "She runs off. You want to run after her, to assure her than everything is ok, that your not a monster."
                 "Is that really why you want to chase after her? Or is it the hunt? The desire to chase prey…"
                 "You run back home, a million thoughts in your mind, and a pounding hunger tormenting you."
@@ -937,6 +937,217 @@ label start:
 #---CHAPTER 3---
 
     label chapter3:
-        "wawawa"
+        scene apartment with fade
+        # Neutral Music
+        "You awaken this evening feeling more like yourself than you did the last couple nights."
+        "Well, still not quite yourself, but not as much pain as before."
+        "As you rise from your bed, you sense something different in the air. There's tension, with a palpability to it."
+        "You're not sure what, but something big is going down tonight. There's weight and finality in the actions you take this evening."
+        "As you make your way into the living room, you notice a piece of paper has been slipped under your door."
+        "You decide to investigate, and are perhaps unsurprised to find it is a letter from Laila."
+        "Note" "[player], tonight, midnight. We'll be in a section of the woods we call the Blood Bank. You can meet the others."
+        "Note" "Just head straight into the woods from your street. Keep walking until you start to hear the revels."
+        "Note" "-Laila"
+
+        "You glance at the clock on your microwave. It's- already eleven fifteen!?"
+        "You really need to set an alarm going forward."
+        "You hurriedly throw on some fresh clothes, and make your way out into the street."
+
+        scene street with fade
+        "You suspect Cass might be interested in joining you on this excursion."
+        "You text Cassandra to meet you  and wait outside of her apartment."
+        "A few minutes later Cass rushes out."
+
+        show c excited with dissolve
+        c excited "A Vampire Party! Oh my god!"
+        c "It's like everything I dreamed of!"
+        c "I put on my most emo clothes, do you think I'll fit in?"
+        "You take a good long look at Cassandra's bright pink jacket and skirt."
+        "\" I'm sure you'll be fine."
+        "You walk into the woods, looking for the blood bank."
+        "You wish Laila had written coordinates or something, cause you were deeply lost."
+
+        c neutral "Maybe there's a vampire  thing that you can do to find it?"
+        "You close your eyes and try to sense the forest as you walk."
+
+        # Exciting Music, maybe even party music?
+        "Finally, just on the edge of hearing, you detect the sound of laughter and mirth."
+        mc "I think we've found it."
+
+        "Cass gives you an excited smile but remains quiet as you move ever closer to the ongoing party."
+
+        scene hideout with fade
+        "After several more minutes of walking, you break through the trees into a massive clearing."
+        "Fairy lights are strung across the clearing, which is decorated with picnic tables and populated by a couple dozen people who all look like they're having a very good time. Near the center of the clearing is a makeshift bar."
+
+        show l excited with dissolve
+        "As soon as you step into the clearing, Laila is at your side, appearing in what you are learning is typical vampiric speed."
+        l excited "Hey, there [player], great to see you!"
+        l neutral  "But who's this?"
+        "There is deep concern in Laila's voice as she stares worriedly at Cass."
+
+        show l at right with ease
+        show c neutral at left with dissolve
+        c "Hi, I'm [player]'s friend Cassandra!"
+        l away "Yes, I gathered that much, but why are you here? You're not, you know-"
+        "At this, Laila bares her fangs demonstratively."
+
+        c "Well, I'm not, but me and [player] are close, and, well, I'm really into vampiric history and seeing a place like this…"
+        c "It's just so cool! But if it's more of a vampire's only thing I totally understand!"
+
+        scene hideout with dissolve
+
+        menu:
+            "Defend Cass":
+                $ cass_affection+=1
+                "You push back against Laila, saying that Cass is your friend and deserves to be here."
+                show c neutral with dissolve
+                c "That's sweet [player], but i don't want to make anyone uncomfortable."
+                c "I promise to be on my best behavior if you let me stay."
+                hide c with dissolve
+
+            "Support Laila":
+                "You see the wisdom in what Laila is saying."
+                mc "You know Cass, Laila might be right. It could be dangerous with all these vampires around, and you know, I don't really know any of them."
+
+
+        "Laila looks taken aback at your remark."
+        show l away with dissolve
+        l away "Ah, you misunderstand, [player]. Your friend is not in any danger here. This is a gathering of… let's say civilized vamps. We can control ourselves. Mostly."
+        l excited "Had we known a human guest was coming, we would have brought some non-blood based beverages."
+        "Laila shows you and Cass over to the makeshift bar near the center of the clearing."
+        "A rather portly vampire greets you in a deep jolly voice."
+        "Shamus" "Hello there, you must be the new one. I'm Shamus, and this here is the Blood Bank."
+
+        hide l with dissolve
+        "The barkeep- Shamus- gestures at the bar."
+        "Shamus" "We've got our own brewing operation here. We take blood- sourced from an actual blood bank, don't worry- and distill it in this here contraption."
+        "He now indicates a small still sitting just behind the bar."
+        "Shamus" "We call it ‘Bloodmoon Shine. First one's free."
+        "At this, he passes you a red solo cup filled with a reddish liquid."
+        "You take a hesitant sip and find you somewhat enjoy the surprisingly strong beverage."
+        "You're a bit nervous too nervous to talk to anyone new just yet, so you hang by Laila and Cass."
+
+        # Tense Music
+        "The gentle sounds of the party are disrupted by a loud pop and the clearing is illuminated by a bright red glow. You look up and see a flare rising over the treeline."
+        "All of the revelry stops and a hush falls over the gathered vampires."
+        "Before anyone can comment, a flurry of nets are launched from beyond the clearing, ensnaring many of the partygoers, including Laila."
+        "As she struggles to disentangle herself from the net, she pauses."
+
+        show l angry with dissolve
+        l angry "Is this garlic? Did someone really coat these nets in fucking garlic? My clothes are going to reek!"
+        "Something whizzes past your head and you hear someone scream. You turn to see it's Shamus clawing at a large wooden spike that has lodged itself into their chest."
+        "More and more of these stakes come flying out of the forest, so you grab Cass and drop to the ground to avoid getting hit. Laila, still in the net, follows suit."
+        "The night air is filled with screams and shouts now, as more of your vampire brethren are impacted by this assault. "
+        "Cassandra rushes to cut Laila and the other vampires out of the net. The panic sets in, but you need to act now."
+
+        menu:
+            "Guide Laila and Cass  to scurry under a picnic table":
+                "As you hide under the table, you hear a sharp whirring sound coming from behind the bar."
+
+            "Scamper into a bush":
+                "You all hide in the bush near the bar, but you hear a sharp whirring sound coming from behind the bar."
+                "Remembering the illicit brewing that the bartender mentioned earlier, you rush to hide beneath the picnic table away from the bar."
+
+            "Play dead":
+                "You all play dead, which will surely be a winning strategy against these attackers."
+                "Things seem to quiet down and you breathe a sigh of relief."
+                "However, your relief is cut short by a sharp whirring sound coming from behind the bar."
+                "Remembering the illicit brewing that the bartender mentioned earlier, you rush to hide beneath the picnic table away from the bar."
+
+        "The Blood MoonShine still quakes for a moment before exploding, showering flaming alcohol everywhere."
+        "The smell is pungent and the heat is unbearable."
+        "You hold Cassandra and Laila close to make sure the table shields everyone from the raining flame."
+        "When the rain stops, you risk a glance upward and see two figures enter the burning clearing, shrouded by smoke."
+        "The screaming has mostly died down now, as the other vampires are either dead or have fled off into the woods. It's just you, Laila, and Cass now, cowering beneath the table."
+        "As you try to figure out next steps, you hear one of the figures start to speak."
+        "???" "Well Han, we did it. We've found the vampire cell and routed them. All according to my plan!"
+
+        "Han?" "Your \"plan\", Anne, was firing a hundred stakes randomly at this clearing. Don't pretend like the distillery blowing up was your idea."
+        "Anne?" "And it worked out in our favor. Shock and awe, that's how we did it. Imagine how proud mummy and daddy would be of me in this moment."
+        "Han?" "I can imagine dad telling us he would have done it better back in the day with a half smile right now. Memories."
+        "Anne?" "Ugh, can't you see we've eclipsed them? We're forging a legacy that will outlast theirs!"
+        "The smoke clears enough that you can get a good look at the two conversants- Anne and Han, you gather their names are."
+
+        show a neutral at left
+        show h neutral at right
+        with dissolve
+
+        "The pair dress in matching vests, although Anne is markedly more stylish than Han."
+        a neutral "And the Velsing name will go down in history as that of the greatest vampire hunters in the world!"
+
+        hide a
+        hide h
+        with dissolve
+
+        show c doubt with dissolve
+        c "Velsing???!"
+        "Laila lets out a groan."
+        show c at left with ease
+        show l angry at right with dissolve
+
+        l angry "Not these buffoons again."
+        c smile "You know… the Velsings???"
+        l angry "Unfortunately. These freaks inevitably come around to fuck up any nice vampire community I've managed to find. I thought we'd seen the last of them after the boat disaster in Grand Rapids, but I guess it's hard to kill stupid."
+        #CHANGE: ask abt if this is supposed to be left in like this???
+
+        c "They look… (insert line about their outfit)"
+        l neutral "I know, the fashion is just insult to injury."
+
+        menu:
+            "I think it's kinda cool!":
+                "Cass and Laila both look at you with thinly veiled disgust."
+                show l angry at right
+                show a neutral at left
+                with dissolve
+                l angry "You need some help."
+                a neutral "Thanks for the compliment!"
+                hide l with dissolve
+                show a at center with ease
+
+            "The Pony Express called, they want their uniforms back.":
+                "Cass and Laila try to suppress giggles."
+                show a frown with dissolve
+                a frown "The Pony Express provided a valuable service, just as we do!"
+
+
+            "You know the rest of the fit aside, I feel like that top would look good on me":
+                "Cass evaluates your current attire briefly."
+                show c smile at right
+                show h neutral at left
+                with dissolve
+                c "Yeah, I guess it could work."
+                h "Not everyone can rock such stylish gear. Especially not a bloodsucker."
+                hide c
+                hide h
+                with dissolve
+                show a neutral with dissolve
+
+
+        "You recoil in terror at the addressing of your remarks."
+        a neutral "Oh yes little bat-spawn, we heard everything you and your compatriots were saying."
+        "At this, the Velsings flip the picnic table over, exposing the three of you."
+        "You find crossbows with stakes loaded in them leveled at your face."
+        a angry "To think you could hide from us- what hubris! No one can hide from our incredible acumen and refined senses!"
+        "As she boasts, Laila and Cassandra run away. You seize upon the opportunity and run as well."
+        "Cassandra and Laila are splitting up in the woods. You  don't know who to chase after."
+        "This is a matter of life and death."
+
+        "You could follow Laila, further into the woods, or follow Cassandra, who's running back towards town."
+        "It's possible you may never see the other one again."
+
+        menu:
+            "Follow Laila":
+                "You know Cass will probably be fine- she's a regular human after all- and you feel a burgeoning connection with this vampire that's taken you under her wing."
+                "You know in your heart this is the right decision."
+                "You follow Laila into the night."
+                jump LailaRoute
+
+            "Follow Cassandra":
+                "Laila is far more experienced than you, you trust that she can take care of herself."
+                "You run after Cass, unwilling to let your best friend get hurt."
+                jump CassRoute
+
+
 
 return
