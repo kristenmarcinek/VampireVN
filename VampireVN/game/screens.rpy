@@ -360,7 +360,7 @@ screen main_menu():
     elif menu_variable == 3:
         use han_menu
 
-    elif menu_variable == 4:
+    elif persistent.ending == 4:
         use anne_menu
 
     else:

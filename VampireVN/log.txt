@@ -1,4 +1,4 @@
-Thu Jul 20 02:11:26 2023
+Sun Jul 30 03:12:22 2023
 macOS-13.2.1-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
@@ -7,222 +7,13 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.10s
+Loading script. took 0.06s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
+
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.17s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 142, in script
-    c doubt "Oh my god! You’re awake! I was so worried about you!"
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1290, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1109, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1035, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('doubt',), but there's no image tag associated with the speaking character.
-
-While running game code:
-  File "game/script.rpy", line 142, in script
-    c doubt "Oh my god! You’re awake! I was so worried about you!"
-Exception: Say has image attributes ('doubt',), but there's no image tag associated with the speaking character.
-Resetting cache.
-Bootstrap to the start of init.init. took 31.88s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.02s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 150, in script
-    c doubt "Where are you? You’re in your apartment! Are you ok? Oh my god, Oh my god, does it cause memory loss?"
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1290, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1109, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1035, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('doubt',), but there's no image tag associated with the speaking character.
-
-While running game code:
-  File "game/script.rpy", line 150, in script
-    c doubt "Where are you? You’re in your apartment! Are you ok? Oh my god, Oh my god, does it cause memory loss?"
-Exception: Say has image attributes ('doubt',), but there's no image tag associated with the speaking character.
-Resetting cache.
-Bootstrap to the start of init.init. took 69.75s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 160, in script
-    c neutral "Don’t get philosophical on me! I’m worried about you, you lost a lot of blood!"
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1290, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1109, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1035, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('neutral',), but there's no image tag associated with the speaking character.
-
-While running game code:
-  File "game/script.rpy", line 160, in script
-    c neutral "Don’t get philosophical on me! I’m worried about you, you lost a lot of blood!"
-Exception: Say has image attributes ('neutral',), but there's no image tag associated with the speaking character.
-Resetting cache.
-Bootstrap to the start of init.init. took 121.38s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
+Interface start. took 0.28s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -235,165 +26,16 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 176.15s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 197.66s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 211.80s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 227.21s
+Bootstrap to the start of init.init. took 51.80s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
@@ -407,36 +49,16 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 241.10s
+Bootstrap to the start of init.init. took 54.24s
 Early init. took 0.00s
 Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.05s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
@@ -450,79 +72,16 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 256.54s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 264.39s
+Bootstrap to the start of init.init. took 55.44s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
+Loading script. took 0.05s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
@@ -536,337 +95,16 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 288.86s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 293.72s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 304.59s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 333.83s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 340.19s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 375.20s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 389.13s
+Bootstrap to the start of init.init. took 55.73s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.08s
+Loading script. took 0.05s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 486.15s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
 Interface start. took 0.06s
 
 Initializing gl2 renderer:
@@ -880,36 +118,62 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 533.31s
+Bootstrap to the start of init.init. took 76.20s
+Early init. took 0.00s
+Loader init. took 0.00s
+Loading error handling. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/laila route.rpy", line 211: Tab characters are not allowed in Ren'Py scripts.
+DPI scale factor: 1.000000
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 89.03s
 Early init. took 0.00s
 Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+
+File "game/laila route.rpy", line 218: Tab characters are not allowed in Ren'Py scripts.
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 167.04s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/laila route.rpy", line 221: Tab characters are not allowed in Ren'Py scripts.
+DPI scale factor: 1.000000
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
@@ -923,19 +187,89 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 652.73s
+Bootstrap to the start of init.init. took 188.26s
 Early init. took 0.00s
-Loader init. took 0.01s
+Loader init. took 0.00s
+Loading error handling. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/laila route.rpy", line 221: Tab characters are not allowed in Ren'Py scripts.
+DPI scale factor: 1.000000
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 190.75s
+Early init. took 0.00s
+Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.07s
+Loading script. took 0.05s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 
-File "game/script.rpy", line 289: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+File "game/laila route.rpy", line 221: Tab characters are not allowed in Ren'Py scripts.
+DPI scale factor: 1.000000
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 214.00s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/laila route.rpy", line 315: menu statement expects a non-empty block.
     menu:
+        ^
+
+File "game/laila route.rpy", line 316: expected statement.
+    "Ask her to explain.":
+                         ^
+
+File "game/laila route.rpy", line 328: expected statement.
+    "Remain silent.":
+                    ^
+
+File "game/laila route.rpy", line 349: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/laila route.rpy", line 351: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "You let Laila know that you will join her on her quest, and she embraces you in a hug."
+    ^
+
+File "game/laila route.rpy", line 360: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "You inform Laila that even though you might wish to remain a vampire, you’ll help her find a cure."
+    ^
+
+File "game/laila route.rpy", line 371: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "You inform Laila that you’re done with all this, and intend to leave town and escape the Velsings."
     ^
 DPI scale factor: 1.000000
-Interface start. took 0.07s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -948,12 +282,61 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 666.49s
+Bootstrap to the start of init.init. took 254.94s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/laila route.rpy", line 315: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/laila route.rpy", line 316: expected statement.
+    "Ask her to explain.":
+                         ^
+
+File "game/laila route.rpy", line 328: expected statement.
+    "Remain silent.":
+                    ^
+
+File "game/laila route.rpy", line 349: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/laila route.rpy", line 350: expected statement.
+    "\"Yes Laila, I’m with you all the way. Together, we can be free of this.\"":
+                                                                                ^
+
+File "game/laila route.rpy", line 359: expected statement.
+    "\"I can’t say I’ll use any cure we might find, but I will help you find peace.\"":
+                                                                                      ^
+
+File "game/laila route.rpy", line 369: expected statement.
+    "\"No, there’s too much risk. I’m just going to leave town and make it on my own.\"":
+                                                                                        ^
+DPI scale factor: 1.000000
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 301.29s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
 Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -979,1509 +362,6 @@ Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 687.93s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 704.82s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 761.01s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 775.10s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 879.52s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 897.94s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 925.43s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1082.88s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1154.28s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1248.13s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1334.67s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1348.57s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2192.92s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2229.71s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2246.85s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2272.97s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2528.13s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2546.57s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2589.51s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2595.84s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2627.93s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2644.92s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3025.16s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 635: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3032.88s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 635: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3043.63s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 635: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3061.90s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 635: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3078.70s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3109.03s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3111.03s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3112.56s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3123.31s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3126.61s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3127.49s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3127.80s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.04s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3138.54s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
-DPI scale factor: 1.000000
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3150.79s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3265.85s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3282.76s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3337.51s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3710.44s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3734.92s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -2495,25 +375,39 @@ Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 666, in script
-    jump chapter3
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/Applications/renpy-7.4.6-sdk/renpy/script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'chapter3'.
+  File "game/laila route.rpy", line 343, in script
+    l neutral "[Player], this is a lot to ask of you, and I understand if this quest is not for you."
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: 'Player'
 
 While running game code:
-  File "game/script.rpy", line 666, in script
-    jump chapter3
-ScriptError: could not find label 'chapter3'.
+  File "game/laila route.rpy", line 343, in script
+    l neutral "[Player], this is a lot to ask of you, and I understand if this quest is not for you."
+KeyError: 'Player'
 Resetting cache.
-Bootstrap to the start of init.init. took 3772.91s
+Bootstrap to the start of init.init. took 344.30s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -2558,12 +452,12 @@ Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 4107.20s
+Bootstrap to the start of init.init. took 426.20s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -2575,6 +469,56 @@ Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 592.49s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
@@ -2601,143 +545,14 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 4395.41s
+Bootstrap to the start of init.init. took 613.81s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4439.47s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4512.17s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4542.70s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
+Loading script. took 0.12s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
+Running init code. took 0.01s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
@@ -2753,10 +568,10 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -2772,12 +587,19 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 4647.09s
+Bootstrap to the start of init.init. took 698.59s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.10s
+Loading script. took 0.12s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -2815,12 +637,64 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Applications/renpy-7.4.6-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/Applications/renpy-7.4.6-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
+
+While running game code:
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
 Resetting cache.
-Bootstrap to the start of init.init. took 4777.16s
+Bootstrap to the start of init.init. took 700.30s
 Early init. took 0.00s
-Loader init. took 0.01s
+Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
+Loading script. took 0.12s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -2842,7 +716,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -2858,13 +732,65 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Applications/renpy-7.4.6-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/Applications/renpy-7.4.6-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
+
+While running game code:
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
 Resetting cache.
-Bootstrap to the start of init.init. took 4843.87s
+Bootstrap to the start of init.init. took 744.23s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.11s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -2901,101 +827,67 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4870.02s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Applications/renpy-7.4.6-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/Applications/renpy-7.4.6-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "/Applications/renpy-7.4.6-sdk/renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
+
+While running game code:
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 354, in execute
+    if menu_variable == 1:
+  File "game/screens.rpy", line 354, in <module>
+    if menu_variable == 1:
+NameError: name 'menu_variable' is not defined
 Resetting cache.
-Bootstrap to the start of init.init. took 4900.52s
+Bootstrap to the start of init.init. took 771.57s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.11s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4929.72s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
@@ -3018,7 +910,7 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.06s
+Interface start. took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -3031,12 +923,12 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 4946.80s
+Bootstrap to the start of init.init. took 804.99s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -3054,10 +946,53 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 817.54s
+Early init. took 0.00s
+Loader init. took 0.00s
+Loading error handling. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -3073,99 +1008,31 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4980.44s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 5002.09s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
+Full traceback:
+  File "game/laila route.rpy", line 383, in script
+    $ persistent_ending = Anne
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Applications/renpy-7.4.6-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/laila route.rpy", line 383, in <module>
+    $ persistent_ending = Anne
+NameError: name 'Anne' is not defined
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1'
-Version: b'2.1 Metal - 83'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
-Maximum texture size: 4096x4096
+While running game code:
+  File "game/laila route.rpy", line 383, in script
+    $ persistent_ending = Anne
+  File "game/laila route.rpy", line 383, in <module>
+    $ persistent_ending = Anne
+NameError: name 'Anne' is not defined
 Resetting cache.
-Bootstrap to the start of init.init. took 5009.92s
+Bootstrap to the start of init.init. took 835.96s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -3202,13 +1069,20 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 5049.45s
+Bootstrap to the start of init.init. took 938.72s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -3226,14 +1100,14 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.06s
+Interface start. took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -3246,12 +1120,55 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 5060.38s
+Bootstrap to the start of init.init. took 940.49s
 Early init. took 0.00s
-Loader init. took 0.00s
+Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.09s
+Loading script. took 0.08s
 Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 951.24s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.02s
+Loading script. took 0.11s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
@@ -3288,3 +1205,188 @@ Version: b'2.1 Metal - 83'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "game/laila route.rpy", line 224, in script
+    l away "Oh, [player], I’m so sorry, I hope I didn’t disturb your sleep."
+  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: 'player'
+
+While running game code:
+  File "game/laila route.rpy", line 224, in script
+    l away "Oh, [player], I’m so sorry, I hope I didn’t disturb your sleep."
+KeyError: 'player'
+Resetting cache.
+Bootstrap to the start of init.init. took 1136.65s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 1295.66s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 1326.14s
+Early init. took 0.00s
+Loader init. took 0.00s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/kaylaandreoli/Library/RenPy/backups/VampireVN':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 83'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1147, 645) drawable=(2294, 1290)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

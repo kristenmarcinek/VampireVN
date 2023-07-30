@@ -2,7 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 643: Tab characters are not allowed in Ren'Py scripts.
+File "game/laila route.rpy", line 315: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/laila route.rpy", line 316: expected statement.
+    "Ask her to explain.":
+                         ^
+
+File "game/laila route.rpy", line 328: expected statement.
+    "Remain silent.":
+                    ^
+
+File "game/laila route.rpy", line 349: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/laila route.rpy", line 350: expected statement.
+    "\"Yes Laila, I’m with you all the way. Together, we can be free of this.\"":
+                                                                                ^
+
+File "game/laila route.rpy", line 359: expected statement.
+    "\"I can’t say I’ll use any cure we might find, but I will help you find peace.\"":
+                                                                                      ^
+
+File "game/laila route.rpy", line 369: expected statement.
+    "\"No, there’s too much risk. I’m just going to leave town and make it on my own.\"":
+                                                                                        ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jul 20 03:03:44 2023
+Sun Jul 30 03:16:37 2023

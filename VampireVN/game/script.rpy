@@ -109,6 +109,7 @@ define config.side_image_change_transform = change_transform
 
 
 init:
+    default persistent_ending = 0
     $ menu_variable = 0
     $ laila_affection = 0
     $ cass_affection = 0
@@ -780,7 +781,7 @@ label start:
         "After another minute or so of walking, Laila halts in a small clearing, and turns to face you."
 
         l neutral "Dodge."
-        
+
         hide l with dissolve
 
         # exciting music
@@ -1148,12 +1149,12 @@ label start:
                 "You know Cass will probably be fine- she's a regular human after all- and you feel a burgeoning connection with this vampire that's taken you under her wing."
                 "You know in your heart this is the right decision."
                 "You follow Laila into the night."
-                jump LailaRoute
+                jump laila_chapter4
 
             "Follow Cassandra":
                 "Laila is far more experienced than you, you trust that she can take care of herself."
                 "You run after Cass, unwilling to let your best friend get hurt."
-                jump CassRoute
+                jump cass_chapter4
 
 
 
