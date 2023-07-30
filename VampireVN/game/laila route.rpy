@@ -831,16 +831,16 @@ label laila_chapter8:
 	if laila_affection >14:
         jump lailaTrueEnding
 
-	if laila_affection > 6 & drank her blood:
+	if laila_affection > 6 and $drank_blood == True:
         jump lailaGoodEndingA
 
-	if laila_affection > 6 & did not drink her blood:
+	if laila_affection > 6 & and $drank_blood == False:
         jump lailaGoodEndingB
 
-	if laila_affection < 7 & drank her blood:
+	if laila_affection < 7 & and $drank_blood ==True:
         jump lailaBadEndingA
 
-	if laila_affection < 7 & did not drink her blood:
+	if laila_affection < 7 & and $drank_blood == False:
         jump lailaBadEndingB
 
 label lailaTrueEnding:
