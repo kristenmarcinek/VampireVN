@@ -118,6 +118,11 @@ init:
     default q3 = False
     default q4 = False
 
+    default lq1 = False
+    default lq2 = False
+    default lq3 = False
+    default lq4 = False
+
 label start:
 
     label chapter1:
@@ -775,6 +780,7 @@ label start:
         "After another minute or so of walking, Laila halts in a small clearing, and turns to face you."
 
         l neutral "Dodge."
+        
         hide l with dissolve
 
         # exciting music
@@ -1135,6 +1141,7 @@ label start:
 
         "You could follow Laila, further into the woods, or follow Cassandra, who's running back towards town."
         "It's possible you may never see the other one again."
+        hide a with dissolve
 
         menu:
             "Follow Laila":
