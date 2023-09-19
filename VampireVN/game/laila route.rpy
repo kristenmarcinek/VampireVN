@@ -26,27 +26,32 @@ label laila_chapter4:
     # neutral music
     "You spin to see it’s Laila, her clothes somewhat dirty, but otherwise none the worse for wear."
     hide l with dissolve
+    window hide
 
     menu:
         "\"Oh thank god, you’re alright!\"":
+            window show
             "Laila’s countenance, somewhat grim, now lightens."
             show l excited with dissolve
             l excited "I’m glad to see you’re okay too, [player]."
             $ laila_affection+=2
 
         "\"Don’t sneak up on me like that!\"":
+            window show
             "Laila lets out a soft chuckle."
             show l excited with dissolve
             l excited "I didn’t know you were such a fraidy cat. Are you sure you’re qualified to be a creature of the night?"
             $ laila_affection+=1
 
         "\"Took you long enough.\"":
+            window show
             "Laila gives you a withering stare."
             show l angry with dissolve
             l angry "Perhaps had you not made such a racket in your escape, I would not have had to run quite so far to hide."
             $ laila_affection-=1
 
         "Remain silent.":
+            window show
             "Laila looks at you expectantly, then speaks in an exasperated tone."
             show l away with dissolve
             l away "Yeah, thanks [player], I’m glad to see you’re okay too. Jeez."
@@ -81,21 +86,25 @@ label laila_chapter4:
     l smile "I didn’t think we’d be sleeping together this soon."
     "She lets out a little laugh."
     hide l with dissolve
+    window hide
 
     menu:
         "Stay quiet.":
             "You remain silent and Laila’s laugh peters out."
+            window show
             show l away with dissolve
             l away "Sorry, wrong time, yeah."
             $ laila_affection-=1
 
         "Give a little laugh.":
+            window show
             "You release a little giggle at Laila’s joke, and she gives you a broad smile."
             show l excited with dissolve
             l excited "I’m glad you found it funny."
             $ laila_affection+=1
 
         "Make a quip back.":
+            window show
             mc "Yeah, I expected you to buy me a drink first."
             "Laila chuckles at your remark."
             show l excited with dissolve
@@ -107,13 +116,14 @@ label laila_chapter4:
     #romantic music
 
 
-#CHANGE: make sure that the game doesn't break bc there's no option to pass the questions, hopefully it just returns
 
 label laila_pit:
     hide l with dissolve
+    window hide
 
     menu:
         "Ask about Laila’s past." if not lq1:
+            window show
             mc "If you don’t mind, could I know some more about your past?"
             show l neutral with dissolve
             l neutral "Like, before I came to town? Yeah, I suppose."
@@ -128,6 +138,7 @@ label laila_pit:
             jump laila_pit
 
         "Ask about Laila’s life now." if not lq2:
+            window show
             mc "Can you tell me what things have been like for you recently?"
             show l neutral with dissolve
             l neutral "I mean, I’ve been living here for something like 9 months? After Grand Rapids, I needed to find a new place to settle down. My ex, some of her friends were out here. Felt like it could be safe. And it has been."
@@ -140,6 +151,7 @@ label laila_pit:
             jump laila_pit
 
         "Ask about the other vampires in town." if not lq3:
+            window show
             mc "Can you tell me about the other vampires living in town?"
             show l neutral with dissolve
             l neutral "The ones that are left you mean? There’s something like 20ish of us? I knew a couple of them through my ex and they’re good enough folks."
@@ -151,6 +163,7 @@ label laila_pit:
             jump laila_pit
 
         "Ask what Laila thinks of you." if not lq4:
+            window show
             mc "Well, what do you think of me?"
             "Laila’s eyes widen briefly at your question, then she looks away."
             show l away with dissolve
@@ -171,9 +184,11 @@ label laila_pit:
     "It’s all for her to share, and a great deal for you to process."
 
     hide l with dissolve
+    window hide
 
     menu:
         "\"It’s okay, I get where you’re coming from, I feel that a bit too.\"":
+            window show
             "Laila cheers up a bit at your response."
             show l smile with dissolve
             l smile "Thank you [player]. I appreciate your empathy. And I’m glad someone else feels the way I do."
@@ -182,12 +197,14 @@ label laila_pit:
             $ laila_affection+=2
 
         "\"I’m loving it, but your feelings are totally valid.\"":
+            window show
             "Laila takes a deep breath and nods at your response."
             show l neutral with dissolve
             l neutral "That’s more understanding than I get from most others, so I appreciate it."
             $ laila_affection+=1
 
         "\"Yeah, how could anyone not love this?\"":
+            window show
             "Laila goes from quiet and contemplative to furious in an instant."
             show l angry with dissolve
             l angry "Yeah, of course, your feelings are the only ones that matter. Sorry I bothered to open up to you. You’re just like all the others."
@@ -206,9 +223,11 @@ label laila_chapter5:
     "You awaken to find Laila’s head resting on your shoulder- it appears she shifted in her sleep."
     $ player = "Raven"
     # romantic music
+    window hide
 
     menu:
         "Let her stay like this for a minute.":
+            window show
             "You’re not in any particular rush, so you decide to let Laila rest for as long as she needs to."
             "Despite your best attempts at keeping still, Laila wakes within a couple minutes."
             "When Laila becomes aware of exactly where she’s been sleeping, she stumbles back as far as she can in the enclosed space."
@@ -219,6 +238,7 @@ label laila_chapter5:
             $ laila_affection+=2
 
         "Gently wake her up.":
+            window show
             "You give Laila a light tap on the shoulder, and she begins to come awake."
             "When Laila becomes aware of exactly where she’s been sleeping, she stumbles back as far as she can in the enclosed space."
             show l away with dissolve
@@ -228,6 +248,7 @@ label laila_chapter5:
             $ laila_affection+=1
 
         "Shake her awake.":
+            window show
             #tense music
             "You’re not a fan of Laila being in your personal space, and you grab her shoulders and shake her awake."
             show l angry with dissolve
@@ -312,9 +333,11 @@ label laila_chapter5:
     "A cure? What is this mad old woman talking about?"
 
     hide l with dissolve
+    window hide
 
     menu:
         "Ask her to explain.":
+            window show
             mc "What do you mean a cure?"
             "Gabrielle gives you a sickening grin."
             "Gabrielle" "Oh now you’re interested, eh? I’ll tell you."
@@ -327,6 +350,7 @@ label laila_chapter5:
             "You know the place Gabrielle speaks of. The house is infamous for being in a state of disrepair in an otherwise upscale part of town."
 
         "Remain silent.":
+            window show
             "You elect to remain silent, but Laila speaks up, her voice hopeful."
             show l neutral with dissolve
             l neutral "What cure?"
@@ -346,9 +370,11 @@ label laila_chapter5:
     l neutral "Will you join me?"
 
     hide l with dissolve
+    window hide
 
     menu:
         "\"Yes Laila, I’m with you all the way. Together, we can be free of this.\"":
+            window show
             "You let Laila know that you will join her on her quest, and she embraces you in a hug."
             l excited "Thank you so much [player]. I know we’ve only known each other for a couple days, but I will forever appreciate this."
             "She releases you from the hug, and you find yourself wishing she had held you for just a moment longer."
@@ -358,6 +384,7 @@ label laila_chapter5:
             $ laila_affection+=2
 
         "\"I can’t say I’ll use any cure we might find, but I will help you find peace.\"":
+            window show
             "You inform Laila that even though you might wish to remain a vampire, you’ll help her find a cure."
             "Laila gives you a big smile and clasps your hands in thanks."
             show l excited with dissolve
@@ -368,7 +395,8 @@ label laila_chapter5:
             $ laila_affection+=1
 
         "\"No, there’s too much risk. I’m just going to leave town and make it on my own.\"":
-        #sad music
+            window show
+            #sad music
             "You inform Laila that you’re done with all this, and intend to leave town and escape the Velsings."
             "Laila is visibly disappointed in your response."
             show l away with dissolve
@@ -421,9 +449,11 @@ label laila_chapter6:
     l neutral "I will do it to help you."
     "Laila shifts her weight so she now has you pinned with one arm, while using her free hand to make a small cut in her neck. Pale red blood begins to seep from the incision."
     hide l with dissolve
+    window hide
 
     menu:
         "Accept Laila’s offer.":
+            window show
             #romantic music
         	"You nod, and Laila eases her hold on you. You lunge forward and press your lips to her neck."
             "Laila is stiff initially, but softens at your touch, and her breathing becomes ragged and hitched as you feed."
@@ -443,6 +473,7 @@ label laila_chapter6:
         	$ drank_blood = True
 
         "Reject Laila’s offer, and resist the hunger.":
+            window show
         	"With a great deal of effort, you manage to purse your lips together and shake your head."
             "Laila eases up on you, covering the wound on her throat."
             "You sit up, shaking, and try to get control of your body. Every muscle screams out, driven to act by the vampiric essence flowing through you."
@@ -508,9 +539,11 @@ label laila_chapter6:
     "You and Laila approach the vast doors of the manor, hesitating before you open the door. Laila turns to face you."
     l away "[player], I don’t know what waits for us beyond these doors, but I want to thank you for sticking with me through this."
     hide l with dissolve
+    window hide
 
     menu:
         "Kiss Laila":
+            window show
         	# romantic music
             "You reach out to Laila and pull her in close to you. There is confusion in her eyes for half a second, before she realizes what’s going on and gives you a gentle smile."
             "You lean in and press your lips to Laila’s, and she returns your affection, holding you tightly. Despite the unnatural chill of both your bodies, it feels right."
@@ -521,6 +554,7 @@ label laila_chapter6:
         	$ laila_affection+=2
 
         "Give her a handshake":
+            window show
         	"You extend a hand to Laila, who looks at you somewhat confused."
             show l away with dissolve
             l away "Oh, okay, uh. Not quite what I was expecting, but okay."
@@ -589,11 +623,13 @@ label laila_chapter7:
     a neutral "Alright vampire. Surrender now, and I’ll make the deaths of you and your companion swift. For I will kill you both. It is simply a matter of whether I stake you, or leave you in the sun to burn. Or perhaps I shall bury you alive in the basement and let you starve to death over decades."
     a neutral "The only difference is the amount of suffering you go through. And the enjoyment I derive."
     hide a with dissolve
+    window hide
 
     # tense music
 
     menu:
         "\"Why are you doing this?\"":
+            window show
         	"Anne looks genuinely puzzled at your question."
             show a confused with dissolve
             a confused "Why am I doing this? Surely you jest? The Velsings have always hunted your kind."
@@ -604,6 +640,7 @@ label laila_chapter7:
             a neutral "I hope that answers your question, brat."
 
         "\"I think you’ve got a problem lady.\"":
+            window show
         	"Anne is taken aback."
             show a angry with dissolve
 
@@ -619,15 +656,18 @@ label laila_chapter7:
     a neutral "Come now vampire, do not make this harder than it has to be for the both of us."
 
     hide a with dissolve
+    window hide
 
     menu:
         "\"Surely we can come to some sort of arrangement?\"":
+            window show
         	"Anne raises an eyebrow at you."
             show a confused with dissolve
             a confused "You are very different from other vampires I have met. Most try to kill me without a thought. Yet you want to make a deal with me? Very curious indeed."
             a neutral "I suppose I’m open to discussing alternatives with you."
 
         "\"Why would I ever want to make killing me easier for you?\"":
+            window show
         	"Anne scowls and opens her mouth as if to snap back at you, but pauses."
             show a frown with dissolve
             a frown "You’re right, why would you ever willingly surrender? I never would. And yet, while I will assuredly beat you in a contest of strength, I should not risk life and limb needlessly. I have won this battle."
@@ -675,9 +715,11 @@ label laila_chapter7:
     "You have Anne where you want her. You can save Laila, it’s just a matter of choosing your tactics."
 
     hide a with dissolve
+    window hide
 
     menu:
         "\"Yes Anne, I’ll join you.\"":
+            window show
             "Anne gives you a smugly satisfied smile."
             show a neutral with dissolve
             a neutral "I knew you could not resist the temptation of working with a huntress of my skill and power."
@@ -688,11 +730,14 @@ label laila_chapter7:
             "Anne approaches and clasps your shoulders in a comradely fashion."
             a neutral "Perhaps we shall become friends through this endeavor. And hopefully you prove more competent than my idiot brother."
             "Anne releases you and turns towards Laila now."
-            A annoyed "Now, time to finish off the broken one. Then we can clear out the rest of this disgusting backwater of a town."
+            a annoyed "Now, time to finish off the broken one. Then we can clear out the rest of this disgusting backwater of a town."
             "Anne’s attention is away from you. Now is your chance."
+            hide a with dissolve
+            window hide
 
             menu:
                 "Bite her":
+                    window show
                     "Anne has let her guard down, and you take the opportunity to strike."
                     "You lunge forward, and before Anne can react, you’ve sunk your teeth into her jugular vein."
                     "Anne releases a pained gasp, and struggles to shake you off her back, but you remain attached."
@@ -710,6 +755,7 @@ label laila_chapter7:
                     #Jump chap7endcommon
 
                 "Go for her knife":
+                    window show
                 	"Anne has let her guard down, and you take the opportunity to strike."
                     "You dash forward and pull Anne’s knife. Before she can react, you drive it into her side, between the ribs."
                     "Anne’s breath is forced from her lungs and she faces you, shock and bewilderment in her eyes rapidly replaced by rage."
@@ -730,6 +776,7 @@ label laila_chapter7:
                     #chapt7endcommon
 
         "\"I have a better idea. What if you and I became… lovers?\"":
+            window show
             "Anne stares at you, baffled"
             show a confused with dissolve
             a confused "What? Where is this coming from?"
@@ -752,9 +799,11 @@ label laila_chapter7:
             "Indeed, you want her too. You hear her heart pounding with desire, blood flowing through her, more vibrant and full of life than any other you have perceived since you turned."
             "There is no room between the two of you, and Anne closes her eyes to kiss you. Now is your chance."
             hide a with dissolve
+            window hide
 
             menu:
                 "Bite her":
+                    window show
                 	"As Anne lets her guard down, you strike."
                     "The vampire hunter is not expecting your teeth in her jugular vein, and she writhes in panic trying to pull you off of her, but even her athletic skill is no match for your vampiric power."
                     "She wheezes in protest."
@@ -768,6 +817,7 @@ label laila_chapter7:
                     hide a with dissolve
 
                 "Go for her knife":
+                    window show
                 	"As Anne lets her guard down, you strike."
                     "While her lips press against yours, you draw her knife and drive it into her right side, between her ribs."
                     "Anne breaks away from you gasping. You’ve evidently succeeded in puncturing a lung, and now the huntress struggles for breath."
@@ -791,7 +841,6 @@ label laila_chapter7:
     "You’re not sure how, but you can sense that Laila is dying."
 
 ##---CHAPTER 8---
-
 
 label laila_chapter8:
     scene mansion int
@@ -837,7 +886,7 @@ label laila_chapter8:
 	if laila_affection > 6 & and $drank_blood == False:
         jump lailaGoodEndingB
 
-	if laila_affection < 7 & and $drank_blood ==True:
+	if laila_affection < 7 & and $drank_blood == True:
         jump lailaBadEndingA
 
 	if laila_affection < 7 & and $drank_blood == False:
@@ -875,13 +924,20 @@ label lailaTrueEnding:
     l smile "I guess I could have put it more simply- I love you, [player]. I hope you realize that."
     "Laila averts her eyes and gives a shy smile."
     l away "It’s been a while since I’ve said that to anyone."
+    hide l with dissolve
+    window hide
 
     menu:
         "\"I love you too, Laila.\"":
+            window show
         	"You confess your shared feelings to Laila, and her smile widens."
+            show l smile with dissolve
             l smile "That means the world to me."
+
         "Kiss her.":
+            window show
         	"You take hold of Laila’s hand and pull her close to you, before gently kissing her. She returns the kiss with an intensity unlike any you have experienced thus far. After a moment she breaks away."
+            show l smile with dissolve
             l smile "That means the world to me."
 
 

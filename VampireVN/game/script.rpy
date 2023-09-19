@@ -114,15 +114,30 @@ init:
     $ laila_affection = 0
     $ cass_affection = 0
 
+    $ cass_kiss = False
+    $ casspetname = "[player]"
+    $ evil_cass = False
+    $ cass_vamp = False
+    $ cass_human = False
+
+    $ anne_dead = False
+    $ han_kill = False
+
+    #questions for laila
     default q1 = False
     default q2 = False
     default q3 = False
     default q4 = False
 
+    #questions about laila
     default lq1 = False
     default lq2 = False
     default lq3 = False
     default lq4 = False
+
+    #anne fight chapter 4
+    default af1 = False
+    default af2 = False
 
 label start:
 
@@ -213,8 +228,6 @@ label start:
             c "I took you home and now you're awake and then you asked… and now we're here."
 
             mc "Blood? What do you mean blood? I don't feel any blood.."
-
-            #CHANGE: (Single Choice) <- ask wtf this means later
 
             "You notice a sharp pain in your neck."
 
@@ -646,6 +659,7 @@ label start:
         menu:
             "Lean in for a kiss.":
                 "You lean in, anxious but excited. Cassandra purses her lips and you slowly move closer together…"
+                $ cass_kiss = True
                 "But Cass pulls away."
                 c "I… I'm sorry. I need to go back home, it's getting late."
                 scene forest with fade
@@ -1155,7 +1169,5 @@ label start:
                 "Laila is far more experienced than you, you trust that she can take care of herself."
                 "You run after Cass, unwilling to let your best friend get hurt."
                 jump cass_chapter4
-
-
 
 return

@@ -367,7 +367,6 @@ screen main_menu():
         use default_menu
 
 
-
 screen default_menu:
     tag menu
 
