@@ -289,7 +289,7 @@ label cass_chapter5:
             mc "Umm… No?"
             $ cass_affection-=3
             mc "Anyway… Why did you call me here?"
-            Jump 5cb
+
 
         "Leave them alone":
             "You leave them knocked out and rush to the library."
@@ -1008,7 +1008,7 @@ label cass_chapter8:
         mc "I need a doctor! Please!"
         "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
         "You fall asleep, the long run sinking in…"
-        scene scene forest with fade
+        scene forest with fade
 
     show l smile with dissolve
     "You wake up to see Laila, at long last."
@@ -1325,7 +1325,7 @@ label cass_chapter8:
                 "He collapses to the ground, instantly dead."
                 "You toss his corpse into the raging fire that has started around the moonshine kegs."
                 "You and Cassandra leave, heading back home."
-                    Jump cassgoodending
+                # Jump cassgoodending
 
             "Make him a vampire.":
                 window show
@@ -1768,7 +1768,7 @@ label evilCass:
                     "He really did win it all."
                     return
 
-                "Don’t use the weak point."
+                    "Don’t use the weak point."
                     window show
                     "You miss the chance to hurt Cass."
                     "You tussle for a bit…"
@@ -1903,15 +1903,15 @@ label evilCass:
     window hide
 
     menu:
-    "I forgive you.":
-        window show
+        "I forgive you.":
+            window show
 
-        show c doubt with dissolve
-        c "But i can’t forgive myself."
-        c "All the horrible things i did."
-        c "I’m a monster."
-        c "You deserve better."
-        c "You deserve a better friend."
+            show c doubt with dissolve
+            c "But i can’t forgive myself."
+            c "All the horrible things i did."
+            c "I’m a monster."
+            c "You deserve better."
+            c "You deserve a better friend."
 
         menu:
             "You’re right.":
@@ -1938,23 +1938,23 @@ label evilCass:
 
 
 
-    "I can’t forgive you.":
-        label no_forgiveness:
-            window show
-            # Sad Music
-            show c doubt with dissolve
-            c "I know. That’s why I can’t see you anymore."
-            c "Goodbye, [player]."
-            c "I’ll always remember you, and treasure what we had, and mourn what we lost."
-            "Cassandra leaves, and you let her."
-            hide c with dissolve
-            "You stand alone for a while, letting it all sink in."
-            "Imagining what could have been."
-            "Before you too walk away in the night."
-            return
+            "I can’t forgive you.":
+                label no_forgiveness:
+                    window show
+                    # Sad Music
+                    show c doubt with dissolve
+                    c "I know. That’s why I can’t see you anymore."
+                    c "Goodbye, [player]."
+                    c "I’ll always remember you, and treasure what we had, and mourn what we lost."
+                    "Cassandra leaves, and you let her."
+                    hide c with dissolve
+                    "You stand alone for a while, letting it all sink in."
+                    "Imagining what could have been."
+                    "Before you too walk away in the night."
+                    return
 
 
-        label quizdeath:
+        label Quizdeath:
             window show
             # Sad Music
             show c doubt with dissolve
