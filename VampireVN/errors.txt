@@ -18,7 +18,17 @@ File "game/cass route.rpy", line 1916: expected menuitem
     menu:
     ^
 
-File "game/laila route.rpy", line 759: Tab characters are not allowed in Ren'Py scripts.
+File "game/laila route.rpy", line 875: expected statement.
+    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."\
+                                                                                                                                                               ^
+
+File "game/laila route.rpy", line 1044: expected ':' not found.
+    label lailaBadEndingA
+                         ^
+
+File "game/laila route.rpy", line 1092: expected statement.
+    Hide l with dissolve
+           ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Sep 20 18:32:24 2023
+Wed Sep 20 18:47:16 2023

@@ -756,7 +756,7 @@ label laila_chapter7:
 
                 "Go for her knife":
                     window show
-                	"Anne has let her guard down, and you take the opportunity to strike."
+                    "Anne has let her guard down, and you take the opportunity to strike."
                     "You dash forward and pull Anne’s knife. Before she can react, you drive it into her side, between the ribs."
                     "Anne’s breath is forced from her lungs and she faces you, shock and bewilderment in her eyes rapidly replaced by rage."
                     "She tries to swing her fists at you, but she is off balance, and you easily step out of the way, with each attempted blow further winding her."
@@ -804,7 +804,7 @@ label laila_chapter7:
             menu:
                 "Bite her":
                     window show
-                	"As Anne lets her guard down, you strike."
+                    "As Anne lets her guard down, you strike."
                     "The vampire hunter is not expecting your teeth in her jugular vein, and she writhes in panic trying to pull you off of her, but even her athletic skill is no match for your vampiric power."
                     "She wheezes in protest."
                     show a angry with dissolve
@@ -818,7 +818,7 @@ label laila_chapter7:
 
                 "Go for her knife":
                     window show
-                	"As Anne lets her guard down, you strike."
+                    "As Anne lets her guard down, you strike."
                     "While her lips press against yours, you draw her knife and drive it into her right side, between her ribs."
                     "Anne breaks away from you gasping. You’ve evidently succeeded in puncturing a lung, and now the huntress struggles for breath."
                     "Anne stumbles back, trying to pull the blade from her side, but doubles over in pain. She coughs and blood trickles from her mouth."
@@ -877,19 +877,19 @@ label laila_chapter8:
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
 
-	if laila_affection >14:
+    if laila_affection >14:
         jump lailaTrueEnding
 
-	if laila_affection > 6 and $drank_blood == True:
+    if laila_affection > 6 and $drank_blood == True:
         jump lailaGoodEndingA
 
-	if laila_affection > 6 & and $drank_blood == False:
+    if laila_affection > 6 & and $drank_blood == False:
         jump lailaGoodEndingB
 
-	if laila_affection < 7 & and $drank_blood == True:
+    if laila_affection < 7 & and $drank_blood == True:
         jump lailaBadEndingA
 
-	if laila_affection < 7 & and $drank_blood == False:
+    if laila_affection < 7 & and $drank_blood == False:
         jump lailaBadEndingB
 
 label lailaTrueEnding:
@@ -930,13 +930,13 @@ label lailaTrueEnding:
     menu:
         "\"I love you too, Laila.\"":
             window show
-        	"You confess your shared feelings to Laila, and her smile widens."
+            "You confess your shared feelings to Laila, and her smile widens."
             show l smile with dissolve
             l smile "That means the world to me."
 
         "Kiss her.":
             window show
-        	"You take hold of Laila’s hand and pull her close to you, before gently kissing her. She returns the kiss with an intensity unlike any you have experienced thus far. After a moment she breaks away."
+            "You take hold of Laila’s hand and pull her close to you, before gently kissing her. She returns the kiss with an intensity unlike any you have experienced thus far. After a moment she breaks away."
             show l smile with dissolve
             l smile "That means the world to me."
 
