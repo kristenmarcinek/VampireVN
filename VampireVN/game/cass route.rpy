@@ -653,8 +653,8 @@ label cass_chapter7:
     c "If I disobey, If i reveal a secret, if I do anything… "
     "She doesn’t finish, but you get the implication. She would die."
     c "I didn’t think it was real. I’ve joined larps and role plays and conventions all the time…"
-    c "So I took the oath no problem."
-    c "That night in the woods… I realized it was real."
+    c neutral "So I took the oath no problem."
+    c doubt"That night in the woods… I realized it was real."
     "When she met Han… When Han dragged her unconscious…"
     c "I wanted to tell you… they told me that you were some kind of monster, that you weren’t yourself…"
 
@@ -670,19 +670,19 @@ label cass_chapter7:
     if cass_affection <= 5:
         jump cass_bad
 
-    c "But I know you! You’re still the sweet beautiful person I've known forever!"
+    c smile"But I know you! You’re still the sweet beautiful person I've known forever!"
     c "Vampire’s aren’t a danger!"
     c "You aren’t a danger!"
-    c "You’re…"
+    c doubt "You’re…"
     "She hesitates again, but this time it doesn’t seem like the curse."
     c "You're my rock, [player]. When was bullied, when I came out, when I transitioned, you were always there for me."
-    c "And i tried so hard to repay that, repay everything you’ve done for me but in the end i keep hurting you."
-    c "I don’t deserve your friendship… so why do I…"
+    c neutral"And i tried so hard to repay that, repay everything you’ve done for me but in the end i keep hurting you."
+    c doubt"I don’t deserve your friendship… so why do I…"
     "She pauses again."
     c "I love you, [player]."
-    c "I wanted to tell you before this whole thing, but now it's too late."
+    c neutral "I wanted to tell you before this whole thing, but now it's too late."
     c "Now we’re on opposite sides of this war."
-    c "And I can’t fight them without dying… But I can’t fight you without wishing I was dead."
+    c doubt "And I can’t fight them without dying… But I can’t fight you without wishing I was dead."
     "You stare into Cassandra’s eyes, the gravity of the situation sinking in."
     "That’s why she was acting distant recently."
 
@@ -1952,6 +1952,33 @@ label evilCass:
             "Imagining what could have been."
             "Before you too walk away in the night."
             return
+
+
+          label quizdeath:
+            window show
+            # Sad Music
+            show c doubt with dissolve
+                    c "Damn it. I really, really hoped it was you in there."
+                    "Cassandra shifts back into attacking you."
+                    "You tussle for a bit…"
+                    "You try your best…"
+                    "But in the end, Cassandra stabs you in the chest with a stake."
+                    "She starts crying."
+                    c "I know this isn’t you, [player]."
+                    c "But I don't know who to say this to…"
+                    c "Now that [player] is gone…"
+                    c "[player] made my life worth living."
+                    # all obj
+                    c "Made me smile every time I saw [pronoun]."
+                    c "I loved [pronoun]."
+                    #sing
+                    c "And when [player] turned, I was so excited."
+                    #obj
+                    c "I didn’t even realize that I lost [pronoun]"
+                    c "I’ll always feel guilty for that."
+                    c "I just hope now, [player]’s soul will finally rest."
+                    c "You fade into death, Cassandra’s tears the last thing you see before you die."
+                    return
 
 
 label cass_med:
