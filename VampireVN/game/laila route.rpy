@@ -1,4 +1,4 @@
-##---CHAPTER 4---
+ #---CHAPTER 4---
 
 label laila_chapter4:
     scene forest
@@ -455,7 +455,7 @@ label laila_chapter6:
         "Accept Laila’s offer.":
             window show
             #romantic music
-        	"You nod, and Laila eases her hold on you. You lunge forward and press your lips to her neck."
+            "You nod, and Laila eases her hold on you. You lunge forward and press your lips to her neck."
             "Laila is stiff initially, but softens at your touch, and her breathing becomes ragged and hitched as you feed."
             "You’ve never fed like this before, your skin against Laila’s skin, the salty ichor passing directly from her veins into you. It’s an ecstasy you’ve never felt before."
             "As you drink, you feel Laila’s emotions as if they’re your own- fear for the future, concern for you, and her excitement at this taboo action you now engage in."
@@ -469,12 +469,12 @@ label laila_chapter6:
             "Laila bites her lip before speaking again."
             l smile "It felt good though."
             "With that, you and Laila depart your apartment and head in the direction of the manor Gabrielle told you about."
-        	$ laila_affection+=2
-        	$ drank_blood = True
+            $ laila_affection+=2
+            $ drank_blood = True
 
         "Reject Laila’s offer, and resist the hunger.":
             window show
-        	"With a great deal of effort, you manage to purse your lips together and shake your head."
+            "With a great deal of effort, you manage to purse your lips together and shake your head."
             "Laila eases up on you, covering the wound on her throat."
             "You sit up, shaking, and try to get control of your body. Every muscle screams out, driven to act by the vampiric essence flowing through you."
             "Laila watches you nervously, evidently ill at ease. Still, she offers you encouragement."
@@ -491,7 +491,7 @@ label laila_chapter6:
             "After you’ve taken some time to compose yourself, you rise to your feet, and Laila gives you a nod of respect."
             l neutral "The night’s getting on, we should get over to the mansion."
             "With that, you and Laila depart your apartment and head in the direction of the manor Gabrielle told you about."
-        	$ laila_affection+=1
+            $ laila_affection+=1
 
     # neutral music
     scene street
@@ -544,18 +544,18 @@ label laila_chapter6:
     menu:
         "Kiss Laila":
             window show
-        	# romantic music
+            # romantic music
             "You reach out to Laila and pull her in close to you. There is confusion in her eyes for half a second, before she realizes what’s going on and gives you a gentle smile."
             "You lean in and press your lips to Laila’s, and she returns your affection, holding you tightly. Despite the unnatural chill of both your bodies, it feels right."
             "After several moments in each other’s embrace, you and Laila separate."
             show l smile with dissolve
             l smile "That was nice. Let’s do it again sometime."
             l neutral "But it’s time we ended this. Let’s go."
-        	$ laila_affection+=2
+            $ laila_affection+=2
 
         "Give her a handshake":
             window show
-        	"You extend a hand to Laila, who looks at you somewhat confused."
+            "You extend a hand to Laila, who looks at you somewhat confused."
             show l away with dissolve
             l away "Oh, okay, uh. Not quite what I was expecting, but okay."
             "Laila grabs your hand and gives a somewhat halfhearted handshake."
@@ -630,7 +630,7 @@ label laila_chapter7:
     menu:
         "\"Why are you doing this?\"":
             window show
-        	"Anne looks genuinely puzzled at your question."
+            "Anne looks genuinely puzzled at your question."
             show a confused with dissolve
             a confused "Why am I doing this? Surely you jest? The Velsings have always hunted your kind."
             a neutral "I merely aim to be the very best; as I said before, the nonpareil. To go down in history as the greatest Velsing that ever lived."
@@ -641,7 +641,7 @@ label laila_chapter7:
 
         "\"I think you’ve got a problem lady.\"":
             window show
-        	"Anne is taken aback."
+            "Anne is taken aback."
             show a angry with dissolve
 
             a angry "What impudence! Were I not feeling gracious in my moment of triumph, I would smite you for that."
@@ -661,14 +661,14 @@ label laila_chapter7:
     menu:
         "\"Surely we can come to some sort of arrangement?\"":
             window show
-        	"Anne raises an eyebrow at you."
+            "Anne raises an eyebrow at you."
             show a confused with dissolve
             a confused "You are very different from other vampires I have met. Most try to kill me without a thought. Yet you want to make a deal with me? Very curious indeed."
             a neutral "I suppose I’m open to discussing alternatives with you."
 
         "\"Why would I ever want to make killing me easier for you?\"":
             window show
-        	"Anne scowls and opens her mouth as if to snap back at you, but pauses."
+            "Anne scowls and opens her mouth as if to snap back at you, but pauses."
             show a frown with dissolve
             a frown "You’re right, why would you ever willingly surrender? I never would. And yet, while I will assuredly beat you in a contest of strength, I should not risk life and limb needlessly. I have won this battle."
             a neutral "So vampire, let us discuss alternatives to needlessly shedding each other’s blood."

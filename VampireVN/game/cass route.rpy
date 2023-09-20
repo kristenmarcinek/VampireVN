@@ -28,7 +28,7 @@ label anne4fight:
 
         "Try hypnosis":
             window show
-        	pass
+            pass
 
         "Try floating" if not a2:
             window show
@@ -159,11 +159,11 @@ label anne4fight:
             c neutral "Hey, you. You’re finally awake."
 
             menu:
-            	"What.. happened..":
+                "What.. happened..":
                     pass
-            	"Are you ok?":
-            		$ cass_affection+=1
-            	"I’m in deep, deep pain.":
+                "Are you ok?":
+                    $ cass_affection+=1
+                "I’m in deep, deep pain.":
                     pass
 
             c neutral "Let’s get you up, we need to head home."
@@ -340,16 +340,16 @@ label cass_chapter5:
     window hide
 
     menu:
-    	"Green Apple Envy":
+        "Green Apple Envy":
             pass
 
-    	"Ultra Sour Ushy Gushy":
+        "Ultra Sour Ushy Gushy":
             pass
 
-    	"Brorple Smorp":
+        "Brorple Smorp":
             pass
-    	"That one trans flavor you forget the name of, but it has baby blue and hot pink on it":
-    		$ cass_affection+=1
+        "That one trans flavor you forget the name of, but it has baby blue and hot pink on it":
+            $ cass_affection+=1
 
     window show
     show c wink with dissolve
@@ -375,17 +375,17 @@ label cass_petchoice:
     window hide
 
     menu:
-    	"Sand Pie":
+        "Sand Pie":
 
-    		$ casspetname == "Sand Pie"
+            $ casspetname == "Sand Pie"
 
-    	"Cutums":
-    		$ casspetname == "Cutums"
+        "Cutums":
+            $ casspetname == "Cutums"
 
-    	"C-Sharp":
-    		$ casspetname == "C-Sharp"
+        "C-Sharp":
+            $ casspetname == "C-Sharp"
 
-    	"Honey Bun":
+        "Honey Bun":
             window show
             show c doubt with dissolve
             c "Haha, very funny. What’s your real choice?"
@@ -410,17 +410,17 @@ label cass_petchoice:
     window hide
 
     menu:
-    	"Red":
-    		$ petname == "Red"
+        "Red":
+            $ petname == "Red"
 
-    	"Echo":
-    		$ petname == "Echo"
+        "Echo":
+            $ petname == "Echo"
 
-    	"Cutums":
-    		$ petname == "Cutums"
+        "Cutums":
+            $ petname == "Cutums"
 
-    	"\"Actually, I feel like I just like being called by my first name.\"":
-    		$ petname == "[player]"
+        "\"Actually, I feel like I just like being called by my first name.\"":
+            $ petname == "[player]"
 
     window show
     show c smile with dissolve
@@ -638,10 +638,10 @@ label cass_chapter7:
     window hide
 
     menu:
-    	"\"Are you under a spell?\"":
+        "\"Are you under a spell?\"":
             pass
 
-    	"\"What can you tell me?\"":
+        "\"What can you tell me?\"":
             pass
 
     window show
@@ -799,7 +799,7 @@ label cass_chapter7:
             "You grab Cassandra and run into the night."
             $ anne_dead = True
         "Fight Han":
-        	window show
+            window show
             # Tense Music
             "You reject Han’s order and attack him."
             "You feel a stake dig into your back."
@@ -1121,14 +1121,14 @@ label cass_chapter8:
         "\"I’m fine!\" (lie)":
             window show
             show l away with dissolve
-        	l "[player], it’s okay to be upset. It’s not easy being like this, and that comes with difficulties that you normally would never have to face."
+            l "[player], it’s okay to be upset. It’s not easy being like this, and that comes with difficulties that you normally would never have to face."
 
         "\"No, I’m not doing well right now.\"":
             window show
             show l neutral with dissolve
-        	l neutral "I’m sorry. I hope Cynthia will be ok."
-        	mc "It’s Cassandra."
-        	l neutral "Oh, uh, yeah. Sorry. Long night."
+            l neutral "I’m sorry. I hope Cynthia will be ok."
+            mc "It’s Cassandra."
+            l neutral "Oh, uh, yeah. Sorry. Long night."
 
     #CHANGE: the original script to this had the second choice jump to 8c2, but the label for 8c2 doesn't exist. I'm giong to assume that 8c2 was the label that started with laila saying 'i'm sorry,' but i need to make this note just to check in
 
@@ -1204,8 +1204,8 @@ label cass_chapter8:
 
                 menu:
                     "\"Oh, I see! Yeah, I’m down\"":
-                    	$ cass_affection+=1
-                    	jump sex_time
+                        $ cass_affection+=1
+                        jump sex_time
 
                     "\"I’d rather not right now.\"":
                         label no_sex:
@@ -1216,7 +1216,7 @@ label cass_chapter8:
 
 
                     "\"I’m still confused.\"":
-                    	window show
+                        window show
                         show c neutral with dissolve
                         c "You know, have sex… bang… fuck…etcetera…"
                         hide c with dissolve
@@ -1224,11 +1224,11 @@ label cass_chapter8:
 
                         menu:
                             "Oh, I see! Yeah,  I’m down":
-                            	$ cass_affection+=1
-                            	jump sex_time
+                                $ cass_affection+=1
+                                jump sex_time
 
                             "I’d rather not right now.":
-                            	jump no_sex
+                                jump no_sex
 
                             "I’m still confused.":
                                 window show
@@ -1238,21 +1238,21 @@ label cass_chapter8:
 
                                 menu:
                                     "Oh, I see! Yeah, I’m down":
-                                    	$ cass_affection+=1
-                                    	jump sex_time
+                                        $ cass_affection+=1
+                                        jump sex_time
 
                                     "I’d rather not right now.":
-                                    	jump no_sex
+                                        jump no_sex
 
                                     "I’m a proud virgin, I don’t want to sully myself with such things until marriage.":
 
-                                    	window show
+                                        window show
                                         show c doubt with dissolve
                                         c doubt "Oh. Umm… I didn’t know that about you… Let’s discuss this later ok?"
                                         c smile "For now, lets train for tonight!"
 
                                     "I’m still confused.":
-                                    	window show
+                                        window show
                                         show c doubt with dissolve
                                         c doubt "Nevermind, I’m not feeling it anymore. Lets just train for battle, ok?"
                                         $ cass_affection-=1
@@ -1320,15 +1320,15 @@ label cass_chapter8:
         window hide
         menu:
             "Give him a quick death.":
-            	window show
+                window show
                 "Cassandra snaps Han’s neck."
                 "He collapses to the ground, instantly dead."
                 "You toss his corpse into the raging fire that has started around the moonshine kegs."
                 "You and Cassandra leave, heading back home."
-                	Jump cassgoodending
+                    Jump cassgoodending
 
             "Make him a vampire.":
-            	window show
+                window show
                 "You bite down on Han’s neck, sucking his blood."
                 "You let go, and he collapses."
                 "You tie his leg to a root and leave him there."
@@ -1339,7 +1339,7 @@ label cass_chapter8:
                 # Jump cassgoodending
 
             "Let Cass decide.":
-            	window show
+                window show
                 show c neutral with dissolve
                 c "I think we should flip the spell on him."
                 "Cassandra grabs the book of names from Han’s pocket and starts chanting."
@@ -1731,7 +1731,7 @@ label evilCass:
 
         "\"I am the same as [player]! I can prove it!\"":
             window show
-        	pass
+            pass
 
         "\"Screw it, it's on!\"":
             window show
@@ -1745,7 +1745,7 @@ label evilCass:
 
             menu:
                 "Use the weak point.":
-                	window show
+                    window show
                     "You take advantage of the weak point and punch Cassandra."
                     "But you don’t know your own vampiric strength."
                     "You kill her."
@@ -1769,7 +1769,7 @@ label evilCass:
                     return
 
                 "Don’t use the weak point."
-                	window show
+                    window show
                     "You miss the chance to hurt Cass."
                     "You tussle for a bit…"
                     "You try your best…"
@@ -1805,13 +1805,13 @@ label evilCass:
 
     menu:
         "Orange":
-        	# Jump Quizdeath
+            # Jump Quizdeath
         "Blue":
             # Jump Quizdeath
         "Pink":
             pass
         "Green":
-        	# Jump Quizdeath
+            # Jump Quizdeath
 
     window show
     show c smile with dissolve
@@ -1824,11 +1824,11 @@ label evilCass:
         "What They do in the Shade":
             # Jump Quizdeath
         "The Werewolf Diaries":
-        	# Jump Quizdeath
+            # Jump Quizdeath
         "The Moonlight Trilogy"
-        	pass
+            pass
         "Nosferatu"
-        	# Jump Quizdeath
+            # Jump Quizdeath
 
     window show
     show c neutral with dissolve
@@ -1838,9 +1838,9 @@ label evilCass:
 
     menu:
         "Michelle":
-        	# Jump Quizdeath
+            # Jump Quizdeath
         "Gwen":
-        	# Jump Quizdeath
+            # Jump Quizdeath
         "I don’t know":
             pass
 
@@ -1904,7 +1904,7 @@ label evilCass:
 
     menu:
     "I forgive you.":
-    	window show
+        window show
 
         show c doubt with dissolve
         c "But i can’t forgive myself."
@@ -1915,7 +1915,7 @@ label evilCass:
 
         menu:
             "You’re right.":
-            	jump no_forgiveness
+            jump no_forgiveness
 
             "You were manipulated, misled":
                 window show
@@ -1932,15 +1932,15 @@ label evilCass:
 
                 menu:
                     "I like you platonically.":
-                    	jump cass_med
+                        jump cass_med
                     "I love you. Most ardently.":
-                    	jump cass_best
+                        jump cass_best
 
 
 
     "I can’t forgive you.":
         label no_forgiveness:
-        	window show
+            window show
             # Sad Music
             show c doubt with dissolve
             c "I know. That’s why I can’t see you anymore."
@@ -1954,7 +1954,7 @@ label evilCass:
             return
 
 
-          label quizdeath:
+        label quizdeath:
             window show
             # Sad Music
             show c doubt with dissolve
