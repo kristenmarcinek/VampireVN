@@ -872,7 +872,7 @@ label laila_chapter8:
     mc "What do you mean?"
     l away "There is no cure. And this, the events of the last few days, I cannot bear to go through it again. I’ve run for so long, and for what? To watch more friends die?"
     l away "No, better to go now, knowing you’re safe and Anne is in hell."
-    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."
+    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."\
     mc "What if I got you some of Anne’s blood, she’s not… empty? You could get some of your strength back."
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
@@ -1089,7 +1089,6 @@ label lailaBadEndingB:
     l smile "Go out and bring good into the world, okay? And try to avoid turning into a winged rodent, if you can. Do that specifically for me."
     "Though it is very difficult for her, Laila laughs at her final remark."
     "With a deep sigh, Laila closes her eyes, her body takes on a stillness like death, and you know she is gone from the world."
-
     hide l with dissolve
     "You are overcome with overwhelming grief. This beautiful wonderful woman is gone. If only things had been different, had you been closer to her, things might have played out differently."
     "Despite the injuries she suffered before passing, Laila looks serene. She passed from this world to a better place, happy."

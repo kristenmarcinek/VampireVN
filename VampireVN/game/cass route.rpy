@@ -1805,13 +1805,16 @@ label evilCass:
 
     menu:
         "Orange":
-            jump Quizdeath
+            jump quiz_death
+
         "Blue":
-            jump Quizdeath
+            jump quiz_deathh
+
         "Pink":
             pass
+
         "Green":
-            jump Quizdeath
+            jump quiz_death
 
     window show
     show c smile with dissolve
@@ -1822,13 +1825,16 @@ label evilCass:
 
     menu:
         "What They do in the Shade":
-            jump Quizdeath
+            jump quiz_death
+
         "The Werewolf Diaries":
-            jump Quizdeath
+            jump quiz_death
+
         "The Moonlight Trilogy":
             pass
+
         "Nosferatu":
-            jump Quizdeath
+            jump quiz_death
 
     window show
     show c neutral with dissolve
@@ -1838,9 +1844,9 @@ label evilCass:
 
     menu:
         "Michelle":
-            jump Quizdeath
+            jump quiz_death
         "Gwen":
-            jump Quizdeath
+            jump quiz_death
         "I don’t know":
             pass
 
@@ -1935,50 +1941,23 @@ label evilCass:
                             jump cass_med
                         "I love you. Most ardently.":
                             jump cass_best
-                        "I can’t forgive you.":
-                            jump no_forgiveness
-
-label no_forgiveness:
-                    window show
-                    # Sad Music
-                    show c doubt with dissolve
-                    c "I know. That’s why I can’t see you anymore."
-                    c "Goodbye, [player]."
-                    c "I’ll always remember you, and treasure what we had, and mourn what we lost."
-                    "Cassandra leaves, and you let her."
-                    hide c with dissolve
-                    "You stand alone for a while, letting it all sink in."
-                    "Imagining what could have been."
-                    "Before you too walk away in the night."
-                    return
 
 
-label Quizdeath:
-    window show
-    # Sad Music
-    show c doubt with dissolve
-    c "Damn it. I really, really hoped it was you in there."
-    "Cassandra shifts back into attacking you."
-    "You tussle for a bit…"
-    "You try your best…"
-    "But in the end, Cassandra stabs you in the chest with a stake."
-    "She starts crying."
-    c "I know this isn’t you, [player]."
-    c "But I don't know who to say this to…"
-    c "Now that [player] is gone…"
-    c "[player] made my life worth living."
-    # all obj
-    c "Made me smile every time I saw [pronoun]."
-    c "I loved [pronoun]."
-    #sing
-    c "And when [player] turned, I was so excited."
-    #obj
-    c "I didn’t even realize that I lost [pronoun]"
-    c "I’ll always feel guilty for that."
-    c "I just hope now, [player]’s soul will finally rest."
-    c "You fade into death, Cassandra’s tears the last thing you see before you die."
-    return
 
+        "I can’t forgive you.":
+            label no_forgiveness:
+                window show
+                # Sad Music
+                show c doubt with dissolve
+                c "I know. That’s why I can’t see you anymore."
+                c "Goodbye, [player]."
+                c "I’ll always remember you, and treasure what we had, and mourn what we lost."
+                "Cassandra leaves, and you let her."
+                hide c with dissolve
+                "You stand alone for a while, letting it all sink in."
+                "Imagining what could have been."
+                "Before you too walk away in the night."
+                return
 
 label cass_med:
     window show
@@ -2031,4 +2010,30 @@ label cass_best:
     "Even though Han is still out there somewhere…"
     "You feel like the world is perfect right now."
 
+    return
+
+label quiz_death:
+    window show
+    # Sad Music
+    show c doubt with dissolve
+    c "Damn it. I really, really hoped it was you in there."
+    "Cassandra shifts back into attacking you."
+    "You tussle for a bit…"
+    "You try your best…"
+    "But in the end, Cassandra stabs you in the chest with a stake."
+    "She starts crying."
+    c "I know this isn’t you, [player]."
+    c "But I don't know who to say this to…"
+    c "Now that [player] is gone…"
+    c "[player] made my life worth living."
+    # all obj
+    c "Made me smile every time I saw [pronoun]."
+    c "I loved [pronoun]."
+    #sing
+    c "And when [player] turned, I was so excited."
+    #obj
+    c "I didn’t even realize that I lost [pronoun]"
+    c "I’ll always feel guilty for that."
+    c "I just hope now, [player]’s soul will finally rest."
+    c "You fade into death, Cassandra’s tears the last thing you see before you die."
     return
