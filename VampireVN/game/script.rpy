@@ -173,7 +173,7 @@ label start:
 
                 "Something seems off… But before you have time to think of what you hear an overjoyed shriek:"
 
-                show c doubt with dissolve
+                show c smile with dissolve
 
                 #MUSIC: cass romantic
 
@@ -218,6 +218,8 @@ label start:
             $ player = player.title()
 
             c "Ok, you remember your name is [player]. That's good."
+
+
 
             # Tense Music
 
@@ -672,6 +674,7 @@ label start:
                 "You open your mouth and you feel two fangs you did not notice before."
                 "You feel a stange, intoxicating fear from Cassandra. The urge to bite consumes you, but you restrain yourself as best you can, jumping off of her."
                 scene forest with fade
+                show c neutral with dissolve
 
                 menu:
                     "I'm sorry, I don't know what came over me.":
@@ -979,8 +982,8 @@ label start:
         "You text Cassandra to meet you  and wait outside of her apartment."
         "A few minutes later Cass rushes out."
 
-        show c excited with dissolve
-        c excited "A Vampire Party! Oh my god!"
+        show c wink with dissolve
+        c wink "A Vampire Party! Oh my god!"
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
@@ -1034,6 +1037,7 @@ label start:
 
         "Laila looks taken aback at your remark."
         show l away with dissolve
+        show c doubt with dissolve
         l away "Ah, you misunderstand, [player]. Your friend is not in any danger here. This is a gathering of… let's say civilized vamps. We can control ourselves. Mostly."
         l excited "Had we known a human guest was coming, we would have brought some non-blood based beverages."
         "Laila shows you and Cass over to the makeshift bar near the center of the clearing."
@@ -1041,10 +1045,11 @@ label start:
         "Shamus" "Hello there, you must be the new one. I'm Shamus, and this here is the Blood Bank."
 
         hide l with dissolve
+        hide c with dissolve
         "The barkeep- Shamus- gestures at the bar."
         "Shamus" "We've got our own brewing operation here. We take blood- sourced from an actual blood bank, don't worry- and distill it in this here contraption."
         "He now indicates a small still sitting just behind the bar."
-        "Shamus" "We call it ‘Bloodmoon Shine. First one's free."
+        "Shamus" "We call it ‘Blood Moon Shine. First one's free."
         "At this, he passes you a red solo cup filled with a reddish liquid."
         "You take a hesitant sip and find you somewhat enjoy the surprisingly strong beverage."
         "You're a bit nervous too nervous to talk to anyone new just yet, so you hang by Laila and Cass."
@@ -1055,7 +1060,8 @@ label start:
         "Before anyone can comment, a flurry of nets are launched from beyond the clearing, ensnaring many of the partygoers, including Laila."
         "As she struggles to disentangle herself from the net, she pauses."
 
-        show l angry with dissolve
+        show l angry at right with dissolve
+        show c doubt at left with dissolve
         l angry "Is this garlic? Did someone really coat these nets in fucking garlic? My clothes are going to reek!"
         "Something whizzes past your head and you hear someone scream. You turn to see it's Shamus clawing at a large wooden spike that has lodged itself into their chest."
         "More and more of these stakes come flying out of the forest, so you grab Cass and drop to the ground to avoid getting hit. Laila, still in the net, follows suit."
@@ -1082,6 +1088,8 @@ label start:
         "When the rain stops, you risk a glance upward and see two figures enter the burning clearing, shrouded by smoke."
         "The screaming has mostly died down now, as the other vampires are either dead or have fled off into the woods. It's just you, Laila, and Cass now, cowering beneath the table."
         "As you try to figure out next steps, you hear one of the figures start to speak."
+        hide l with dissolve
+        hide c with dissolve
         "???" "Well Han, we did it. We've found the vampire cell and routed them. All according to my plan!"
 
         "Han?" "Your \"plan\", Anne, was firing a hundred stakes randomly at this clearing. Don't pretend like the distillery blowing up was your idea."
@@ -1108,11 +1116,11 @@ label start:
         show l angry at right with dissolve
 
         l angry "Not these buffoons again."
-        c smile "You know… the Velsings???"
+        c doubt "You know… the Velsings???"
         l angry "Unfortunately. These freaks inevitably come around to fuck up any nice vampire community I've managed to find. I thought we'd seen the last of them after the boat disaster in Grand Rapids, but I guess it's hard to kill stupid."
         #CHANGE: ask abt if this is supposed to be left in like this???
 
-        c "They look… (insert line about their outfit)"
+        c neutral "They look...dated."
         l neutral "I know, the fashion is just insult to injury."
 
         menu:
@@ -1132,7 +1140,7 @@ label start:
                 a frown "The Pony Express provided a valuable service, just as we do!"
 
 
-            "You know the rest of the fit aside, I feel like that top would look good on me":
+            "You know, the rest of the outfit aside, I feel like that top would look good on me":
                 "Cass evaluates your current attire briefly."
                 show c smile at right
                 show h neutral at left
@@ -1146,6 +1154,8 @@ label start:
 
 
         "You recoil in terror at the addressing of your remarks."
+        hide c with dissolve
+        hide h with dissolve
         a neutral "Oh yes little bat-spawn, we heard everything you and your compatriots were saying."
         "At this, the Velsings flip the picnic table over, exposing the three of you."
         "You find crossbows with stakes loaded in them leveled at your face."

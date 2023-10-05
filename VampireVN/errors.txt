@@ -2,33 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/cass route.rpy", line 1807: choice menuitem expects a non-empty block.
-    "Orange":
-             ^
+File "game/script.rpy", line 1063: end of line expected.
+    show l at right angry with dissolve
+                    ^
 
-File "game/cass route.rpy", line 1824: choice menuitem expects a non-empty block.
-    "What They do in the Shade":
-                                ^
-
-File "game/cass route.rpy", line 1840: choice menuitem expects a non-empty block.
-    "Michelle":
-               ^
-
-File "game/cass route.rpy", line 1916: expected menuitem
-    menu:
-    ^
-
-File "game/laila route.rpy", line 875: expected statement.
-    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."\
-                                                                                                                                                               ^
-
-File "game/laila route.rpy", line 1044: expected ':' not found.
-    label lailaBadEndingA
-                         ^
-
-File "game/laila route.rpy", line 1092: expected statement.
-    Hide l with dissolve
-           ^
+File "game/script.rpy", line 1064: end of line expected.
+    show c at left doubt with dissolve
+                   ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Oct  4 19:09:50 2023
+Wed Oct  4 19:49:52 2023

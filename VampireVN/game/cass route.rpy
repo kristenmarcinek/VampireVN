@@ -1805,13 +1805,13 @@ label evilCass:
 
     menu:
         "Orange":
-            # Jump Quizdeath
+            jump Quizdeath
         "Blue":
-            # Jump Quizdeath
+            jump Quizdeath
         "Pink":
             pass
         "Green":
-            # Jump Quizdeath
+            jump Quizdeath
 
     window show
     show c smile with dissolve
@@ -1822,13 +1822,13 @@ label evilCass:
 
     menu:
         "What They do in the Shade":
-            # Jump Quizdeath
+            jump Quizdeath
         "The Werewolf Diaries":
-            # Jump Quizdeath
-        "The Moonlight Trilogy"
+            jump Quizdeath
+        "The Moonlight Trilogy":
             pass
-        "Nosferatu"
-            # Jump Quizdeath
+        "Nosferatu":
+            jump Quizdeath
 
     window show
     show c neutral with dissolve
@@ -1838,9 +1838,9 @@ label evilCass:
 
     menu:
         "Michelle":
-            # Jump Quizdeath
+            jump Quizdeath
         "Gwen":
-            # Jump Quizdeath
+            jump Quizdeath
         "I don’t know":
             pass
 
@@ -1913,33 +1913,32 @@ label evilCass:
             c "You deserve better."
             c "You deserve a better friend."
 
-        menu:
-            "You’re right.":
-            jump no_forgiveness
+            menu:
+                "You’re right.":
+                    jump no_forgiveness
 
-            "You were manipulated, misled":
-                window show
-                mc "Han tricked you."
-                mc "If I were in your place, I may have been tricked too."
-                mc "Please, I need you."
-                mc "I’ve lost so much already, I can’t lose you too."
-                mc "You mean so much to me."
-                mc "I miss meeting you in the library"
-                mc "I miss seeing you smile after geeking out about something."
-                mc "I miss being with you."
-                mc "I… "
-                window hide
+                "You were manipulated, misled":
+                    window show
+                    mc "Han tricked you."
+                    mc "If I were in your place, I may have been tricked too."
+                    mc "Please, I need you."
+                    mc "I’ve lost so much already, I can’t lose you too."
+                    mc "You mean so much to me."
+                    mc "I miss meeting you in the library"
+                    mc "I miss seeing you smile after geeking out about something."
+                    mc "I miss being with you."
+                    mc "I… "
+                    window hide
 
-                menu:
-                    "I like you platonically.":
-                        jump cass_med
-                    "I love you. Most ardently.":
-                        jump cass_best
+                    menu:
+                        "I like you platonically.":
+                            jump cass_med
+                        "I love you. Most ardently.":
+                            jump cass_best
+                        "I can’t forgive you.":
+                            jump no_forgiveness
 
-
-
-            "I can’t forgive you.":
-                label no_forgiveness:
+label no_forgiveness:
                     window show
                     # Sad Music
                     show c doubt with dissolve
@@ -1954,31 +1953,31 @@ label evilCass:
                     return
 
 
-        label Quizdeath:
-            window show
-            # Sad Music
-            show c doubt with dissolve
-                    c "Damn it. I really, really hoped it was you in there."
-                    "Cassandra shifts back into attacking you."
-                    "You tussle for a bit…"
-                    "You try your best…"
-                    "But in the end, Cassandra stabs you in the chest with a stake."
-                    "She starts crying."
-                    c "I know this isn’t you, [player]."
-                    c "But I don't know who to say this to…"
-                    c "Now that [player] is gone…"
-                    c "[player] made my life worth living."
-                    # all obj
-                    c "Made me smile every time I saw [pronoun]."
-                    c "I loved [pronoun]."
-                    #sing
-                    c "And when [player] turned, I was so excited."
-                    #obj
-                    c "I didn’t even realize that I lost [pronoun]"
-                    c "I’ll always feel guilty for that."
-                    c "I just hope now, [player]’s soul will finally rest."
-                    c "You fade into death, Cassandra’s tears the last thing you see before you die."
-                    return
+label Quizdeath:
+    window show
+    # Sad Music
+    show c doubt with dissolve
+    c "Damn it. I really, really hoped it was you in there."
+    "Cassandra shifts back into attacking you."
+    "You tussle for a bit…"
+    "You try your best…"
+    "But in the end, Cassandra stabs you in the chest with a stake."
+    "She starts crying."
+    c "I know this isn’t you, [player]."
+    c "But I don't know who to say this to…"
+    c "Now that [player] is gone…"
+    c "[player] made my life worth living."
+    # all obj
+    c "Made me smile every time I saw [pronoun]."
+    c "I loved [pronoun]."
+    #sing
+    c "And when [player] turned, I was so excited."
+    #obj
+    c "I didn’t even realize that I lost [pronoun]"
+    c "I’ll always feel guilty for that."
+    c "I just hope now, [player]’s soul will finally rest."
+    c "You fade into death, Cassandra’s tears the last thing you see before you die."
+    return
 
 
 label cass_med:
