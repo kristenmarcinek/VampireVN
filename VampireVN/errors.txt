@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/laila route.rpy", line 875: expected statement.
-    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."\
-                                                                                                                                                               ^
+File "game/script.rpy", line 142: expected statement.
+    pronoun = "them"
+            ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Tue Oct 10 19:30:40 2023
+Tue Oct 10 20:13:50 2023

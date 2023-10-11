@@ -1,36 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/cass route.rpy", line 153, in script
-    a "You won't be able to tell the others anything once I catch [pronoun]!"
-KeyError: u'pronoun'
+  File "game/cass route.rpy", line 420, in script
+    $ petname == "Red"
+  File "game/cass route.rpy", line 420, in <module>
+    $ petname == "Red"
+NameError: name 'petname' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/cass route.rpy", line 153, in script
-    a "You won't be able to tell the others anything once I catch [pronoun]!"
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1337, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1251, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1231, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'pronoun'
+  File "game/cass route.rpy", line 420, in script
+    $ petname == "Red"
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/cass route.rpy", line 420, in <module>
+    $ petname == "Red"
+NameError: name 'petname' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.1.23060707
 Crimson Nights 1.0
-Tue Oct 10 20:06:01 2023
+Tue Oct 10 20:41:29 2023

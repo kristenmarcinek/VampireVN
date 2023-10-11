@@ -173,7 +173,7 @@ label anne4fight:
                     pass
 
             c neutral "Let’s get you up, we need to head home."
-            "You walk as fast as you can until you get out of the woods and reenter the town"
+            #"You walk as fast as you can until you get out of the woods and reenter the town"
             scene street
 
         "Wait in the tree":
@@ -193,7 +193,7 @@ label anne4fight:
             "Once you made sure the Velsings were far enough away, you followed Cassandra as she ran home."
             "What was Han talking about? What did he have planned for her?"
             scene street with fade
-            "As You both finally get back in town, you turn back into a human."
+            "As you both finally get back in town, you turn back into a human."
             mc "Cassandra! It's me."
             c "[player]! I’m so happy you’re ok! That was terrifying!"
 
@@ -227,8 +227,8 @@ label anne4fight:
     menu:
         "\"Cassandra, I don’t think you should be around me anymore.\"":
             show c doubt with dissolve
-            "What… look i knew you being a vampire was dangerous from the get go, ok?"
-            c "I’m not going to let you die just so I can be safe ok!"
+            c "What… Look. I knew you being a vampire was dangerous from the get go, ok?"
+            c "I’m not going to let you die, just so I can be safe!"
             c "You know me. You know I’d never give up on you. Because I care about you!"
             c "Because I lo-"
             c "Because I like you!"
@@ -248,7 +248,7 @@ label anne4fight:
             "She was right. You remember nights in middle school where you played vampires and werewolves together."
             "Reading the Moonlight trilogy… watching Nosferatu…"
             c "But…"
-            "Cassandra seems conflicted, lost in thought"
+            "Cassandra seems conflicted, lost in thought..."
             "Clearly something is holding her back… but what?"
             "You decide not to press her on it. It's been a long night."
 
@@ -316,11 +316,11 @@ label cass_chapter5:
     c "I was kind of hoping that Abram would learn to accept Bran…"
     c doubt "But he didn’t."
     c neutral "The diary stops abruptly, it was never finished."
-    c "But in this book.."
+    c "But in this book..."
 
-    "Cassandra pushes another huge book titled A Historie of the Order of the Batbasher towards you"
+    "Cassandra pushes another huge book titled {b}{i}A Historie of the Order of the Batbasher{/i}{/b} towards you."
     c " Someone named Abram kills his own vampire brother to found this order."
-    c "And look at his last name"
+    c "And look at his last name..."
     "You open the book and see Abram’s full name."
     c "Abram Van Velsing."
     c "Abram killed Bran, and coined the motto \"firmitas voluntatis in fraudem.\""
@@ -333,12 +333,13 @@ label cass_chapter5:
     c wink "You’re so sharp, [player]!"
     c smile "So, I grabbed every book I could find with any relevance."
     "You eye Cassandra’s mountain of books…"
-    "This is going to be a really long day isn’t it."
+    "This is going to be a really long day isn’t it..."
     c "Let’s get researching!"
     "You toil through the mountain of books, hoping to find more information about the Batbashers."
 
     "After a while, you start to get into a groove."
     "It reminds you of when you and Cassandra studied together before a big test."
+    "Cassandra would be dealing with transitioning and family stuff, but still made time to study with you."
     "Just like back then, Cass brought a bunch of cans of Demon Energy Drinks to fuel the study sesh."
     "She had gone through the \"Big Blue Betrayal\", \"Red Anguish\", and \"Emerald Elation\" flavors."
     "You were getting tired, so you decided to drink the…"
@@ -367,7 +368,7 @@ label cass_chapter5:
     "Would you be my friend if you were a worm, would you rather bend fire or water, etc."
     "And eventually, as the day goes on, the conversation steers towards…"
     c smile "You know, Pet Names! Like fun little names people call their partner!"
-    c doubt "My awful ex Darryl called me honey bun, and at the time I liked it…"
+    c doubt "My awful chaser ex Darryl called me honey bun, and at the time I liked it…"
     c smile "But now I can’t even look at a honey bun without gagging."
     c "I feel like I’d love to be called something like Sand Pie, or Cutums, or something cool like C-sharp!"
 
@@ -383,13 +384,13 @@ label cass_petchoice:
     menu:
         "Sand Pie":
 
-            $ casspetname == "Sand Pie"
+            $ casspetname = "Sand Pie"
 
-        "Cutums":
-            $ casspetname == "Cutums"
+        "Cutesandra":
+            $ casspetname = "Cutesandra"
 
         "C-Sharp":
-            $ casspetname == "C-Sharp"
+            $ casspetname = "C-Sharp"
 
         "Honey Bun":
             window show
@@ -407,7 +408,7 @@ label cass_petchoice:
     c smile "You’ll find a cool person someday, and they have to call you a cool name too!"
     c "Something like Red, you know, cause of the blood?"
     c neutral "Or Echo, cause of echolocation, cause… you can turn into a bat?"
-    c wink "Or Cutums! You know… cause you’re cute?"
+    c wink "Or Cutasaur! You know… cause you’re cute?"
     c smile "What do you think?"
     mc "Hmm, I really like…"
 
@@ -417,16 +418,16 @@ label cass_petchoice:
 
     menu:
         "Red":
-            $ petname == "Red"
+            $ petname = "Red"
 
         "Echo":
-            $ petname == "Echo"
+            $ petname = "Echo"
 
-        "Cutums":
-            $ petname == "Cutums"
+        "Cutasaur":
+            $ petname = "Cutasaur"
 
         "\"Actually, I feel like I just like being called by my first name.\"":
-            $ petname == "[player]"
+            $ petname = player
 
     window show
     show c smile with dissolve
@@ -468,7 +469,7 @@ label cass_petchoice:
     mc "Yeah, don’t worry. I’ll just turn into a bat and watch from afar."
     mc "It’ll be fine!"
     c "Ok… If you.. *yawn*... insist."
-
+    hide c with dissolve
     "Cassandra rests her head on the table and takes a nap."
     "The library is 24/7, so she should be fine."
     "Plus, If all goes well, you’ll be back before you know it!"

@@ -115,7 +115,7 @@ init:
     $ cass_affection = 0
 
     $ cass_kiss = False
-    $ casspetname = "[player]"
+    $ casspetname = "Cass"
     $ evil_cass = False
     $ cass_vamp = False
     $ cass_human = False
@@ -138,7 +138,8 @@ init:
     #anne fight chapter 4
     default a1 = False
     default a2 = False
-
+    #standin for now
+    $ pronoun = "them"
 label start:
 
     label chapter1:
@@ -216,7 +217,7 @@ label start:
             $ player = renpy.input("What is your name?", length = 12)
             $ player = player.strip()
             $ player = player.title()
-
+            $ petname = player
             c "Ok, you remember your name is [player]. That's good."
 
             # Tense Music
