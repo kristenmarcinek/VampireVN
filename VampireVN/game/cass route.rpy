@@ -2,6 +2,9 @@
 
 label cass_chapter4:
     # Tense Music
+    hide c
+    hide l
+    
     "You lose sight of Cass after a while, but for some reason you can still tell where she is."
     "It’s as if you can sense her, hear her heartbeat in the air"
     "You hear the Velsings gaining on you, and you remember the powers Cassandra mentioned earlier."
@@ -83,12 +86,13 @@ label anne4fight:
     h "Like you didn’t tell dad about Ren? Oh wait…"
     show a frown
     a "We were young Ok! It was ages ago! Why are you still fixated on that!"
-    show a sigh
+    show h sigh
     h "Why am I still… WHY AM I STILL FIXATED ON THAT?"
     h "Are you for real?"
 
     hide a
     hide h
+    hide c
     with dissolve
 
     "As they bicker, you have time to focus."
@@ -96,6 +100,7 @@ label anne4fight:
 
     show a angry at left
     show h sigh at right
+    #show c doubt at right
     with dissolve
 
     a "Look, I’ve said I’m sorry for outing you a million times. It’s in the past! Dad’s gone!"
@@ -134,9 +139,10 @@ label anne4fight:
                     pass
                 "Fall on Anne":
                     pass
-                "You miss both and fall on the ground next to them."
-                "Your whole body hurts like hell, but you seem to have created a cloud of dust."
-                "Both Velsings are coughing as you grab Cassandra and run as far away as possible."
+                    
+            "You miss both and fall on the ground next to them."
+            "Your whole body hurts like hell, but you seem to have created a cloud of dust."
+            "Both Velsings are coughing as you grab Cassandra and run as far away as possible."
 
 
 

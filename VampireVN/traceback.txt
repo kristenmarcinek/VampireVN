@@ -1,36 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/laila route.rpy", line 224, in script
-    l away "Oh, [player], I’m so sorry, I hope I didn’t disturb your sleep."
-KeyError: 'player'
+  File "game/cass route.rpy", line 153, in script
+    a "You won't be able to tell the others anything once I catch [pronoun]!"
+KeyError: u'pronoun'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/laila route.rpy", line 224, in script
-    l away "Oh, [player], I’m so sorry, I hope I didn’t disturb your sleep."
-  File "/Applications/renpy-7.4.6-sdk/renpy/ast.py", line 930, in execute
+  File "game/cass route.rpy", line 153, in script
+    a "You won't be able to tell the others anything once I catch [pronoun]!"
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/exports.py", line 1473, in say
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/exports.py", line 1473, in say
     who(what, *args, **kwargs)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1337, in __call__
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1337, in __call__
     what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1251, in prefix_suffix
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1251, in prefix_suffix
     return (sub(prefix) + sub(body) + sub(suffix))
-  File "/Applications/renpy-7.4.6-sdk/renpy/character.py", line 1231, in sub
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/character.py", line 1231, in sub
     return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 278, in substitute
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/substitutions.py", line 278, in substitute
     s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
-  File "/Applications/renpy-7.4.6-sdk/renpy/substitutions.py", line 168, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/substitutions.py", line 168, in get_field
     obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
-KeyError: 'player'
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'pronoun'
 
-macOS-13.2.1-arm64-arm-64bit arm64
-Ren'Py 8.1.1.23060707
+Windows-10-10.0.22621 AMD64
+Ren'Py 7.6.1.23060707
 Crimson Nights 1.0
-Sun Jul 30 03:29:12 2023
+Tue Oct 10 20:06:01 2023

@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/laila route.rpy", line 1044: expected ':' not found.
-    label lailaBadEndingA
-                         ^
+File "game/laila route.rpy", line 875: expected statement.
+    "You gaze into her eyes, and see they are filled with grief. While she is not terribly older than you, the weight of the last decade rests heavily on her."\
+                                                                                                                                                               ^
 
-File "game/laila route.rpy", line 1092: expected statement.
-    Hide l with dissolve
-           ^
-
-Ren'Py Version: Ren'Py 8.1.2.23090503
-Fri Sep 22 12:42:47 2023
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Tue Oct 10 19:30:40 2023

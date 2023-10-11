@@ -979,12 +979,12 @@ label start:
         "You text Cassandra to meet you  and wait outside of her apartment."
         "A few minutes later Cass rushes out."
 
-        show c excited with dissolve
-        c excited "A Vampire Party! Oh my god!"
+        show c smile with dissolve
+        c smile "A Vampire Party! Oh my god!"
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
-        "\" I'm sure you'll be fine."
+        mc "I'm sure you'll be fine."
         "You walk into the woods, looking for the blood bank."
         "You wish Laila had written coordinates or something, cause you were deeply lost."
 
@@ -1014,7 +1014,7 @@ label start:
         "At this, Laila bares her fangs demonstratively."
 
         c "Well, I'm not, but me and [player] are close, and, well, I'm really into vampiric history and seeing a place like this…"
-        c "It's just so cool! But if it's more of a vampire's only thing I totally understand!"
+        c "It's just so cool! But if it's more of a vampires only thing I totally understand!"
 
         scene hideout with dissolve
 
@@ -1132,8 +1132,9 @@ label start:
                 a frown "The Pony Express provided a valuable service, just as we do!"
 
 
-            "You know the rest of the fit aside, I feel like that top would look good on me":
+            "You know, the rest of the outfit aside, I feel like that top would look good on me!":
                 "Cass evaluates your current attire briefly."
+                hide l with dissolve
                 show c smile at right
                 show h neutral at left
                 with dissolve
@@ -1142,7 +1143,8 @@ label start:
                 hide c
                 hide h
                 with dissolve
-                show a neutral with dissolve
+                show a neutral at left with dissolve
+                show h neutral at right with dissolve
 
 
         "You recoil in terror at the addressing of your remarks."
