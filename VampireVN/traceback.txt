@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/cass route.rpy", line 420, in script
-    $ petname == "Red"
-  File "game/cass route.rpy", line 420, in <module>
-    $ petname == "Red"
-NameError: name 'petname' is not defined
+  File "game/cass route.rpy", line 985, in script
+    scene forest day
+Exception: Image 'forest' does not accept attributes 'day'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/cass route.rpy", line 420, in script
-    $ petname == "Red"
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/cass route.rpy", line 420, in <module>
-    $ petname == "Red"
-NameError: name 'petname' is not defined
+  File "game/cass route.rpy", line 985, in script
+    scene forest day
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 1562, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/ast.py", line 1398, in show_imspec
+    atl=atl)
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/display/core.py", line 496, in _duplicate
+    args.extraneous()
+  File "C:\Users\Radha\Downloads\renpy-7.6.1-sdk/renpy/display/core.py", line 361, in extraneous
+    " ".join(self.args),
+Exception: Image 'forest' does not accept attributes 'day'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.1.23060707
 Crimson Nights 1.0
-Tue Oct 10 20:41:29 2023
+Tue Oct 10 22:50:41 2023

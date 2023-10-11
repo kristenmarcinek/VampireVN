@@ -501,16 +501,16 @@ label cass_chapter6:
     a "Glad to see you all here. Plenty of unfamiliar faces, I assume, beneath the mask."
     "The crowd chuckles. Damn, they must be easy to please."
     a "For those of you who were at the culling of the vampire hideout, a toast!"
-    "Thunderous applause"
+    "*Thunderous applause*"
     h "Our organization has a proud history, and a success rate beyond any other."
     h "Looking today, you may not know that this town used to be a huge center for vampire activity!"
-    h "There were shops, schools, communities…more than anywhere else in the south "
+    h "There were shops, schools, communities…more than anywhere else in the south. "
     "This stuns you. Cassandra theorized that there was an old vampire community here, but a hub?"
 
-    h sigh " And then came my ancestor. He killed the monstrous Bran Velcant, founded the ______, and brought the vampire community to its knees."
+    h sigh " And then came my ancestor. He killed the monstrous Bran Velcant, founded the Batbashers, and brought the vampire community to its knees."
     #CHANGE: i'm going to assume this isn't meant to be blank
 
-    h neutral "And now, here we are. Us an organization sprawling across Georgia, Alabama, Mississippi, Tennessee, The Virginias…"
+    h neutral "And now, here we are. An organization sprawling across Georgia, Alabama, Mississippi, Tennessee, The Virginias…"
     a "Even Kentucky starting next spring!"
     h sigh "And the vampires are all but stamped out. But now is not the time for complacency!"
 
@@ -519,6 +519,7 @@ label cass_chapter6:
     "This must be about the relationship Anne mentioned earlier? The nosy in you needs more information."
     h neutral "Yeah I was complacent. I let myself be manipulated. But so have we all."
     h sigh "We’ve grown complacent. We’ve let vampires not a day old slip through our fingers."
+    show a neutral
     "The crown murmurs. It seems the news of you escaping Anne has gone out."
     h neutral "We cannot rest until every last one of them is stamped out."
     h smile "The escapees have a camp in the deep woods. Tomorrow, we strike, and kill them all."
@@ -560,7 +561,7 @@ label cass_chapter6:
     h sigh "I was in love once. Adrian Lansberry. He was handsome, devoted, kind."
     h smile "We did everything together. I hid it from my dad, but my sis knew."
     h sigh "It was just lovely… until he got bit."
-    h unsure "At first, i loved him so much, I betrayed the whole organization for him. Covered for him."
+    h unsure "At first, I loved him so much, I betrayed the whole organization for him. Covered for him."
     h "My father disowned me. I was meant to take over as head but Anne seized the opportunity. I was alone and scared and we only had each other."
     h "But i noticed he was different. He wasn’t the man I fell in love with anymore."
     h "He grew violent. His bloodlust grew and grew. He… tried to bite me."
@@ -589,7 +590,7 @@ label cass_chapter6:
         c "Well, they have been acting a bit different… but.. "
         h surprise "How different?"
         #pronoun obj
-        c "A little more aggressive, but that’s not [pronoun] fault! There has to be a better way!"
+        c "A little more aggressive, but that’s not [player]'s fault! There has to be a better way!"
         h unsure "I’ve been where you are! I’ve said what you’ve said, I’ve done what you’ve done."
         h "You’re going through a lot right now, I get it. I’ve helped dozens of people like you. Like me."
         h "Take your time. You’ll realize sooner or later."
@@ -600,6 +601,7 @@ label cass_chapter6:
         "You sense worry and conflict in Cassandra's face."
         c "I need some air…"
         h smile "Whatever you need, friend."
+        hide c
         "Cassandra runs out, leaving the church."
         "You don’t know how to feel."
         "The situation is difficult to process."
@@ -657,7 +659,7 @@ label cass_chapter7:
     c "I am prohibited from discussing the organization… I would get hurt if I did."
     c "I want to help you as best as I could, but I can't tell you anything."
     "Cassandra seems to be struggling, but her precise words seem to be mostly avoiding the curse."
-    c "If I disobey, If i reveal a secret, if I do anything… "
+    c "If I disobey, If I reveal a secret, if I do anything… "
     "She doesn’t finish, but you get the implication. She would die."
     c "I didn’t think it was real. I’ve joined larps and role plays and conventions all the time…"
     c neutral "So I took the oath no problem."
@@ -870,7 +872,7 @@ label cass_bad:
     h "This is the one you wanted to cure, huh…"
     "Han shoots you with a net."
     c "You said you needed me right? Leave [player] alone, and I’ll help you take over."
-    h "Glad to see you change your mind Kalluri."
+    h "Glad to see you change your mind, Kalluri."
     h "I promise, I’ll keep [player] safe."
     "You feel the sharp prick of a tranquilizer and pass out."
 
@@ -980,7 +982,7 @@ label cass_bad:
             "But you collapse halfway there, tired out of your mind."
             "You pass out…"
 
-            scene forest day
+            scene forest with fade
             #CHANGE: we don't have an image for this. lol
 
             "And wake up, the sun in your eyes."
