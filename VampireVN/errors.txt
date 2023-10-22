@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 142: expected statement.
-    pronoun = "them"
-            ^
+File "game/cass route.rpy", line 1152: reached end of line when expecting ':'.
+    if( cassvamp) jump Cassfight
+                                ^
+
+File "game/cass route.rpy", line 1153: reached end of line when expecting ':'.
+    if( !cassvamp) jump MCfight
+                               ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Tue Oct 10 20:13:50 2023
+Wed Oct 11 02:18:41 2023

@@ -577,20 +577,20 @@ label cass_chapter6:
 
     if cass_affection > 5:
         # pronoun obj
-        c "They’ve been acting the exact same as long as i’ve known [pronoun]!"
+        c neutral "They’ve been acting the exact same as long as i’ve known [pronoun]!"
         h "That’s how it starts. Pretty soon the bloodsucker will be.."
-        c "Pretty soon what? Don’t think I don’t see you trying to worm your way back to the top!"
-        C"You killed your boyfriend to get your old job back!"
+        c confident "Pretty soon what? Don’t think I don’t see you trying to worm your way back to the top!"
+        c "You killed your boyfriend to get your old job back!"
         h surprise " Kalluri, Kalluri, I get you’re upset but no need to get emotional!"
         h unsure "You’re going through a lot right now, I get it. I’ve helped dozens of people like you. Like me."
-        h "take your time. You’ll realize sooner or later."
+        h "Take your time. You’ll realize sooner or later."
 
     if cass_affection <= 5:
 
         c "Well, they have been acting a bit different… but.. "
         h surprise "How different?"
         #pronoun obj
-        c "A little more aggressive, but that’s not [player]'s fault! There has to be a better way!"
+        c neutral"A little more aggressive, but that’s not [player]'s fault! There has to be a better way!"
         h unsure "I’ve been where you are! I’ve said what you’ve said, I’ve done what you’ve done."
         h "You’re going through a lot right now, I get it. I’ve helped dozens of people like you. Like me."
         h "Take your time. You’ll realize sooner or later."
@@ -599,7 +599,7 @@ label cass_chapter6:
         h neutral "I have plans. Restructure the organization. More strategic hunts. Protect people like your friend before they get bit. A cure."
         h "That means I need allies. I see potential in you. Something to consider."
         "You sense worry and conflict in Cassandra's face."
-        c "I need some air…"
+        c doubt "I need some air…"
         h smile "Whatever you need, friend."
         hide c
         "Cassandra runs out, leaving the church."
@@ -685,7 +685,7 @@ label cass_chapter7:
     c doubt "You’re…"
     "She hesitates again, but this time it doesn’t seem like the curse."
     c "You're my rock, [player]. When was bullied, when I came out, when I transitioned, you were always there for me."
-    c neutral"And i tried so hard to repay that, repay everything you’ve done for me but in the end i keep hurting you."
+    c neutral"And I tried so hard to repay that, repay everything you’ve done for me but in the end I keep hurting you."
     c doubt"I don’t deserve your friendship… so why do I…"
     "She pauses again."
     c "I love you, [player]."
@@ -713,7 +713,7 @@ label cass_chapter7:
             pass
 
     window show
-    show c neutral with dissolve
+    show c smile with dissolve
     c "*giggles*"
     $ cass_affection+=1
     "Cassandra’s smile is infectious as always. Despite everything, you both giggle together."
@@ -725,6 +725,7 @@ label cass_chapter7:
             pass
 
     "You close your eyes as Cassandra presses her lips against yours."
+    show c wink with dissolve
     $ cass_affection+=10
     "It’s like a decade of emotions have flowed through you both, left with a peaceful bliss."
     "As you hold her close, and she holds you close.."
@@ -734,7 +735,7 @@ label cass_chapter7:
     #hear voice without seeing person?
     # Tense Music
     h "Oh Kalluri… I’m disappointed."
-    show c at left with ease
+    show c doubt at left with ease
     show h neutral at right with dissolve
 
     h "After all my precautions, you led the bloodsucker right to us."
@@ -769,11 +770,11 @@ label cass_chapter7:
     show h at left with ease
     show a neutral at right with dissolve
     a "Heh.. I got you! Finally! Wait till the Batbashers hear about this!"
-    h "Step aside Anne, this is my business."
-    a "That bloodsucker was going to kill you, idiot!"
+    h sigh"Step aside Anne, this is my business."
+    a annoyed"That bloodsucker was going to kill you, idiot!"
     "As they bicker, you stumble to grab Cassandra and crawl away."
     "Anne points a shotgun at you."
-    a "Hannn, he’s getting away."
+    a confused "Hannn, the vamp is getting away..."
 
     "Han walks behind Anne."
     #pronoun obj
@@ -782,11 +783,11 @@ label cass_chapter7:
     #Hide A with dissolve.
 
     a annoyed "What the hell, Han?"
-    h " Vampire, you’re weak, you need blood… kill her."
-    a "What?"
-    h "Kill her, and you’ll heal enough to escape."
-    h "You wrestled the net gun from her, killed her, and I found her dead."
-    h "Catch my drift?"
+    h smile" Vampire, you’re weak, you need blood… kill her."
+    a angry"What?"
+    h sigh"Kill her, and you’ll heal enough to escape."
+    h smile"You wrestled the net gun from her, killed her, and I found her dead."
+    h unsure"Catch my drift?"
     "You hate to admit it, but he’s right about you needing blood."
     "You wouldn’t make it a few feet without healing, much less to a hospital."
     "But you don’t like being a pawn in Han’s game."
@@ -982,7 +983,7 @@ label cass_bad:
             "But you collapse halfway there, tired out of your mind."
             "You pass out…"
 
-            scene forest with fade
+            scene forest day with fade
             #CHANGE: we don't have an image for this. lol
 
             "And wake up, the sun in your eyes."
@@ -1009,15 +1010,13 @@ label cass_chapter8:
     scene forest with fade
     # Tense Music
 
-    if $ dying_mc:
-        pass
-
-    else:
-        "You drag Cassandra’s unconscious body into the vampire hideout."
-        mc "I need a doctor! Please!"
-        "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
-        "You fall asleep, the long run sinking in…"
-        scene forest with fade
+    #if dying_mc:pass else:
+    "You drag Cassandra’s unconscious body into the vampire hideout."
+    mc "I need a doctor! Please!"
+    "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
+    scene black with fade
+    "You fall asleep, the long run sinking in…"
+    scene forest with fade
 
     show l smile with dissolve
     "You wake up to see Laila, at long last."
@@ -1068,12 +1067,12 @@ label cass_chapter8:
 
     window show
     show c doubt with dissolve
-    c "I’m ok, thanks to Dr. Fang. She’s been researching the spell and… there may be a way to undo the damage."
-    c "The spell wounded me deeply. Doc says my internal organs are bleeding."
-    c "I’m dying. And the spell is going to keep hurting me until… until…"
+    c smile"I’m ok, thanks to Dr. Fang. She’s been researching the spell and… there may be a way to undo the damage."
+    c doubt "The spell wounded me deeply. Doc says my internal organs are bleeding."
+    c neutral "I’m dying. And the spell is going to keep hurting me until… until…"
     c "Han told me that  being bit would trigger the curse and kill me, but the doctor says that vampire healing may be the only way I live."
-    c "Maybe Han lied. Maybe he didn’t, I don't know. But it’s my only shot."
-    "You didn’t truly expect the vampires to have a 100% solution."
+    c doubt "Maybe Han lied. Maybe he didn’t, I don't know. But it’s my only shot."
+    "You didn’t truly expect the vampires to have a foolproof solution."
     "Turning Cassandra into a vampire could kill her…"
     "But what other option was there?"
     "Maybe you could beat the solution out of Han.."
@@ -1082,11 +1081,11 @@ label cass_chapter8:
     c neutral "I’m so sorry about all of this, [player]."
     c "I want you to know, no matter what you choose, no matter what happens to me."
     c "I still feel the same way I did when we kissed…"
-    c "I love you, [player]."
+    c wink"I love you, [player]."
     "You kiss again, this time a somberness pervading the whole thing. "
     $ cass_affection+=1
-    c "You’re the only one I trust to turn me, [player]."
-    c "But I understand if you don’t want to."
+    c neutral"You’re the only one I trust to turn me, [player]."
+    c doubt "But I understand if you don’t want to."
     "You have to make a decision…"
 
     hide c with dissolve
@@ -1107,7 +1106,7 @@ label cass_chapter8:
             $ cass_vamp = True
 
         "Try to find a cure":
-            "You kiss her one more time"
+            "You kiss her one more time..."
             $ cass_affection+=1
             mc "I’m sorry Cassandra, I don’t want to risk you dying by my hand."
             mc "I’ll find Han and get him to stop the spell somehow."
@@ -1148,36 +1147,38 @@ label cass_chapter8:
     l neutral "This camp is in a valley."
     l neutral "If we set some traps here before we leave, we can take a bunch of these hunters out, maybe scare them away, make it harder for them to follow us."
     l neutral "After what happened at the Blood Bank, I had an idea."
-    L smile "If we set a bunch of kegs on fire, we could give the Velsings a taste of their own medicine for once."
+    l smile "If we set a bunch of kegs on fire, we could give the Velsings a taste of their own medicine for once."
     l away "We just need someone to stay put and trigger the trap."
-    # if( $cassvamp) jump Cassfight
-    # if( !$cassvamp) jump MCfight
+   
     #CHANGE: this was the original variable jump, but i'm going to assume the mc is fighting if cass isn't a vampire. check in later.
 
     if cass_vamp:
-        show c confident with dissolve
+
+        show c confident at right with dissolve
+        show l away at left with ease
         c "I’ve got this."
         "You see Cassandra, fit as a fiddle, awake and filled with vampiric energy."
         mc "Cassandra!"
-        show c at left with ease
-        show l neutral at right with dissolve
+        #show c at left with ease
+        show l neutral with dissolve
         "You rush to give her a hug before kissing her. Her lips feel different now, colder, but still lovely as ever."
         l neutral "Don’t let me interrupt you love birds."
         "You pull apart, acutely aware of your surroundings."
-        c smile "Look, after everything the Vellsings did, everything I was complicit in, I can’t let them get away with it. I need to fight them."
-        "You feel the same way. After all the Vellsings put you through, you can’t just turn and run."
+        c smile "Look, after everything the Velsings did, everything I was complicit in, I can’t let them get away with it. I need to fight them."
+        "You feel the same way. After all the Velsings put you through, you can’t just turn and run."
         l smile "I would stay, but I’ve lived through this kind of thing too many times already. I can’t bear to witness it again. I wish you luck, [player]. Your nobility is touching."
         "You say goodbye to Laila and prepare for the fight. With Cassandra at your side, you feel ready for anything."
         hide l with dissolve
+        show c neutral at center with ease
         # Label fightalongCass
         "As the town evacuates, you and Cassandra stand next to the empty clinic."
         # Romantic Music
         c smile "You know, It's really sinking in how, this might be our last day.."
         "Cassandra moves closer to you."
-        c smile "And I’m so glad I get to spend it with you."
+        c wink "And I’m so glad I get to spend it with you."
         "Cassandra gives you a little kiss on the neck."
-        c "You know, the clinic is empty…"
-        c "Nobody would bother us if we wanted to.. You know…"
+        c neutral"You know, the clinic is empty…"
+        c wink"Nobody would bother us if we wanted to.. You know…"
 
         hide c with dissolve
         window hide
@@ -1186,19 +1187,20 @@ label cass_chapter8:
             "\"I know…\"":
                 label sex_time:
                     window show
+                    show c wink with ease
                     "Cassandra giggles."
                     c smile "Well, what are we waiting for, [petname]?"
                     "You follow Cassandra into the clinic and lock the door behind you."
                     $ cass_affection+=1
 
                     scene clinic with fade
-                    show c smile with dissolve
+                    show c wink with dissolve
                     c "How about here in this empty bed? No one's used it, and noone is going to use it any more…"
                     "You nod and turn off the lights."
                     scene black with fade
                     c "Come here, you!"
                     $ cass_affection+=11
-                    scene woods with fade
+                    scene forest with fade
                     show c smile with dissolve
                     "After a few hours of fun, you stumble out of the clinic with Cassandra."
                     c "That was fun… I feel so energized! Let's train before those dickheads show up!"
@@ -1206,9 +1208,9 @@ label cass_chapter8:
 
             "\"Wait what?\"":
                 window show
-                "Cassandra giggles."
                 show c smile with dissolve
-                c "You know… spend some… quality time together… of a risque variety.."
+                "Cassandra giggles."
+                c wink "You know… spend some… quality time together… of a risque variety.."
                 window hide
 
                 menu:
@@ -1275,7 +1277,7 @@ label cass_chapter8:
         "You stand in the center of the hideout."
         "You watch as dozens of Batbashers rush towards you."
         "You gesture to  Cassandra at the right moment."
-        "She uses a lighter to set a string near a blood moonshine keg on fire"
+        "She uses a lighter to set a string near a blood moonshine keg on fire."
         "She speeds towards you, pushing you to the ground as…"
         scene fire with fade
         "BOOOM"
@@ -1369,8 +1371,8 @@ label cass_chapter8:
     else:
         # Label mcfight
         "You realize what you have to do."
-        "\I need to fight Han and figure out how to cure Cass."
-        "\I need to be the one to stay here and trigger the explosion."
+        mc"I need to fight Han and figure out how to cure Cass."
+        mc"I need to be the one to stay here and trigger the explosion."
         "Laila nods grimly."
         l smile "I would stay, but I’ve lived through this kind of thing too many times already. I can’t bear to witness it again. I wish you luck, [player]. Your nobility is touching."
         "You say goodbye to Laila and prepare for the fight. Without Cassandra at your side, you feel uneasy."
@@ -1383,19 +1385,19 @@ label cass_chapter8:
     #CHANGE: i'm going to assume that this is label cassgoodending, but i'm not sure.
     scene diner with fade
     # Romantic Music
-    "ONE MONTh LATER"
+    "ONE MONTH LATER"
     "You rush into the town Waffle Home."
     "You hope you aren’t too late for your date with…"
     show c wink with dissolve
     c "[player]!!!"
-    "Cassandra pulls you into an embrace"
+    "Cassandra pulls you into an embrace."
     c "Oh my god it's been so long!"
-    mc "[Casspetname], it's been two days."
+    mc "[casspetname], it's been two days."
     "Cassandra giggles."
     c "I’m so happy to see you though!"
-    c smile "We’ve been so busy helping rebuild the local vampire community, we’ve haven’t had time for a date like this!"
+    c smile "We’ve been so busy helping rebuild the local vampire community, we haven’t had time for a date like this!"
 
-    mc "I guess this is technically our first real date as a couple, huh"
+    mc "I guess this is technically our first real date as a couple, huh..."
     c smile "What are you gonna have, [petname]? I’m thinking strawberry pancakes and some whisky."
 
     hide c with dissolve
@@ -1422,18 +1424,23 @@ label cass_chapter8:
             pass
         "A fruity cocktail":
             pass
+        "Water":
+            pass
 
     window show
     show c wink with dissolve
     c wink "Nice choice, [petname]!"
+    show c smile
     "You smile. With the Vellsings and the Batbashers dealt with, the town has become a new safe haven for the vampire community."
     "More and more new vampires have come into town to help rebuild the hideout."
     "The world finally feels safe."
     "You and Cassandra talk and eat for a while, giggling and laughing and smiling."
-    c "I’m so happy with you, [player]."
+    c wink "I’m so happy with you, [player]."
+    
     mc "Me too."
     "You both lean in for a kiss."
     $ cass_affection+=1
+    return
     # END OF PART 8 GOOD ENDING
 
 label fightalone:
@@ -1455,11 +1462,11 @@ label fightalone:
     scene forest with fade
     show h smile with dissolve
     h smile "Ahh, bloodsucker. There you are."
-    h "Let me guess, you want to get me to let Kalluri free from the spell."
-    h "That’s not going to happen."
+    h neutral "Let me guess, you want to get me to let Kalluri free from the spell."
+    h sigh "That’s not going to happen."
     "Han stabs you, and you fall to the side."
     "You see a book strapped to his pants."
-    "Maybe the book has something to save Cass."
+    "Maybe the book has something to save Cass?"
     hide h with dissolve
     window hide
 
@@ -1519,11 +1526,11 @@ label fightalone:
     "You sense where the new vampire hideout is and dash towards it."
     "Just as you make it, you feel a stake puncture your foot."
     show h sigh with dissolve
-    h sigh "looks like you led me right to them."
+    h sigh "Looks like you led me right to them."
     "Han cocks his shotgun at you."
     h "Say your prayers, bloodsucker."
     "Suddenly, bats swarm all around Han."
-    h suprise "GET OFF ME GET OFF ME GET OFF ME!"
+    h surprise "GET OFF ME GET OFF ME GET OFF ME!"
     "As the bats bite and peck at Han, you feel yourself slipping from consciousness."
     "Quick, say something cool before you die!"
     hide h with dissolve
@@ -1543,8 +1550,9 @@ label fightalone:
 
     window show
     "You pass out, watching Han die."
-    scene diner with fade
+    scene black
     "THREE MONTHS LATER"
+    scene diner with fade
     # Romantic Music
     "You stumble into the town Waffle Home."
     "You hope you aren’t too late for your date with…"
@@ -1554,7 +1562,7 @@ label fightalone:
     "Cassandra pulls you into an embrace."
     c smile "Oh my god it's been so long!"
     "You’ve both been in recovery for the last couple months, but you’ve both finally healed enough to go on a real date!"
-    "You smile. With the Vellsings and the Batbashers dealt with, [townname] has become a new safe haven for the vampire community."
+    "You smile. With the Vellsings and the Batbashers dealt with, the town has become a new safe haven for the vampire community."
 
     #CHANGE: i'm 99% sure we don't have a townname variable
 
@@ -1581,6 +1589,8 @@ label fightalone:
         "Moonshine":
             pass
         "A fruity cocktail":
+            pass
+        "Water":
             pass
 
     window show
@@ -1639,7 +1649,7 @@ label evilCass:
     "You see them appear from the shadows."
     "It’s…"
 
-    show h smile w dissolve
+    show h smile with dissolve
     #Neutral Music or Goofy music
     h "Howdy, bloodsucker."
     mc "HAN?"
@@ -1648,7 +1658,7 @@ label evilCass:
     h "No hard feelings?"
     mc "NO HARD FEELINGS?"
     h surprise "Calm down! You’ll get us both killed…"
-    h unsure "look, you turned me into a vampire, and, well.."
+    h unsure "Look, you turned me into a vampire, and, well.."
     h "I kinda lied to Cassandra, and the others."
     h sigh "You are the same person when you turn."
     h unsure "Adrian was the same person."
@@ -1656,9 +1666,9 @@ label evilCass:
     h "I just wanted to make killing him easier, you know?"
     h "Anyway, now Cassandra thinks you aren’t you."
     h "That you are the reason why her best friend/crush is dead."
-    "\" Crush?"
+    mc " Crush?"
     h smile"Yeah, it’s really obvious."
-    h "The will they won’t they of it all was getting deeply annoying."
+    h "The will they/ won’t they of it all was getting deeply annoying."
     h "Like, make out already! You know?"
     h unsure "Anyway…"
     h "Now that I'm a vampire, I feel really guilty about everything."
@@ -1671,7 +1681,7 @@ label evilCass:
     "This is a real sad state of affairs."
 
     mc "Okay, I guess i don’t have another choice…"
-    h surprised "Really? Wow, honestly expected you to tell me to fuck off or something…"
+    h surprise "Really? Wow, honestly expected you to tell me to fuck off or something…"
     h smile "Don’t worry, I won’t let you down."
     "Filled with new found confidence, you both head towards the church."
 
@@ -1680,14 +1690,15 @@ label evilCass:
     show h smile with dissolve
     "You feel anxious and afraid."
     h "Cassandra Kalluri, I challenge you to a Velsing Valorian for the title of head of the Batbashers!"
-    show c doubt with dissolve
+    show h smile at left with dissolve
+    show c doubt at right with dissolve
     "Cassandra appears from the shadows."
     "She looks depressed, broken."
     c "You can’t do that as a vampire, as you well know, Han."
     c "Or should I say, Hankiller."
     h "Well, the first one  was between  a Vellsing and a Vampire Velsing! It’s my birthright!"
-    c "I… suppose you're right."
-    c "And that’s why you’ve brought [player]’s corpse here right! To taunt me, to phase me."
+    c neutral "I… suppose you're right."
+    c doubt "And that’s why you’ve brought [player]’s corpse here right! To taunt me, to phase me."
     h unsure "Well, not exactly."
     h smile "This bloodsucker is my champion!"
 
@@ -1696,13 +1707,14 @@ label evilCass:
     "Wait what?"
     mc "That was never part of the plan!"
 
-    h smile"Oh my god, are you naive? It’s me!"
-    h smile "Of course I’m going to betray you."
-    c "Well, at least I’ll be able to put [player] to rest."
-    h "Look, you’ve got this bloodsucker! Pull some Stephen Universe redemption shit on her!"
+    h surprise "Oh my god, are you naive? It’s me!"
+    h sigh "Of course I’m going to betray you."
+    c neutral "Well, at least I’ll be able to put [player] to rest."
+    h smile "Look, you’ve got this bloodsucker! Pull some Stephen Universe redemption shit on her!"
     mc "Screw you…"
 
     hide h with dissolve
+    show c doubt at center with dissolve
     "Soon enough, you face off against Cassandra."
     "You don’t want to hurt her…"
     "Maybe you can convince her somehow…"
@@ -1720,7 +1732,7 @@ label evilCass:
             "She starts crying."
             show c doubt with dissolve
             c "I know this isn’t you, [player]."
-            c "But I don't know who to say this to…"
+            c neutral "But I don't know who to say this to…"
             c "Now that [player] is gone…"
             c "[player] made my life worth living."
 
@@ -1733,11 +1745,12 @@ label evilCass:
             c "And when [player] turned, I was so excited."
             #obj
             c "I didn’t even realize that I lost [pronoun]."
-            c "I’ll always feel guilty for that."
+            c doubt "I’ll always feel guilty for that."
             c "I just hope now, [player]’s soul will finally rest."
             "You fade into death, Cassandra’s tears the last thing you see before you die."
-            # END OF GAME BAD ENDING
 
+            # END OF GAME BAD ENDING
+            return
         "\"I am the same as [player]! I can prove it!\"":
             window show
             pass
@@ -1760,12 +1773,13 @@ label evilCass:
                     "You kill her."
 
                     "As she dies, you hold her in your arms."
+                    hide c
                     "You didn’t mean for this to happen."
                     show h surprise with dissolve
                     h surprise "Damn, that’s crazy…"
-                    h "Anyways…"
+                    h sigh"Anyways…"
                     h smile "I guess that makes me the head of the Batbashers!"
-                    h "Everyone, kill that vamp!"
+                    h sigh"Everyone, kill that vamp!"
                     "What feels like a hundred stakes pierce through you as you hold Cassandra."
 
                     scene black with fade
@@ -1894,23 +1908,24 @@ label evilCass:
     "You hear the marching of the Batbashers as they hunt you down, and you run. "
     "Back into hiding again."
     "Alone once more."
-    "ONE YEAR LATER"
+
 
     #sad music
     scene street with fade
+    "ONE YEAR LATER"
     "After a year of searching, you finally find her."
     show c doubt with dissolve
     mc "Cassandra."
     "You’ve tried confronting her before, but she’s always slipped away."
     "But now, in the light of the moon, she finally says."
-    c "[player]."
+    c smile"[player]."
     "You look at each other, tears in both of your eyes."
-    c "I… I’m sorry for running."
-    c "I didn’t know what else to do."
-    c "After everything I did to you, to the other vampires…"
+    c doubt "I… I’m sorry for running."
+    c neutral"I didn’t know what else to do."
+    c doubt"After everything I did to you, to the other vampires…"
     c "I couldn’t live with myself."
-    c "I’ve been fighting off Batbashers, hoping to atone in someway…"
-    c "But after everything we’ve been through, I couldn’t look you in the eyes."
+    c neutral"I’ve been fighting off Batbashers, hoping to atone in someway…"
+    c doubt"But after everything we’ve been through, I couldn’t look you in the eyes."
     c "I’m so so sorry, for everything."
     "The guilt on her face is heartbreaking."
 
@@ -1922,8 +1937,8 @@ label evilCass:
             window show
 
             show c doubt with dissolve
-            c "But i can’t forgive myself."
-            c "All the horrible things i did."
+            c "But I can’t forgive myself."
+            c "All the horrible things I did."
             c "I’m a monster."
             c "You deserve better."
             c "You deserve a better friend."
@@ -1939,8 +1954,8 @@ label evilCass:
                     mc "Please, I need you."
                     mc "I’ve lost so much already, I can’t lose you too."
                     mc "You mean so much to me."
-                    mc "I miss meeting you in the library"
-                    mc "I miss seeing you smile after geeking out about something."
+                    mc "I miss meeting you in the library..."
+                    mc "I miss seeing you smile after geeking out about something..."
                     mc "I miss being with you."
                     mc "I… "
                     window hide
@@ -1972,7 +1987,7 @@ label cass_med:
     window show
     show c smile with dissolve
     c smile "Wow…"
-    "Cassandra giggles"
+    "Cassandra giggles for a bit."
     $ cass_affection+=1
     # Neutral Music
     c smile "I haven’t laughed in so long…"
@@ -2020,6 +2035,7 @@ label cass_best:
     "You feel like the world is perfect right now."
 
     return
+    #Medium Good ending
 
 label quiz_death:
     window show
