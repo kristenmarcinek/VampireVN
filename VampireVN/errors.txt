@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/cass route.rpy", line 1152: reached end of line when expecting ':'.
-    if( cassvamp) jump Cassfight
-                                ^
+File "game/script.rpy", line 1285: expected statement.
+    window how
+          ^
 
-File "game/cass route.rpy", line 1153: reached end of line when expecting ':'.
-    if( !cassvamp) jump MCfight
-                               ^
-
-Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Oct 11 02:18:41 2023
+Ren'Py Version: Ren'Py 8.1.2.23090503
+Wed Oct 25 01:33:44 2023

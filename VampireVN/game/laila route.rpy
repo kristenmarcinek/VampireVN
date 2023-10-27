@@ -1,7 +1,7 @@
  #---CHAPTER 4---
 
 label laila_chapter4:
-    scene forest
+    scene forest with fade
     # tense music
     "You dash after Laila deeper into the woods. All the vampires you met at the party- how many of them are dead? And those hunters, who are they?"
     "You don’t have time to think about those things now. You keep going."
@@ -877,19 +877,19 @@ label laila_chapter8:
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
 
-    if laila_affection >14:
+    if laila_affection > 14:
         jump lailaTrueEnding
 
-    if laila_affection > 6 and $drank_blood == True:
+    if laila_affection > 6 and drank_blood == True:
         jump lailaGoodEndingA
 
-    if laila_affection > 6 & and $drank_blood == False:
+    if laila_affection > 6 and drank_blood == False:
         jump lailaGoodEndingB
 
-    if laila_affection < 7 & and $drank_blood == True:
+    if laila_affection < 7 and drank_blood == True:
         jump lailaBadEndingA
 
-    if laila_affection < 7 & and $drank_blood == False:
+    if laila_affection < 7 and drank_blood == False:
         jump lailaBadEndingB
 
 label lailaTrueEnding:

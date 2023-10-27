@@ -115,7 +115,7 @@ init:
     $ cass_affection = 0
 
     $ cass_kiss = False
-    $ casspetname = "Cass"
+    $ casspetname = "[player]"
     $ evil_cass = False
     $ cass_vamp = False
     $ cass_human = False
@@ -138,8 +138,7 @@ init:
     #anne fight chapter 4
     default a1 = False
     default a2 = False
-    #standin for now
-    $ pronoun = "them"
+
 label start:
 
     label chapter1:
@@ -165,9 +164,11 @@ label start:
         "You feel a pulsing headache, your body sore as it has ever felt."
 
         "You want to lie down forever but you hear a worried voice."
+        window hide
 
         menu:
             "Wake up":
+                window show
                 "Your eyes open to the bright iridescent lights of your apartment. You feel hungover, but you don't remember drinking last night?"
 
                 "Well, that's how it happens doesn't it? You drink so much you don't remember… And yet…"
@@ -185,9 +186,11 @@ label start:
                 "You've been inseparable since middle school. It was hard to find queer friends in a small Southern town like ____ but when you do the bond is unbreakable."
 
                 hide c with dissolve
+                window hide
 
                 menu:
                     "Where am I?":
+                        window show
 
                         show c doubt with dissolve
 
@@ -196,6 +199,7 @@ label start:
                         c neutral "Quick, what's your name?"
 
                     "Who am I?":
+                        window show
 
                         show c doubt with dissolve
 
@@ -204,6 +208,7 @@ label start:
                         "Your name is.."
 
                     "Why am I?":
+                        window show
 
                         show c neutral with dissolve
 
@@ -214,10 +219,33 @@ label start:
                         "You feel dizzy and your mind feels clouded. You try to focus on a constant. Your name is…"
 
         label nameEntry:
+            hide c with dissolve
+            window hide
+
             $ player = renpy.input("What is your name?", length = 12)
             $ player = player.strip()
             $ player = player.title()
-            $ petname = player
+
+            window show
+
+            "Choose your pronouns."
+
+            window hide
+
+            menu:
+                "She/her":
+                    $ pronoun = "her"
+
+                "He/him":
+                    $ pronoun = "him"
+
+                "They/them":
+                    $ pronoun = "them"
+
+            window show
+
+            show c neutral with dissolve
+
             c "Ok, you remember your name is [player]. That's good."
 
             # Tense Music
@@ -235,6 +263,7 @@ label start:
             "You reach up to feel it, two holes that seem to have healed up. They feel like decade old scars, and yet you definitely have not had them before today."
 
             hide c with dissolve
+            window hide
 
             menu:
                 "This can't be happening.":
@@ -244,6 +273,7 @@ label start:
                 "I'm so confused…":
                     pass
 
+        window show
         show c neutral with dissolve
 
         c "This is going to sound crazy but… I think you got bitten by a vampire."
@@ -252,6 +282,7 @@ label start:
         "Cassandra shows you her phone camera, but you don't see yourself in it. Could she be right? Are you a.."
 
         hide c with dissolve
+        window hide
 
         menu:
             "Vampire":
@@ -263,6 +294,7 @@ label start:
 
         #MUSIC: Cass Romantic
 
+        window show
         show c smile with dissolve
 
         c smile "Oh my GOD!!! You don't have a reflection! This is so cool! I wonder what powers you have! I wonder if you can fly…"
@@ -270,19 +302,23 @@ label start:
         "Cassandra has always been a supernatural nerd for as long as you've known her. Its always been endearing, but now her knowledge could be the difference between life and death."
 
         hide c with dissolve
+        window hide
 
         menu:
             "This is a lot… I don't know what to do.":
+                window show
                 show c doubt with dissolve
                 c "Sorry, this must be really overwhelming for you. I should be more cognizant of that… "
 
                 c smile "Look, we'll work through this together ok? Let's get to the bottom of this!"
 
             "A vampire huh? Sounds like a dream come true!":
+                window show
                 show c smile with dissolve
                 c smile "I know right! Oh my god, there is so much to discover, I can't wait! I'm sure if you got bit, there must be more vampires out there!"
 
             "This may be fun for you, but my whole life has been upended!":
+                window show
                 show c doubt with dissolve
                 c doubt "Sorry, this must be really overwhelming for you. I should be more cognizant of that… "
 
@@ -304,6 +340,8 @@ label start:
 
         "You feel a deep hunger. You turn so you can ransack your fridge, and eat…"
 
+        window hide
+
         menu:
             "7 packs of instant ramen":
                 pass
@@ -311,6 +349,8 @@ label start:
                 pass
             "A loaf of bread and a packet of cheese":
                 pass
+
+        window show
 
         "And yet… even though your belly is full you still feel it… the hunger."
 
@@ -335,6 +375,7 @@ label start:
         "And this is what hits the spot. Your muscles relax and your head clears. It should have been disgusting, but somehow it was almost pleasant."
 
         "There is a sharp rap at your door."
+        window hide
 
     label door:
 
@@ -345,6 +386,7 @@ label start:
                 "The knocking continues, insistent."
                 jump door
 
+        window show
         "You rise and make your way over to your door. You open it, and peer out into the hallway beyond."
 
         # tense music, mayhaps
@@ -380,13 +422,16 @@ label start:
         l away "Do you not remember? Of course, some people don't remember."
         l "You were out, last night, at a party in the woods. One of my peers, apparently she got too excited and, well there's no other way to put it, she bit you."
         hide l with dissolve
+        window hide
 
         menu:
             "She BIT me?!?":
+                window show
                 show l away with dissolve
                 l away "Yes, I know, it's a lot and she really was not supposed to, I understand your discomfort."
 
             "I vaguely remember this.":
+                window show
                 show l smile with dissolve
                 l smile "Oh, that's good, I'm glad some of your memory is coming back."
 
@@ -399,18 +444,23 @@ label start:
         "Laila pauses for a moment. She seems conflicted about what to say next."
 
         l away "Ugh, look I'm just going to come out and say it, and I hate having to be the one to do this, but you're a vampire now."
+
         hide l with dissolve
+        window hide
 
         menu:
             "You've got to be kidding.":
+                window show
                 show l away with dissolve
                 l away "I really wish I was. Quite frankly it sucks to have to do this."
 
             "A vampire? That's badass!":
+                window show
                 show l neutral with dissolve
                 l neutral "Well, I'm glad you're enthusiastic about it."
 
             "That's a lot.":
+                window show
                 show l away with dissolve
                 l away "I know how you feel. It takes a while to process."
 
@@ -461,6 +511,7 @@ label start:
         "You think on the two women who visited you last night- your old friend Cassandra, and the mysterious vampire Laila."
 
         "You have no doubt you'll see both of them tonight. That said, it might be best to call one of them now, whoever you feel you should speak with most."
+        window hide
 
         menu:
             "Call Cassandra":
@@ -472,7 +523,7 @@ label start:
 
     label callCass:
         # Romantic Music
-
+        window show
         "You pick up and Cass starts excitedly talking."
 
         show c smile with dissolve
@@ -513,8 +564,11 @@ label start:
 
         #CHANGE: Cass literally has no expressions here what the fuck
 
+        window hide
+
         menu:
             "Just how being a vampire feels so… different..":
+                window show
                 show c wink with dissolve
                 c "Hmm interesting. Tell me how so?"
 
@@ -524,9 +578,11 @@ label start:
                 c "That's so cool! I've been reading really conflicted narratives about vampires, but that seems to track the most with.."
 
             "I'm excited to get started!":
+                window show
                 pass
 
             "I was just thinking about how much I like seeing your smile!":
+                window show
                 "Why did you say that! It's like it spilled out of you. You hope Cassandra doesn't see your blush…"
 
                 $ cass_affection += 1
@@ -547,10 +603,12 @@ label start:
 
         c smile "And it has so much fascinating lore about how vampires used to live, the little pocket societies they made, what they wore, how they traveled…"
         hide c with dissolve
+        window hide
 
         menu:
             "(Say nothing.)":
                 $ cass_affection += 1
+                window show
                 show c smile with dissolve
 
                 c smile "and there's this kinda interesting romance he's having, like a kinda love triangle with these two other guys, and normally i'm not a fan of them but this one is really gripping!"
@@ -559,27 +617,39 @@ label start:
 
                 c doubt "wait, I've been ranting, haven't I? I'm sorry, you know how I am with books…"
 
+                hide c with dissolve
+                window hide
+
                 menu:
                     "You're good!":
+                        window show
                         $ cass_affection += 1
+                        show c doubt with dissolve
                         pass
                     "I'm genuinely interested! The book seems cool":
+                        window show
                         $ cass_affection += 2
+                        show c doubt with dissolve
                         pass
                     "Let's get to training!":
+                        window show
+                        show c doubt with dissolve
                         pass
 
             "Cool, but let's get to the training!":
+                window show
                 show c doubt with dissolve
                 pass
 
             "Dooon't Carree":
+                window show
                 $ cass_affection -= 2
                 show c doubt with dissolve
 
-                c doubt "Oh… i'm sorry."
+                c doubt "Oh… I'm sorry."
                 "Cass looks really dejected."
                 c doubt "Let's just get to the training."
+
 
 
         c "Ok, so the powers the book mentions are hypnosis, bat transformation, and flight."
@@ -594,6 +664,7 @@ label start:
 
         "You try to concentrate, thinking of something to hypnotize her with.."
         hide c with dissolve
+        window hide
 
         menu:
             "Do jumping jacks!":
@@ -603,25 +674,30 @@ label start:
             "Take a nap!":
                 pass
 
+        window show
         show c doubt with dissolve
         c "Well, that didn't work… let's get back to that."
 
         c "I'm sure that we can figure more stuff out about hypnosis later. Next up is bat transformation. Velcant said he would visualize himself as a bat and it would just happen!"
 
         "You give it a try, and as if slipping into a slumber you shrink. Your arms grow skinnier and turn into wings. You feel your clothes slip away around you as you fly out of them. You…"
+        window hide
         hide c with dissolve
 
         menu:
             "Fly around for a bit":
+                window show
                 "You feel a wonderful breeze flow through you as you zoom through the forest. You feel so at peace."
                 "As you fly back to Cassandra you are shocked by how big she is compared to you. You go back into your clothes and visualize yourself as a human again."
 
             "Go back into your clothes and turn back":
+                window show
                 pass
 
         show c wink with dissolve
         c "Wow. That's so cool! I'm gonna be real, I didn't expect you to get that first try. How do you feel?"
         hide c with dissolve
+        window hide
 
         menu:
             "I feel great!":
@@ -631,8 +707,10 @@ label start:
             "I feel nothing.":
                 pass
 
+        window show
         show c neutral with dissolve
         c "Ok, the only other thing I think you should try is floating. I was thinking you could jump off of that short tree and see if you can stay in the air! Don't worry, I'll be there to catch you."
+        window hide
         hide c with dissolve
 
         menu:
@@ -641,6 +719,8 @@ label start:
             "I got this, let's do it!":
                 pass
 
+        window show
+        show c neutral with dissolve
         c "I'll be right below you, you'll be fine!"
 
         "You climb up the tree, breathing heavily."
@@ -656,9 +736,11 @@ label start:
         "You've known Cassandra for a long time but you've never been this close physically. You feel her breathing push against you."
         "You see the purple eyes you were staring at earlier, the smile you were thinking about earlier, and you are overwhelmed with emotion."
         "You can't tell if it's human or vampire, or both? But you feel a strange compulsion to…"
+        window hide
 
         menu:
             "Lean in for a kiss.":
+                window show
                 "You lean in, anxious but excited. Cassandra purses her lips and you slowly move closer together…"
                 $ cass_kiss = True
                 "But Cass pulls away."
@@ -669,10 +751,12 @@ label start:
                 "The almost kiss pounded in your brain until you willed it to stop. As you arrived home, you lay down in bed, a million thoughts in your mind."
 
             "Lean in for a bite.":
+                window show
                 "You lean in towards Cassandra's neck, as a strange bloodlust comes over you."
                 "You open your mouth and you feel two fangs you did not notice before."
                 "You feel a stange, intoxicating fear from Cassandra. The urge to bite consumes you, but you restrain yourself as best you can, jumping off of her."
                 scene forest with fade
+                window hide
 
                 menu:
                     "I'm sorry, I don't know what came over me.":
@@ -684,6 +768,7 @@ label start:
                     "Well… that just happened…":
                         pass
 
+                window show
                 c "Woah… I… I'm sorry. I need to go back home, it's getting late."
                 "She runs off. You want to run after her, to assure her than everything is ok, that your not a monster."
                 "Is that really why you want to chase after her? Or is it the hunt? The desire to chase prey…"
@@ -691,10 +776,9 @@ label start:
 
         jump chapter3
 
-
         label callLaila:
             # neutral music
-
+            window show
             "You call up the vampire you met last night, dialing the number she wrote on your arm."
 
             show l neutral with dissolve
@@ -720,13 +804,16 @@ label start:
             l neutral "It's good to see you again. How are you feeling?"
 
             hide l with dissolve
+            window hide
 
             menu:
                 "Not too bad.":
+                    window show
                     show l smile with dissolve
                     l smile "That's really good to hear. I'm glad you're feeling better."
 
                 "Really shitty.":
+                    window show
                     show l away with dissolve
                     l away "Oh my goodness, I'm sorry about that. This whole process takes time."
 
@@ -738,11 +825,13 @@ label start:
 
         "You begin to laugh at her last remark, but a steely look from Laila indicates she's being quite serious. Now walking beside her, you figure it could be a good time to ask some questions about her."
         hide l with dissolve
+        window hide
 
     label laila_questions:
 
         menu:
             "Are you from around here?" if not q1:
+                window show
                 show l neutral with dissolve
                 l neutral "No, I'm not. Spent my youth out in New Mexico, but I've lived all over the country. This place is peaceful though, and that's what I've been looking for."
                 hide l with dissolve
@@ -751,6 +840,7 @@ label start:
                 jump laila_questions
 
             "How long have you been a vampire?" if not q2:
+                window show
                 show l neutral with dissolve
                 l neutral "I've been a vampire for about a decade. That would make me around 35 now? After the first couple years, keeping track of time doesn't feel quite so important."
                 hide l with dissolve
@@ -759,6 +849,7 @@ label start:
                 jump laila_questions
 
             "Is the vampire-lady look intentional?" if not q3:
+                window show
                 show l angry with dissolve
                 l angry "Intentional in that it is my chosen style, yes. I dressed like this before I was turned. I'm not going to buy a whole new wardrobe just because I'm a cliche now."
                 hide l with dissolve
@@ -767,6 +858,7 @@ label start:
                 jump laila_questions
 
             "Are you single?" if not q4:
+                window show
                 show l smile with dissolve
                 l smile "My, that's forward of you. I hope you aren't getting ideas in your head."
 
@@ -779,6 +871,7 @@ label start:
                 jump laila_questions
 
             "Remain silent":
+                window show
                 "You walk beside Laila in silence now, making your way ever closer to the woods."
 
         scene forest with fade
@@ -798,11 +891,13 @@ label start:
         l neutral "Dodge."
 
         hide l with dissolve
+        window hide
 
         # exciting music
 
         menu:
             "What?":
+                window show
                 "As soon as the word leaves your mouth, Laila swings her arm out in a karate chop to your side. The blow strikes with surprising force, leaving you coughing."
 
                 show l neutral with dissolve
@@ -811,6 +906,7 @@ label start:
                 "This time you're ready for Laila's strike, leaping backwards and out of her reach with a speed you didn't know you had."
 
             "Tense up.":
+                window show
                 "When Laila swings her arm out to karate chop you, you're ready. You leap backwards and out of her reach with a speed you didn't know you had."
 
                 "Laila gives you a nod, impressed."
@@ -822,9 +918,11 @@ label start:
 
         l neutral "Now you try."
         hide l with dissolve
+        window hide
 
         menu:
             "Go full force.":
+                window show
                 "You try your best to deliver a fearsome kick to a venerable oak."
                 "Unfortunately, you kick with far too much force and lose your balance before you even make contact with the tree, and start to fall."
 
@@ -839,6 +937,7 @@ label start:
                 l smile "It's alright, these kinds of things take practice."
 
             "Keep things simple.":
+                window show
                 "You take aim at a moderately sized tree, making sure to mimic the move you saw Laila perform."
 
                 "With a twirl you deliver a blow to the tree, which cracks and collapses into the underbrush."
@@ -863,9 +962,11 @@ label start:
         l angry "Yes, we can turn into bats. Quite frankly, I find it a loathsome experience. Bats smell horrible, and I'm quite content as I am."
 
         hide l with dissolve
+        window hide
 
         menu:
             "But becoming a bat sounds really cool!":
+                window show
                 $ laila_affection -= 1
                 "Laila furrows her brow at your remark."
 
@@ -873,6 +974,7 @@ label start:
                 l angry "Yes, it is interesting the first couple of times you try it, but I can assure you becoming a winged rodent does not make for a good time."
 
             "Well that's good, I like you just the way you are.":
+                window show
                 $ laila_affection += 1
                 "Laila bows her head demurely at your remark."
 
@@ -880,6 +982,7 @@ label start:
                 l smile "Please, [player], while your words flatter me, I don't think you quite understand me enough yet. Nonetheless, I appreciate it."
 
             "A new trial for another time, then.":
+                window show
                 "Laila nods at your remark."
 
                 show l neutral with dissolve
@@ -910,9 +1013,11 @@ label start:
 
         c smile "And it has so much fascinating lore about how vampires used to live, the little pocket societies they made, what they wore, how they traveled…"
         hide c with dissolve
+        window hide
 
         menu:
             "(Say nothing.)":
+                window show
                 show c smile with dissolve
                 c smile "and there's this kinda interesting romance he's having, like a kinda love triangle with these two other guys, and normally i'm not a fan of them but this one is really gripping!"
 
@@ -927,10 +1032,12 @@ label start:
                 mc "What does this mean for me?"
 
             "Cool, but what does this mean for me?":
+                window show
                 show c neutral with dissolve
                 pass
 
             "Dooon't Carree":
+                window show
                 $ cas_affection -=2
                 show c doubt with dissolve
                 c doubt "Oh… i'm sorry."
@@ -980,12 +1087,12 @@ label start:
         "You text Cassandra to meet you  and wait outside of her apartment."
         "A few minutes later Cass rushes out."
 
-        show c smile with dissolve
-        c smile "A Vampire Party! Oh my god!"
+        show c wink with dissolve
+        c "A Vampire Party! Oh my god!"
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
-        mc "I'm sure you'll be fine."
+        "\" I'm sure you'll be fine."
         "You walk into the woods, looking for the blood bank."
         "You wish Laila had written coordinates or something, cause you were deeply lost."
 
@@ -1015,23 +1122,25 @@ label start:
         "At this, Laila bares her fangs demonstratively."
 
         c "Well, I'm not, but me and [player] are close, and, well, I'm really into vampiric history and seeing a place like this…"
-        c "It's just so cool! But if it's more of a vampires only thing I totally understand!"
+        c "It's just so cool! But if it's more of a vampire's only thing I totally understand!"
 
         scene hideout with dissolve
+        window hide
 
         menu:
             "Defend Cass":
+                window show
                 $ cass_affection+=1
                 "You push back against Laila, saying that Cass is your friend and deserves to be here."
                 show c neutral with dissolve
-                c "That's sweet [player], but i don't want to make anyone uncomfortable."
+                c "That's sweet [player], but I don't want to make anyone uncomfortable."
                 c "I promise to be on my best behavior if you let me stay."
                 hide c with dissolve
 
             "Support Laila":
+                window show
                 "You see the wisdom in what Laila is saying."
                 mc "You know Cass, Laila might be right. It could be dangerous with all these vampires around, and you know, I don't really know any of them."
-
 
         "Laila looks taken aback at your remark."
         show l away with dissolve
@@ -1063,15 +1172,21 @@ label start:
         "The night air is filled with screams and shouts now, as more of your vampire brethren are impacted by this assault. "
         "Cassandra rushes to cut Laila and the other vampires out of the net. The panic sets in, but you need to act now."
 
+        window hide
+        hide l with dissolve
+
         menu:
             "Guide Laila and Cass  to scurry under a picnic table":
+                window show
                 "As you hide under the table, you hear a sharp whirring sound coming from behind the bar."
 
             "Scamper into a bush":
+                window show
                 "You all hide in the bush near the bar, but you hear a sharp whirring sound coming from behind the bar."
                 "Remembering the illicit brewing that the bartender mentioned earlier, you rush to hide beneath the picnic table away from the bar."
 
             "Play dead":
+                window show
                 "You all play dead, which will surely be a winning strategy against these attackers."
                 "Things seem to quiet down and you breathe a sigh of relief."
                 "However, your relief is cut short by a sharp whirring sound coming from behind the bar."
@@ -1115,9 +1230,15 @@ label start:
 
         c "They look… dated."
         l neutral "I know, the fashion is just insult to injury."
+        hide l
+        hide c
+        with dissolve
+
+        window hide
 
         menu:
             "I think it's kinda cool!":
+                window show
                 "Cass and Laila both look at you with thinly veiled disgust."
                 show l angry at right
                 show a neutral at left
@@ -1128,14 +1249,15 @@ label start:
                 show a at center with ease
 
             "The Pony Express called, they want their uniforms back.":
+                window show
                 "Cass and Laila try to suppress giggles."
                 show a frown with dissolve
                 a frown "The Pony Express provided a valuable service, just as we do!"
 
 
-            "You know, the rest of the outfit aside, I feel like that top would look good on me!":
+            "You know the rest of the fit aside, I feel like that top would look good on me":
+                window show
                 "Cass evaluates your current attire briefly."
-                hide l with dissolve
                 show c smile at right
                 show h neutral at left
                 with dissolve
@@ -1144,8 +1266,7 @@ label start:
                 hide c
                 hide h
                 with dissolve
-                show a neutral at left with dissolve
-                show h neutral at right with dissolve
+                show a neutral with dissolve
 
 
         "You recoil in terror at the addressing of your remarks."
@@ -1160,17 +1281,18 @@ label start:
         "You could follow Laila, further into the woods, or follow Cassandra, who's running back towards town."
         "It's possible you may never see the other one again."
         hide a with dissolve
+        window hide
 
         menu:
             "Follow Laila":
+                window show
                 "You know Cass will probably be fine- she's a regular human after all- and you feel a burgeoning connection with this vampire that's taken you under her wing."
                 "You know in your heart this is the right decision."
                 "You follow Laila into the night."
                 jump laila_chapter4
 
             "Follow Cassandra":
+                window show
                 "Laila is far more experienced than you, you trust that she can take care of herself."
                 "You run after Cass, unwilling to let your best friend get hurt."
                 jump cass_chapter4
-
-return
