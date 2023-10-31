@@ -4,8 +4,8 @@
 # name of the character.
 
 define mc = Character("[player]", color="#dead71", image="mc")
-define l = Character("Laila", color="#b55151", image="l")
-define c = Character("Cassandra", color="#5ba84c", image="c")
+define l = Character("Laila", color="#943a43", image="l")
+define c = Character("Cassandra", color="#e3868f", image="c")
 define a = Character("Anne", color="#b55151", image="a")
 define h = Character("Han", color="#b55151", image="h")
 # define u = Character("Unknown", color="#b55151")
@@ -143,7 +143,7 @@ label start:
 
     label chapter1:
         # Tense Music
-        scene apartment
+        scene apartment with fade
 
         play music "Ominous Forest.mp3" fadein 1 fadeout 1
 
@@ -177,13 +177,13 @@ label start:
 
                 show c doubt with dissolve
 
-                #MUSIC: cass romantic
+                play music "Someday's Dream.mp3" fadein 1 fadeout 1
 
                 c "Oh my god! You're awake! I was so worried about you!"
 
                 "Cassandra Kalluri. Of course she's here. She's always looking out for you."
 
-                "You've been inseparable since middle school. It was hard to find queer friends in a small Southern town like ____ but when you do the bond is unbreakable."
+                "You've been inseparable since middle school. It was hard to find queer friends in a small southern town, but when you do the bond is unbreakable."
 
                 hide c with dissolve
                 window hide
@@ -260,6 +260,8 @@ label start:
 
             "You notice a sharp pain in your neck."
 
+            play music "Ominous Forest.mp3" fadein 1 fadeout 1
+
             "You reach up to feel it, two holes that seem to have healed up. They feel like decade old scars, and yet you definitely have not had them before today."
 
             hide c with dissolve
@@ -277,7 +279,7 @@ label start:
         show c neutral with dissolve
 
         c "This is going to sound crazy but… I think you got bitten by a vampire."
-        c "It matches most of the books I read, the skin tone fluctuation and the eyes shifting color and the  two holes in your neck… What do you see here?"
+        c "It matches most of the books i read, the skin tone fluctuation and the eyes shifting color and the  two holes in your neck… What do you see here?"
 
         "Cassandra shows you her phone camera, but you don't see yourself in it. Could she be right? Are you a.."
 
@@ -331,6 +333,8 @@ label start:
         c smile "We'll figure this out together!"
 
         hide c with easeoutleft
+
+        play music "One Small Light.mp3" fadein 1 fadeout 1
 
         "As Cass leaves, you look behind her, a thousand thoughts running through your head."
 
@@ -439,7 +443,7 @@ label start:
 
         l neutral "Anyway, myself or one of the others would have typically been with you much earlier, but one of your friends got there first and took you home. It was a whole thing."
 
-        "Everything she's just said tracks with what Cassandra said. That's not great."
+        "Everything she's just said tracks with what c said. That's not great."
 
         "Laila pauses for a moment. She seems conflicted about what to say next."
 
@@ -538,6 +542,8 @@ label start:
 
         "You wonder what she has planned…"
 
+        play music "Strange Forest.mp3" fadein 1 fadeout 1
+
         scene forest with fade
 
         "You walk through the woods to the location Cassandra sent you. The woods used to feel scary at night, but now it seems… different."
@@ -556,6 +562,8 @@ label start:
 
         "It's nice to see her like this again."
 
+        show c neutral with dissolve
+
         c "[player], hey! What are you thinking about? You seem lost in thought!"
 
         "Crap, you can't let her know you've been thinking about her smile! That's a weird thing to say!"
@@ -563,6 +571,8 @@ label start:
         "Quick, think of something else!"
 
         #CHANGE: Cass literally has no expressions here what the fuck
+
+        hide c with dissolve
 
         window hide
 
@@ -579,6 +589,7 @@ label start:
 
             "I'm excited to get started!":
                 window show
+                show c smile with dissolve
                 pass
 
             "I was just thinking about how much I like seeing your smile!":
@@ -731,6 +742,8 @@ label start:
         scene cass cg 1 with fade
 
         $ persistent.cass1 = True
+
+        play music "Someday's Dream.mp3" fadein 1 fadeout 1
 
         "You roll around for a bit before you open your eyes and see that you are on top of Cassandra in the grass."
         "You've known Cassandra for a long time but you've never been this close physically. You feel her breathing push against you."
@@ -1038,7 +1051,7 @@ label start:
 
             "Dooon't Carree":
                 window show
-                $ cass_affection -=2
+                $ cas_affection -=2
                 show c doubt with dissolve
                 c doubt "Oh… i'm sorry."
 
@@ -1068,21 +1081,23 @@ label start:
     label chapter3:
         scene apartment with fade
         # Neutral Music
+        play music "Ominous Forest.mp3" fadein 1 fadeout 1
         "You awaken this evening feeling more like yourself than you did the last couple nights."
         "Well, still not quite yourself, but not as much pain as before."
         "As you rise from your bed, you sense something different in the air. There's tension, with a palpability to it."
         "You're not sure what, but something big is going down tonight. There's weight and finality in the actions you take this evening."
         "As you make your way into the living room, you notice a piece of paper has been slipped under your door."
         "You decide to investigate, and are perhaps unsurprised to find it is a letter from Laila."
-        "Note" "[player], tonight, midnight. We'll be in a section of the woods we call the Blood Bank. You can meet the others."
-        "Note" "Just head straight into the woods from your street. Keep walking until you start to hear the revels."
-        "Note" "-Laila"
+        l "[player], tonight, midnight. We'll be in a section of the woods we call the Blood Bank. You can meet the others."
+        l "Just head straight into the woods from your street. Keep walking until you start to hear the revels."
+        l "-Laila"
 
         "You glance at the clock on your microwave. It's- already eleven fifteen!?"
         "You really need to set an alarm going forward."
         "You hurriedly throw on some fresh clothes, and make your way out into the street."
 
         scene street with fade
+        play music "Strange Guide.mp3" fadein 1 fadeout 1
         "You suspect Cass might be interested in joining you on this excursion."
         "You text Cassandra to meet you  and wait outside of her apartment."
         "A few minutes later Cass rushes out."
@@ -1092,7 +1107,7 @@ label start:
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
-        mc " I'm sure you'll be fine."
+        mc "I'm sure you'll be fine."
         "You walk into the woods, looking for the blood bank."
         "You wish Laila had written coordinates or something, cause you were deeply lost."
 
@@ -1106,6 +1121,7 @@ label start:
         "Cass gives you an excited smile but remains quiet as you move ever closer to the ongoing party."
 
         scene hideout with fade
+        play music "Cloudy Jewel.mp3" fadein 1 fadeout 1
         "After several more minutes of walking, you break through the trees into a massive clearing."
         "Fairy lights are strung across the clearing, which is decorated with picnic tables and populated by a couple dozen people who all look like they're having a very good time. Near the center of the clearing is a makeshift bar."
 
@@ -1154,12 +1170,12 @@ label start:
         "The barkeep- Shamus- gestures at the bar."
         "Shamus" "We've got our own brewing operation here. We take blood- sourced from an actual blood bank, don't worry- and distill it in this here contraption."
         "He now indicates a small still sitting just behind the bar."
-        "Shamus" "We call it ‘Bloodmoon Shine'. First one's free."
+        "Shamus" "We call it ‘Bloodmoon Shine. First one's free."
         "At this, he passes you a red solo cup filled with a reddish liquid."
         "You take a hesitant sip and find you somewhat enjoy the surprisingly strong beverage."
         "You're a bit nervous too nervous to talk to anyone new just yet, so you hang by Laila and Cass."
 
-        # Tense Music
+        play music "Snow Forest.mp3" fadein 1 fadeout 1
         "The gentle sounds of the party are disrupted by a loud pop and the clearing is illuminated by a bright red glow. You look up and see a flare rising over the treeline."
         "All of the revelry stops and a hush falls over the gathered vampires."
         "Before anyone can comment, a flurry of nets are launched from beyond the clearing, ensnaring many of the partygoers, including Laila."
@@ -1210,6 +1226,8 @@ label start:
         show h neutral at right
         with dissolve
 
+        play music "Caravan.mp3" fadein 1 fadeout 1
+
         "The pair dress in matching vests, although Anne is markedly more stylish than Han."
         a neutral "And the Velsing name will go down in history as that of the greatest vampire hunters in the world!"
 
@@ -1259,16 +1277,14 @@ label start:
                 window show
                 "Cass evaluates your current attire briefly."
                 show c smile at right
-
+                show h neutral at left
                 with dissolve
                 c "Yeah, I guess it could work."
-                show h neutral at left with dissolve
-                show c doubt with dissolve
                 h "Not everyone can rock such stylish gear. Especially not a bloodsucker."
                 hide c
-
+                hide h
                 with dissolve
-                show a neutral at right with dissolve
+                show a neutral with dissolve
 
 
         "You recoil in terror at the addressing of your remarks."
@@ -1277,12 +1293,13 @@ label start:
         "You find crossbows with stakes loaded in them leveled at your face."
         a angry "To think you could hide from us- what hubris! No one can hide from our incredible acumen and refined senses!"
         "As she boasts, Laila and Cassandra run away. You seize upon the opportunity and run as well."
+        hide a with dissolve
         "Cassandra and Laila are splitting up in the woods. You  don't know who to chase after."
         "This is a matter of life and death."
 
+
         "You could follow Laila, further into the woods, or follow Cassandra, who's running back towards town."
         "It's possible you may never see the other one again."
-        hide a with dissolve
         window hide
 
         menu:

@@ -95,6 +95,8 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+default two_window = True
+
 screen say(who, what):
     style_prefix "say"
 
@@ -136,7 +138,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/window.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -152,6 +154,7 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    color gui.namebox_colour
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -184,7 +187,7 @@ screen input(prompt):
             ypos gui.dialogue_ypos
 
             text prompt style "input_prompt"
-            input id "input"
+            input id "input" color "#dead71"
 
 style input_prompt is default
 
@@ -226,6 +229,9 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    # activate_sound "/button 84.mp3"
+    background Frame("/gui/button.png",0,0)
+    hover_background Frame("/gui/button h.png",0,0)
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
@@ -351,13 +357,13 @@ style navigation_button_text:
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
-    if menu_variable == 1:
+    if persistent.ending == 1:
         use cass_menu
 
-    elif menu_variable == 2:
+    elif persistent.ending == 2:
         use laila_menu
 
-    elif menu_variable == 3:
+    elif persistent.ending == 3:
         use han_menu
 
     elif persistent.ending == 4:

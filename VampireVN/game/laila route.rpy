@@ -3,6 +3,7 @@
 label laila_chapter4:
     scene forest with fade
     # tense music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "You dash after Laila deeper into the woods. All the vampires you met at the party- how many of them are dead? And those hunters, who are they?"
     "You don’t have time to think about those things now. You keep going."
     "You push your way through undergrowth that becomes ever-denser as you go on. You move at such speed that branches nick your face as you fly past."
@@ -84,6 +85,7 @@ label laila_chapter4:
     "You feel the unnatural coolness radiating from her, and realize she probably feels the same from you."
     # comedic music maybe
     l smile "I didn’t think we’d be sleeping together this soon."
+    play music "Strange Forest.mp3" fadein 1 fadeout 1
     "She lets out a little laugh."
     hide l with dissolve
     window hide
@@ -172,9 +174,12 @@ label laila_pit:
 
             jump laila_pit
 
+    window show
     "From everything Laila’s said, you’re picking up on something."
     mc "Do you like being a vampire?"
     "At this, Laila lets out a deep sigh."
+    play music "One Small Light.mp3" fadein 1 fadeout 1
+    show l away with dissolve
     l away "No."
     "She is silent for a long while."
     l neutral "Okay, I probably owe you more of an explanation than that."
@@ -220,8 +225,9 @@ label laila_pit:
 
 label laila_chapter5:
     scene cellar with fade
+    play music "Slow Life.mp3" fadein 1 fadeout 1
     "You awaken to find Laila’s head resting on your shoulder- it appears she shifted in her sleep."
-    $ player = "Raven"
+    # $ player = "Raven"
     # romantic music
     window hide
 
@@ -259,6 +265,7 @@ label laila_chapter5:
             $ laila_affection-=2
 
     # neutral music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "With the two of you sufficiently awake, Laila gestures for you to make your way up the ladder."
     "You make your way to the surface, opening the trapdoor, and emerging into the cool air of the early evening. Laila emerges from the hatch a moment after you."
 
@@ -290,7 +297,7 @@ label laila_chapter5:
     l angry "Besides, I hate turning into bats."
     "With that, Laila leads you through town. It’s not terribly late, so there are still people on the streets- running now would draw too much attention to you."
 
-    scene creepy house
+    scene creepy house with fade
     # tense music
 
     "Soon you arrive in a neighborhood that you’re not quite familiar with. Dilapidated single family homes line the streets. Laila stops in front of one that somehow looks worse than all the rest- vines cover half the house, and the yard is filled with weeds."
@@ -319,7 +326,8 @@ label laila_chapter5:
     "Gabrielle" "Monstrous, they are. I know of the destruction you speak of. Their hunt is driven by hatred, not compassion."
     mc "You’ve got a funny way of showing compassion."
     "Laila gestures for you to stop talking."
-    "Gabrielle" "I’ll let the impudence go. I had a whole lifetime of experience under my belt before I was turned, and I know what it’s like to be a youngster, with no clear view of the bigger picture. There will be a day, [player], that you will come to disdain Laila for not letting me impart my mercy unto you."
+    "Gabrielle" "I’ll let the impudence go. I had a whole lifetime of experience under my belt before I was turned, and I know what it’s like to be a youngster, with no clear view of the bigger picture."
+    "Gabrielle" "There will be a day, [player], that you will come to disdain Laila for not letting me impart my mercy unto you."
     "Laila rubs her temples in frustration."
 
     l neutral "Gabrielle, do you know if anyone survived the attack?"
@@ -364,6 +372,7 @@ label laila_chapter5:
             "You know the place Gabrielle speaks of. The house is infamous for being in a state of disrepair in an otherwise upscale part of town."
 
     # romantic music
+    play music "Slow Life.mp3" fadein 1 fadeout 1
     "Laila turns to you now."
     l neutral "[player], this is a lot to ask of you, and I understand if this quest is not for you."
     l neutral "But I must seek out this cure. I cannot pass on this opportunity."
@@ -397,6 +406,7 @@ label laila_chapter5:
         "\"No, there’s too much risk. I’m just going to leave town and make it on my own.\"":
             window show
             #sad music
+            play music "Monologue.mp3" fadein 1 fadeout 1
             "You inform Laila that you’re done with all this, and intend to leave town and escape the Velsings."
             "Laila is visibly disappointed in your response."
             show l away with dissolve
@@ -415,12 +425,13 @@ label laila_chapter5:
 
     l neutral "I don’t think we’ll have time to get to and explore the mansion this evening. Mind if we stay the day at your place?"
     "Laila’s right, and so you agree to open your home up to your vampire friend."
-    scene apartment
+    scene apartment with fade
     "When you get to your apartment, Laila begins to crawl under your bed."
     show l away with dissolve
     "At your evident shock, Laila begins to explain."
     l away "This is kind of embarrassing, but at home I actually, uh, do sleep in a coffin."
     l away "I’m used to the confined spaces, and can’t really sleep otherwise."
+
     "Of all the things you’ve experienced over the last few nights, this might be the weirdest."
     "Still, the evening’s escapades have left you exhausted, and you collapse onto your bed, and fall into another dreamless slumber."
 
@@ -428,6 +439,7 @@ label laila_chapter5:
 label laila_chapter6:
     scene apartment with fade
     # tense music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "You awaken with a pulsing headache, worse than your first night as a vampire. Your head feels like it might explode at any second."
     "And, as if things couldn’t get any worse, your thirst for blood is all-encompassing.You realize you never had any blood last night."
     "You stagger out of bed and try to make your way towards the kitchen. You don’t make it more than a handful of steps before you collapse."
@@ -439,12 +451,18 @@ label laila_chapter6:
     show l angry with dissolve
     l angry "[player], no!"
     "It seems Laila is awake and intends to stop you. Despite knowing she’s probably acting in your best interest, your body resists her without conscious effort. It’s like you’re no longer in control."
+
+    scene laila cg 1 with fade
     "Laila manages to flip you over, and pins your arms to the ground. Despite her slender frame, she is holding you down with ease."
-    l neutral "Listen to me, you have to fight it. It gets easier to skip a day or two as you get older, I promise. But for now, you need to be strong!"
+    l "Listen to me, you have to fight it. It gets easier to skip a day or two as you get older, I promise. But for now, you need to be strong!"
     "Laila is pleading with you as your body struggles against her. You try to speak, but your lips refuse to do anything other than curl into a snarl."
-    l away "Okay, I can try something crazy, if you can’t calm yourself."
+    l "Okay, I can try something crazy, if you can’t calm yourself."
     "Laila hesitates before speaking again."
-    l neutral "We’re not supposed to, but I can give you some of my blood- vampire blood- and it should sate you. For a time. But you and I will forever be bound."
+    $ persistent.laila1 = True
+
+    scene apartment with fade
+    show l neutral with dissolve
+    l "We’re not supposed to, but I can give you some of my blood- vampire blood- and it should sate you. For a time. But you and I will forever be bound."
     l neutral "Our emotions, our thoughts, we will share them, even over long distances. It will take time for the bond to manifest. But should either one of us perish, we shall feel it as if we ourselves died."
     l neutral "I will do it to help you."
     "Laila shifts her weight so she now has you pinned with one arm, while using her free hand to make a small cut in her neck. Pale red blood begins to seep from the incision."
@@ -455,6 +473,7 @@ label laila_chapter6:
         "Accept Laila’s offer.":
             window show
             #romantic music
+            play music "Slow Life.mp3" fadein 1 fadeout 1
             "You nod, and Laila eases her hold on you. You lunge forward and press your lips to her neck."
             "Laila is stiff initially, but softens at your touch, and her breathing becomes ragged and hitched as you feed."
             "You’ve never fed like this before, your skin against Laila’s skin, the salty ichor passing directly from her veins into you. It’s an ecstasy you’ve never felt before."
@@ -494,13 +513,15 @@ label laila_chapter6:
             $ laila_affection+=1
 
     # neutral music
-    scene street
-    "You and Laila traverse the quiet streets of town quickly, avoiding other pedestrians when possible. Dark clouds obscure the sky- there will be no moon or stars to light your evening, just the orange sodium glow of street lamps."
+    scene street with fade
+    play music "Strange Forest.mp3" fadein 1 fadeout 1
+    "You and Laila traverse the quiet streets of town quickly, avoiding other pedestrians when possible."
+    "Dark clouds obscure the sky- there will be no moon or stars to light your evening, just the orange sodium glow of street lamps."
     "You’re unsure of why, but you feel an urgency in the air, as if the whole of history is coming to a head tonight, in this town."
     "Before you arrive at your destination, you have a question for Laila."
 
     show l neutral with dissolve
-    "\"Laila, this cure, what will you do with your life if it’s real?"
+    mc "Laila, this cure, what will you do with your life if it’s real?"
     "Laila stops walking and contemplates your question for a time."
     l neutral "I think I want to go back to New Mexico for a time, though. Just be away from the night and the shadows in a place baked by the sun."
     l away "I guess most of all I want to live a life where I don’t have to run anymore. Find someone to settle down with."
@@ -510,6 +531,7 @@ label laila_chapter6:
     "On  the way to the mansion, you run into Cassandra, sipping a Demon energy drink and carrying a tote full of books."
 
     # exciting music
+    play music "Cloudy Jewel.mp3" fadein 1 fadeout 1
     show l at left with ease
     show c smile at right with dissolve
     c "[player]! And Laila! What a coincidence! I was just on my way back from the library, studying up on vampire history."
@@ -530,6 +552,7 @@ label laila_chapter6:
     show l at center with ease
 
     # neutral music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "With that, you and Laila proceed across town to the mansion, the houses growing larger and more decadent as you approach."
     scene mansion ext with fade
 
@@ -582,6 +605,8 @@ label laila_chapter6:
     "You look around and see that metal bars have come down over all the windows. Laila tries to open the front door but finds it locked."
     l neutral "I think we’re trapped."
 
+    play music "Strange Guide.mp3" fadein 1 fadeout 1
+
     a "Indeed you are, vampire brats!"
     "Anne Velsing’s voice feels like it comes from all around you."
     a "Welcome to one of our many ancestral residences, designed with vampire entrapment in mind. I’m glad to see my snare has caught some of the runaways from our little surprise in the forest."
@@ -606,13 +631,15 @@ label laila_chapter6:
 label laila_chapter7:
     scene mansion int with fade
     # tense or exciting music. Not sure which is better for a fight
+    play music "Caravan.mp3" fadein 1 fadeout 1
     "You and Laila find yourselves dodging Anne’s furious knife swipes. You’re not sure how much damage a knife can do to you, but you’d still rather not get stabbed."
     "Even that simple task, though, proves hard enough in its own right. Anne’s device has you and Laila seriously off-kilter, and your movements are sluggish, like moving through water."
     "As you try to move away from the vampire hunter, you stumble backwards over an ottoman and into a plush leather armchair. Anne takes this chance to leap at you, her blade aimed at your neck."
     "Laila intercepts Anne, throwing herself into the hunter, causing her to lose her balance momentarily, giving you an opportunity to dive from the chair and onto the floor."
     "This defense has left Laila winded, sending her stumbling across the hall. Anne, not deterred, renews her assault, focusing solely on Laila now."
     "Laila avoids strike after strike, but only barely, Anne’s knife getting closer and closer with each swing."
-    "You pull yourself to your feet and move to help Laila, but it is too late. Laila, too focused on Anne, has neglected paying attention to her surroundings, and leaps backwards- crashing into a suit of armor, and impaling herself on the sword it held."
+    "You pull yourself to your feet and move to help Laila, but it is too late."
+    "Laila, too focused on Anne, has neglected paying attention to her surroundings, and leaps backwards- crashing into a suit of armor, and impaling herself on the sword it held."
 
     # sad music
     "Laila lets out a gasp, the air driven from her lungs as the blade embeds itself below her ribcage. She appears unable to move."
@@ -620,7 +647,9 @@ label laila_chapter7:
     a frown "Oh. I wasn’t expecting that."
     a neutral "Fortune smiles on me, I suppose."
     "Anne now turns to face you. Despite her relentless assault, she hardly seems out of breath."
-    a neutral "Alright vampire. Surrender now, and I’ll make the deaths of you and your companion swift. For I will kill you both. It is simply a matter of whether I stake you, or leave you in the sun to burn. Or perhaps I shall bury you alive in the basement and let you starve to death over decades."
+    a neutral "Alright vampire. Surrender now, and I’ll make the deaths of you and your companion swift."
+    a "For I will kill you both. It is simply a matter of whether I stake you, or leave you in the sun to burn."
+    a "Or perhaps I shall bury you alive in the basement and let you starve to death over decades."
     a neutral "The only difference is the amount of suffering you go through. And the enjoyment I derive."
     hide a with dissolve
     window hide
@@ -670,7 +699,8 @@ label laila_chapter7:
             window show
             "Anne scowls and opens her mouth as if to snap back at you, but pauses."
             show a frown with dissolve
-            a frown "You’re right, why would you ever willingly surrender? I never would. And yet, while I will assuredly beat you in a contest of strength, I should not risk life and limb needlessly. I have won this battle."
+            a frown "You’re right, why would you ever willingly surrender? I never would. And yet, while I will assuredly beat you in a contest of strength, I should not risk life and limb needlessly."
+            a "I have won this battle."
             a neutral "So vampire, let us discuss alternatives to needlessly shedding each other’s blood."
 
     "As she thinks, Anne idly twirls her knife in your direction."
@@ -689,10 +719,12 @@ label laila_chapter7:
     a neutral "You have no kindred ties to the other vampires. You’re practically still human. You’d be ridding the world of a plague that sunk its fangs into you."
     "Anne chuckles."
     a neutral "I will admit, that was not an intentional pun. Haha."
-    a neutral "Anyway, I suppose it’s worth mentioning that I will protect you from other vampire hunters. You could live a normal life. Well, close to one."
+    a neutral "Anyway, I suppose it’s worth mentioning that I will protect you from other vampire hunters."
+    a "You could live a normal life. Well, close to one."
     a frown "And, should we ever find a cure, you would be amongst the first to get it."
 
     # sad music
+    play music "Monologue.mp3" fadein 1 fadeout 1
     "Laila coughs and attempts speaking again."
     l away "You mean… there’s no… cure?"
     "At this, Laila coughs up blood. Anne glances over her shoulder at her."
@@ -711,6 +743,7 @@ label laila_chapter7:
     show a at center with ease
 
     # tense music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     a annoyed "Alright vampire, enough stalling. Time to make up your mind. Are you with me? Or shall I destroy you like so many that have come before?"
     "You have Anne where you want her. You can save Laila, it’s just a matter of choosing your tactics."
 
@@ -915,7 +948,8 @@ label lailaTrueEnding:
     l smile "Without the Velsings to worry about, I don’t have to run anymore. I can settle down, start a life… with you."
     l smile "I’ve got it bad for you, [player]. I want to be with you. You’ve given me something to look forward to."
     "Before Laila can say more, you lean in and kiss her. She seems startled for a moment, perhaps not expecting you to return her feelings quite so suddenly, but any hesitancy is gone quickly."
-    "Laila returns the kiss with passion, pulling you close to her. You make no objection. The two of you embrace with the vigor of those who have just escaped a brush with death, seeking to make the most of your time."
+    "Laila returns the kiss with passion, pulling you close to her. You make no objection."
+    "The two of you embrace with the vigor of those who have just escaped a brush with death, seeking to make the most of your time."
     "After a couple minutes pass- during which your kiss almost certainly became a makeout session- Laila stops you, gasping for breath."
     l neutral "You know [player], we’ve been together for every step of your journey, and quite frankly I’m amazed at how well we understand each other."
     l smile "I don’t think it’s chance that we met. I don’t believe in stuff like fate or destiny, but it’s hard to deny what has passed between us."
@@ -982,16 +1016,23 @@ label lailaGoodEndingA:
     l smile "Without the Velsings to worry about, I don’t have to run anymore. I can settle down, start a life… with you."
     l smile "I’ve got it bad for you, [player]. I want to be with you. You’ve given me something to look forward to."
     "Before Laila can say more, you lean in and kiss her. She seems startled for a moment, perhaps not expecting you to return her feelings quite so suddenly, but any hesitancy is gone quickly."
-    "Laila returns the kiss with passion, pulling you close to her. You make no objection. The two of you embrace with the vigor of those who have just escaped a brush with death, seeking to make the most of your time."
+    "Laila returns the kiss with passion, pulling you close to her. You make no objection."
+    "The two of you embrace with the vigor of those who have just escaped a brush with death, seeking to make the most of your time."
     "After a couple minutes pass- during which your kiss almost certainly became a makeout session- Laila stops you, gasping for breath."
     l neutral "Before we go any further, let’s do something about the corpse. Even dead the bitch is spoiling my fun."
 
     "She casts a somewhat rueful gaze towards Anne’s body."
     "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
-    "Afterwards, you and Laila spend some time discussing your future. This mansion, with all its accouterments and lavish furniture, would make a lovely place to live, provided its exterior sees some renovation. This is where your future will be."
-    "You and Laila spend the remainder of the night, and much of the following day, … ‘breaking in’ each of the mansion’s numerous rooms. By the end of it, even with your vampiric enhancements, the two of you are thoroughly exhausted."
+
+    scene black with fade
+
+    "Afterwards, you and Laila spend some time discussing your future."
+    "This mansion, with all its accouterments and lavish furniture, would make a lovely place to live, provided its exterior sees some renovation. This is where your future will be."
+    "You and Laila spend the remainder of the night, and much of the following day, … ‘breaking in’ each of the mansion’s numerous rooms."
+    "By the end of it, even with your vampiric enhancements, the two of you are thoroughly exhausted."
     "The following evening, you call up Cass and she assists you and Laila in burying Anne out in the woods. For all the trouble she caused, she deserves at least that much."
-    "You and Laila are together almost always in the subsequent nights, splitting your time between repairing the mansion and locating the remaining vampires in town. You let them know the danger has passed and, should they need it, your doors are open to provide a safe haven."
+    "You and Laila are together almost always in the subsequent nights, splitting your time between repairing the mansion and locating the remaining vampires in town."
+    "You let them know the danger has passed and, should they need it, your doors are open to provide a safe haven."
     "As time passes, you find your bond with Laila, formed from drinking her blood, has begun to develop. You can sense each other’s feelings, and sometimes communicate wordlessly."
     "Your relationship only deepens and strengthens because of this newfound connection, with disagreements between the two of you resolving quickly and amicably. Perhaps this should be standard practice for all couples."
     "In a few months, the mansion is repaired, and you and Laila open it for fabulous midnight parties. Vampires and regular humans attend, with the vampires on their very best behavior, and the humans never suspecting a thing."
@@ -1028,10 +1069,15 @@ label lailaGoodEndingB:
     l neutral "Before we go any further, let’s do something about the corpse. Even dead the bitch is spoiling my fun."
     "She casts a somewhat rueful gaze towards Anne’s body."
     "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
-    "Afterwards, you and Laila spend some time discussing your future. This mansion, with all its accouterments and lavish furniture, would make a lovely place to live, provided its exterior sees some renovation. This is where your future will be."
-    "You and Laila spend the remainder of the night, and much of the following day, … ‘breaking in’ each of the mansion’s numerous rooms. By the end of it, even with your vampiric enhancements, the two of you are thoroughly exhausted."
+
+    scene black with fade
+    "Afterwards, you and Laila spend some time discussing your future."
+    "This mansion, with all its accouterments and lavish furniture, would make a lovely place to live, provided its exterior sees some renovation. This is where your future will be."
+    "You and Laila spend the remainder of the night, and much of the following day, … ‘breaking in’ each of the mansion’s numerous rooms."
+    "By the end of it, even with your vampiric enhancements, the two of you are thoroughly exhausted."
     "The following evening, you call up Cass and she assists you and Laila in burying Anne out in the woods. For all the trouble she caused, she deserves at least that much."
-    "You and Laila are together almost always in the subsequent nights, splitting your time between repairing the mansion and locating the remaining vampires in town. You let them know the danger has passed and, should they need it, your doors are open to provide a safe haven."
+    "You and Laila are together almost always in the subsequent nights, splitting your time between repairing the mansion and locating the remaining vampires in town."
+    "You let them know the danger has passed and, should they need it, your doors are open to provide a safe haven."
     "As time passes, you and Laila find you are not quite a perfect couple. There are occasional squabbles, a tiff here and there. But you two emerge from each conflict stronger and closer."
     "Nothing can break the bond you two have formed."
     "In a few months, the mansion is repaired, and you and Laila open it for fabulous midnight parties. Vampires and regular humans attend, with the vampires on their very best behavior, and the humans never suspecting a thing."
@@ -1058,12 +1104,14 @@ label lailaBadEndingA:
     "You’re baffled. What is going on? You weren’t cut by the Velsing sword, and yet it feels as if you’re dying."
     "And then you remember- you took Laila’s blood. Whatever bond you two shared has been severed by death, and now it is as if you yourself are dying."
     "You regain enough control to drag yourself across the floor towards the front door. Maybe you can find Cass, maybe she can help."
+
     "After much effort you manage to get to your feet and you try the front door- it’s locked. Whatever mechanism Anne used to seal you in has not yet been disabled. All the while, the pain within you grows worse."
     "You decide to make your way deeper into the mansion, to see if there’s another way out."
     "You make it to Anne’s body before your legs lock beneath you, and you fall over. Your arms almost immediately follow suit, growing stiff and immobile."
     "As you lie on the floor, you listen for the rush of your blood- and find it is almost nonexistent. You realize in horror that Laila’s death has caused the coagulation of your own blood."
     "You can still think, and look straight ahead- it appears your eyes have grown still as well- but your body is effectively a corpse, with you locked inside as a prisoner."
     "And so you lie like that. For hours."
+    scene black with fade
     "Then the hours turn to days."
     "And the days turn to weeks."
     "And the weeks to months."
@@ -1090,15 +1138,22 @@ label lailaBadEndingB:
     "Though it is very difficult for her, Laila laughs at her final remark."
     "With a deep sigh, Laila closes her eyes, her body takes on a stillness like death, and you know she is gone from the world."
     hide l with dissolve
+
     "You are overcome with overwhelming grief. This beautiful wonderful woman is gone. If only things had been different, had you been closer to her, things might have played out differently."
     "Despite the injuries she suffered before passing, Laila looks serene. She passed from this world to a better place, happy."
     "You leave Laila where she is, and decide to investigate the mansion for a way to disable whatever mechanism locked the doors and barred the windows."
     "After some time searching, you find some levers in a drawing room on the second floor, which seem to lift the security of the place."
     "You phone Cass to let her know what has happened, and she arrives to keep you company, and help you deal with the remains."
+
+    scene forest with fade
     "You sleep in the mansion during the day, and the following evening you and Cass bury Laila in the forest. You leave Anne’s body in the mansion, perhaps as a warning to any future Velsings who might come."
+
+    scene apartment with fade
     "You return to your apartment and begin doing what Laila did- working nights at bars to eke out a living."
     "Afterwards, you and Cass drift apart. You are listless with Laila gone, and Cass has a full human life to live."
     "You seek out what’s left of the vampire community in town, but after the Velsing assault, those who aren’t dead dare not congregate. The current threat may have passed, but few believe it is gone for good."
+
+    scene black with fade
     "Many of those who remain blame you for Laila’s death. She was well-liked, and the troubles started after she took you under her wing, after all."
     "You think often of her- her kindness, her humor and, perhaps most of all, the great sorrow she lived with. The plight of her condition, her desire to return to the world of the living, to the waking world and the sun."
     "You know you will never forget her. And you respect her final wishes. You do what you can to bring some small amount of good into the world- you will sometimes stop petty criminals and miscreants in the night."

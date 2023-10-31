@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1041: expected statement.
-    cass_affection -=2
-                    ^
+File "game/laila route.rpy", line 395: Indentation mismatch.
 
-Ren'Py Version: Ren'Py 7.6.3.23091805
-Mon Oct 30 21:48:13 2023
+Ren'Py Version: Ren'Py 8.1.2.23090503
+Mon Oct 30 23:47:53 2023

@@ -2,6 +2,7 @@
 
 label cass_chapter4:
     # Tense Music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "You lose sight of Cass after a while, but for some reason you can still tell where she is."
     "It’s as if you can sense her, hear her heartbeat in the air"
     "You hear the Velsings gaining on you, and you remember the powers Cassandra mentioned earlier."
@@ -626,7 +627,7 @@ label cass_chapter6:
 label cass_chapter7:
 
     # Sad Music
-    scene forest
+    scene forest with fade
     show c doubt
     with fade
     "Once you are both far enough away, you poof back to confront her."
@@ -996,7 +997,7 @@ label cass_bad:
             "But you collapse halfway there, tired out of your mind."
             "You pass out…"
 
-            scene forest day
+            scene forest with fade
             #CHANGE: we don't have an image for this. lol
 
             "And wake up, the sun in your eyes."
@@ -1006,6 +1007,8 @@ label cass_bad:
             c "[player], please… no. Please, please."
             c "I need you, please don’t go."
             "You die in Cassandra’s arms."
+
+            $ persistent.ending = 3
 
             return
 
@@ -1212,7 +1215,7 @@ label cass_chapter8:
                     scene black with fade
                     c "Come here, you!"
                     $ cass_affection+=11
-                    scene woods with fade
+                    scene forest with fade
                     show c smile with dissolve
                     "After a few hours of fun, you stumble out of the clinic with Cassandra."
                     c "That was fun… I feel so energized! Let's train before those dickheads show up!"
@@ -1448,6 +1451,8 @@ label cass_chapter8:
     mc "Me too."
     "You both lean in for a kiss."
     $ cass_affection+=1
+
+    $ persistent.ending = 1
     # END OF PART 8 GOOD ENDING
 
 label fightalone:
@@ -1494,6 +1499,7 @@ label fightalone:
             "Staring as Han descends to go off and murder other vampires."
             "As Cassandra dies away from you, unable to break the curse."
             "The light leaves your eyes as you lay defeated, conquered, slain."
+            $ persistent.ending = 3
             return
             # END OF GAME BAD ENDING
 
@@ -1518,12 +1524,13 @@ label fightalone:
                     "But to your horror…"
                     "The sun starts to rise."
                     #CHANGE: still no graphic for this
-                    scene forest day
+                    scene forest with fade
                     "You start to feel sharp, agonizing pain throughout your body."
                     "You duck under the shade of a lone tree."
                     "Trapped."
                     "Waiting, knowing you have the very thing that can save Cassandra and can’t get it to her."
                     "As the sun rises, your future falls."
+                    $ persistent.ending = 3
                     return
                     # END OF GAME BAD ENDING
 
@@ -1611,6 +1618,7 @@ label fightalone:
     mc "Me too."
     "You both lean in for a kiss."
     $ cass_affection+=1
+    $ persistent.ending = 1
     return
 
 label evilCass:
@@ -1750,6 +1758,7 @@ label evilCass:
             c "I’ll always feel guilty for that."
             c "I just hope now, [player]’s soul will finally rest."
             "You fade into death, Cassandra’s tears the last thing you see before you die."
+            $ persistent.ending = 3
             # END OF GAME BAD ENDING
 
         "\"I am the same as [player]! I can prove it!\"":
@@ -1789,6 +1798,7 @@ label evilCass:
                     "Or maybe, this tragic end was fate."
                     "Your last sight is Han, a bright smile on his face."
                     "He really did win it all."
+                    $ persistent.ending = 3
                     return
 
                     "Don’t use the weak point."
@@ -1812,6 +1822,7 @@ label evilCass:
                     c "I’ll always feel guilty for that."
                     c "I just hope now, [player]’s soul will finally rest."
                     c "You fade into death, Cassandra’s tears the last thing you see before you die."
+                    $ persistent.ending = 3
                     return
 
 
@@ -1936,8 +1947,8 @@ label evilCass:
             window show
 
             show c doubt with dissolve
-            c "But i can’t forgive myself."
-            c "All the horrible things i did."
+            c "But I can’t forgive myself."
+            c "All the horrible things I did."
             c "I’m a monster."
             c "You deserve better."
             c "You deserve a better friend."
@@ -1982,6 +1993,7 @@ label evilCass:
                 "You stand alone for a while, letting it all sink in."
                 "Imagining what could have been."
                 "Before you too walk away in the night."
+                $ persistent.ending = 3
                 return
 
 label cass_med:
@@ -1998,6 +2010,7 @@ label cass_med:
     "You walk to Cassandra’s new place in the shade."
     "Han Velsing might still be out there…"
     "But at least you have your best friend back."
+    $ persistent.ending = 1
     return
 
 label cass_best:
@@ -2035,6 +2048,8 @@ label cass_best:
     "Even though Han is still out there somewhere…"
     "You feel like the world is perfect right now."
 
+    $ persistent.ending = 1
+
     return
 
 label quiz_death:
@@ -2061,4 +2076,5 @@ label quiz_death:
     c "I’ll always feel guilty for that."
     c "I just hope now, [player]’s soul will finally rest."
     c "You fade into death, Cassandra’s tears the last thing you see before you die."
+    $ persistent.ending = 3
     return
