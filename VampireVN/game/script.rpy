@@ -1051,7 +1051,7 @@ label start:
 
             "Dooon't Carree":
                 window show
-                $ cas_affection -=2
+                $ cass_affection -=2
                 show c doubt with dissolve
                 c doubt "Oh… i'm sorry."
 
