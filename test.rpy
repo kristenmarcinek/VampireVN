@@ -145,7 +145,7 @@ label start:
             
             "Cassandra Kalluri. Of course she’s here. She’s always looking out for you."
             
-            "You’ve been inseparable since middle school. It was hard to find queer friends in a small Southern town like ____ but when you do the bond is unbreakable."
+            "You’ve been inseparable since middle school. It was hard to find queer friends in a small Southern town like this one, but when you do the bond is unbreakable."
             
             menu:
                 "Where am I?":
