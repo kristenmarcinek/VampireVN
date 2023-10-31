@@ -441,7 +441,7 @@ label laila_chapter6:
     # tense music
     play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "You awaken with a pulsing headache, worse than your first night as a vampire. Your head feels like it might explode at any second."
-    "And, as if things couldn’t get any worse, your thirst for blood is all-encompassing.You realize you never had any blood last night."
+    "And, as if things couldn’t get any worse, your thirst for blood is all-encompassing. You realize you never had any blood last night."
     "You stagger out of bed and try to make your way towards the kitchen. You don’t make it more than a handful of steps before you collapse."
     "You resort to feral behavior, crawling along the floor like some sort of animal, driven almost entirely by instinct."
     "In your hunger, your senses seem heightened, and you can hear the beating hearts of your slumbering neighbors."
@@ -894,7 +894,7 @@ label laila_chapter8:
     mc "I’m not leaving you after how far we’ve come."
     "Before Laila can protest any further, you hoist her off of the sword. She coughs up a surprising amount of blood."
     "You cradle Laila’s bloody form in your arms, taking her to the chair you fell into earlier and set her down gently."
-    l angry "Damn that hurt. Some warning would be appreciated next time."
+    l angry "Damn, that hurt. Some warning would be appreciated next time."
     l neutral "Sorry, thank you. But I don’t know what you can do for me."
     "You kneel next to Laila. Though you have only known her a few days, you cannot deny the deep feelings you’ve developed for her."
     "You would be devastated if you were to lose her."
