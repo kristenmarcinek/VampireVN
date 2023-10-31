@@ -351,7 +351,7 @@ label start:
             
             l neutral "Anyway, myself or one of the others would have typically been with you much earlier, but one of your friends got there first and took you home. It was a whole thing."
             
-            "Everything she’s just said tracks with what c said. That’s not great."
+            "Everything she’s just said tracks with what Cass said. That’s not great."
             
             "Laila pauses for a moment. She seems conflicted about what to say next."
             
@@ -650,7 +650,7 @@ label start:
             
             # Romantic Music
             
-            c smile "Hey! I tried calling you earlier and you didn't pick up so i decided to see if you were home cause I just hit a jackpot, research wise!" 
+            c smile "Hey! I tried calling you earlier and you didn't pick up so I decided to see if you were home cause I just hit a jackpot, research wise!"
             
             c confident "Check this out!"
             
@@ -668,7 +668,7 @@ label start:
                 "Cool, but what does this mean for me?":
                     jump to c2eb
                 "Dooon’t Carree":
-                    $ cas_affection -=2
+                    cass_affection -=2
                     jump to c2fb
     
         label c2db:
@@ -1006,7 +1006,7 @@ return
     C "It’s like everything I dreamed of!"
     C "I put on my most emo clothes, do you think I’ll fit in?"
     "You take a good long look at Cassandra’s bright pink jacket and skirt."
-    "\" I’m sure you’ll be fine."
+    mc " I’m sure you’ll be fine."
     "You walk into the woods, looking for the blood bank."
     "You wish Laila had written coordinates or something, cause you were deeply lost."
     C neutral "Maybe there’s a vampire  thing that you can do to find it?

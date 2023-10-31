@@ -277,7 +277,7 @@ label start:
         show c neutral with dissolve
 
         c "This is going to sound crazy but… I think you got bitten by a vampire."
-        c "It matches most of the books i read, the skin tone fluctuation and the eyes shifting color and the  two holes in your neck… What do you see here?"
+        c "It matches most of the books I read, the skin tone fluctuation and the eyes shifting color and the  two holes in your neck… What do you see here?"
 
         "Cassandra shows you her phone camera, but you don't see yourself in it. Could she be right? Are you a.."
 
@@ -439,7 +439,7 @@ label start:
 
         l neutral "Anyway, myself or one of the others would have typically been with you much earlier, but one of your friends got there first and took you home. It was a whole thing."
 
-        "Everything she's just said tracks with what c said. That's not great."
+        "Everything she's just said tracks with what Cassandra said. That's not great."
 
         "Laila pauses for a moment. She seems conflicted about what to say next."
 
@@ -1038,7 +1038,7 @@ label start:
 
             "Dooon't Carree":
                 window show
-                $ cas_affection -=2
+                $ cass_affection -=2
                 show c doubt with dissolve
                 c doubt "Oh… i'm sorry."
 
@@ -1092,7 +1092,7 @@ label start:
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
-        "\" I'm sure you'll be fine."
+        mc " I'm sure you'll be fine."
         "You walk into the woods, looking for the blood bank."
         "You wish Laila had written coordinates or something, cause you were deeply lost."
 
@@ -1154,7 +1154,7 @@ label start:
         "The barkeep- Shamus- gestures at the bar."
         "Shamus" "We've got our own brewing operation here. We take blood- sourced from an actual blood bank, don't worry- and distill it in this here contraption."
         "He now indicates a small still sitting just behind the bar."
-        "Shamus" "We call it ‘Bloodmoon Shine. First one's free."
+        "Shamus" "We call it ‘Bloodmoon Shine'. First one's free."
         "At this, he passes you a red solo cup filled with a reddish liquid."
         "You take a hesitant sip and find you somewhat enjoy the surprisingly strong beverage."
         "You're a bit nervous too nervous to talk to anyone new just yet, so you hang by Laila and Cass."
@@ -1259,14 +1259,16 @@ label start:
                 window show
                 "Cass evaluates your current attire briefly."
                 show c smile at right
-                show h neutral at left
+
                 with dissolve
                 c "Yeah, I guess it could work."
+                show h neutral at left with dissolve
+                show c doubt with dissolve
                 h "Not everyone can rock such stylish gear. Especially not a bloodsucker."
                 hide c
-                hide h
+
                 with dissolve
-                show a neutral with dissolve
+                show a neutral at right with dissolve
 
 
         "You recoil in terror at the addressing of your remarks."

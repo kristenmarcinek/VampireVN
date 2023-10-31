@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1285: expected statement.
-    window how
-          ^
+File "game/script.rpy", line 1041: expected statement.
+    cass_affection -=2
+                    ^
 
-Ren'Py Version: Ren'Py 8.1.2.23090503
-Wed Oct 25 01:33:44 2023
+Ren'Py Version: Ren'Py 7.6.3.23091805
+Mon Oct 30 21:48:13 2023
