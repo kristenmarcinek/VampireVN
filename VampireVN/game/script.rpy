@@ -157,13 +157,13 @@ label start:
 
         "You stand from your bed and all at once everything hurts."
 
-        "Every muscle screams out, demanding you lay back down. Your vision swims and you drop to your knees. You realize now that your mouth is so dry."
+        "Every muscle screams out, demanding you lay back down. Your vision swims and you drop to your knees. You realize now that your mouth is so terribly dry."
 
         "You stagger out of your bedroom and make it no further than your couch before you collapse, the exhaustion taking too much of a toll on you."
 
-        "You feel a pulsing headache, your body sore as it has ever felt."
+        "You feel a pulsing headache, your body as sore as it has ever felt."
 
-        "You want to lie down forever but you hear a worried voice."
+        "You want to lie down forever, but you hear a worried voice."
         window hide
 
         menu:
@@ -1067,13 +1067,13 @@ label start:
 
         c neutral "Bran Velcant so far has used three powers: Hypnosis, morphing into a bat, and floating."
 
-        c smile "it's getting late, so we don't have time to test them out, but I thought you should know!"
+        c smile "It's getting late, so we don't have time to test them out, but I thought you should know!"
 
         c smile"I'm gonna read the rest of this soon, and we'll get all the answers you need!"
 
         "As Cass leaves, you lie down, a thousand thoughts pulsing through your head."
 
-        "What did Laila call you? An Apex Predator? Was that what you were becoming?"
+        "What did Laila call you? An apex predator? Was that what you were becoming?"
 
         "And Cassandra's book… You wonder if this Velcant person felt the same way you do now, all those years ago."
 
@@ -1109,7 +1109,7 @@ label start:
         "A few minutes later Cass rushes out."
 
         show c wink with dissolve
-        c "A Vampire Party! Oh my god!"
+        c "A vampire party! Oh my god!"
         c "It's like everything I dreamed of!"
         c "I put on my most emo clothes, do you think I'll fit in?"
         "You take a good long look at Cassandra's bright pink jacket and skirt."
