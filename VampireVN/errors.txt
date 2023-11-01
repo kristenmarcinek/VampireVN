@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/cass route.rpy", line 1066: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "You drag Cassandra’s unconscious body into the vampire hideout."
-    ^
+File "game/screens.rpy", line 755: the action keyword argument was not given a value.
+    hotspot (79, 301, 255, 69) action hide ("preferences")
+                                      ^
 
-Ren'Py Version: Ren'Py 7.6.3.23091805
-Tue Oct 31 21:36:17 2023
+Ren'Py Version: Ren'Py 8.1.2.23090503
+Wed Nov  1 01:05:57 2023

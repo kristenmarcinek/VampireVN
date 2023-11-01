@@ -380,11 +380,11 @@ screen default_menu:
         ground "gui/menu default.png"
         hover "gui/menu default h.png"
 
-        hotspot (247, 406, 273, 69) action Start()
-        hotspot (247, 487, 261, 68) action ShowMenu("load")
-        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
-        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+        hotspot (225, 416, 306, 84) action Start()
+        hotspot (247, 515, 273, 71) action ShowMenu("load")
+        hotspot (225, 599, 313, 70) action ShowMenu("preferences")
+        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (263, 684, 237, 76) action Quit(confirm=True)
 
 screen laila_menu:
     tag menu
@@ -393,11 +393,11 @@ screen laila_menu:
         ground "gui/menu laila.png"
         hover "gui/menu laila h.png"
 
-        hotspot (247, 406, 273, 69) action Start()
-        hotspot (247, 487, 261, 68) action ShowMenu("load")
-        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
-        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+        hotspot (225, 416, 306, 84) action Start()
+        hotspot (247, 515, 273, 71) action ShowMenu("load")
+        hotspot (225, 599, 313, 70) action ShowMenu("preferences")
+        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (263, 684, 237, 76) action Quit(confirm=True)
 
 screen cass_menu:
     tag menu
@@ -406,11 +406,11 @@ screen cass_menu:
         ground "gui/menu cass.png"
         hover "gui/menu cass h.png"
 
-        hotspot (247, 406, 273, 69) action Start()
-        hotspot (247, 487, 261, 68) action ShowMenu("load")
-        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
-        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+        hotspot (225, 416, 306, 84) action Start()
+        hotspot (247, 515, 273, 71) action ShowMenu("load")
+        hotspot (225, 599, 313, 70) action ShowMenu("preferences")
+        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (263, 684, 237, 76) action Quit(confirm=True)
 
 screen anne_menu:
     tag menu
@@ -419,11 +419,11 @@ screen anne_menu:
         ground "gui/menu anne.png"
         hover "gui/menu anne h.png"
 
-        hotspot (247, 406, 273, 69) action Start()
-        hotspot (247, 487, 261, 68) action ShowMenu("load")
-        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
-        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+        hotspot (225, 416, 306, 84) action Start()
+        hotspot (247, 515, 273, 71) action ShowMenu("load")
+        hotspot (225, 599, 313, 70) action ShowMenu("preferences")
+        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (263, 684, 237, 76) action Quit(confirm=True)
 
 screen han_menu:
     tag menu
@@ -432,11 +432,11 @@ screen han_menu:
         ground "gui/menu han.png"
         hover "gui/menu han h.png"
 
-        hotspot (247, 406, 273, 69) action Start()
-        hotspot (247, 487, 261, 68) action ShowMenu("load")
-        hotspot (220, 572, 318, 74) action ShowMenu("preferences")
-        hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
-        hotspot (270, 741, 226, 79) action Quit(confirm=True)
+        hotspot (225, 416, 306, 84) action Start()
+        hotspot (247, 515, 273, 71) action ShowMenu("load")
+        hotspot (225, 599, 313, 70) action ShowMenu("preferences")
+        # hotspot (218, 658, 325, 70) action [ShowMenu("gallery")]
+        hotspot (263, 684, 237, 76) action Quit(confirm=True)
 
 
 # style main_menu_frame is empty
@@ -752,7 +752,7 @@ screen preferences():
         hover "gui/settings h.png"
         ground "gui/settings.png"
 
-        hotspot (79, 301, 255, 69) action Return()
+        hotspot (79, 301, 255, 69) action Hide ("preferences")
         hotspot (76, 383, 199, 65) action ShowMenu("save")
         hotspot (76, 463, 207, 66) action ShowMenu("load")
         hotspot (72, 539, 302, 75) action ShowMenu("preferences")

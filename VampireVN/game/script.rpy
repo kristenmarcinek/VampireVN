@@ -791,6 +791,7 @@ label start:
 
         label callLaila:
             # neutral music
+            play music "Ominous Forest.mp3" fadein 1 fadeout 1
             window show
             "You call up the vampire you met last night, dialing the number she wrote on your arm."
 
@@ -907,6 +908,7 @@ label start:
         window hide
 
         # exciting music
+        play music "Cloudy Jewel.mp3" fadein 1 fadeout 1
 
         menu:
             "What?":
@@ -940,6 +942,7 @@ label start:
                 "Unfortunately, you kick with far too much force and lose your balance before you even make contact with the tree, and start to fall."
 
                 # romantic music
+                play music "Slow Life.mp3" fadein 1 fadeout 1
 
                 "You don't hit the ground though. Laila has in an instant dashed across the clearing and caught you."
 
@@ -948,6 +951,7 @@ label start:
                 show l smile with dissolve
 
                 l smile "It's alright, these kinds of things take practice."
+                play music "Cloudy Jewel.mp3" fadein 1 fadeout 1
 
             "Keep things simple.":
                 window show
@@ -1007,10 +1011,12 @@ label start:
         "With that, she tosses you another small vial of blood, as she did the night before. She gives you another closed lip smile, and darts off deeper into the woods with supernatural speed."
 
         scene street with fade
+        play music "Someday's Dream.mp3" fadein 1 fadeout 1
 
         "As you make your way out of the forest and back to your apartment building, you find Cass waiting at your front door."
 
         # Romantic Music
+
 
         show c smile with dissolve
 
@@ -1157,6 +1163,7 @@ label start:
                 window show
                 "You see the wisdom in what Laila is saying."
                 mc "You know Cass, Laila might be right. It could be dangerous with all these vampires around, and you know, I don't really know any of them."
+                #CHANGE: not a change, but remember that this might be the problem with laila affection
 
         "Laila looks taken aback at your remark."
         show l away with dissolve
