@@ -602,7 +602,7 @@ label start:
                 c "Yeah, I'm just really excited about all this! Who would have thought my best friend would be a vampire! It's like I'm in a book!"
 
                 show c neutral
-                c "I know this is real, but things have been… too real recently. With the stuff with my family, and the laws being passed and the climate… It's nice to have something else to work on"
+                c "I know this is real, but things have been… too real recently. With the stuff with my family, and the laws being passed and the climate… It's nice to have something else to work on."
 
                 c "Anyway, check this out!"
 
@@ -622,11 +622,11 @@ label start:
                 window show
                 show c smile with dissolve
 
-                c smile "and there's this kinda interesting romance he's having, like a kinda love triangle with these two other guys, and normally i'm not a fan of them but this one is really gripping!"
+                c smile "...and there's this kinda interesting romance he's having, like a kinda love triangle with these two other guys, and normally i'm not a fan of them but this one is really gripping!"
 
-                c smile "and there's this brother character and they have this antagonistic relationship but it seems like he has this deep care in his heart for him, and…"
+                c smile "...and there's this brother character and they have this antagonistic relationship but it seems like he has this deep care in his heart for him, and…"
 
-                c doubt "wait, I've been ranting, haven't I? I'm sorry, you know how I am with books…"
+                c doubt "Wait, I've been ranting, haven't I? I'm sorry, you know how I am with books…"
 
                 hide c with dissolve
                 window hide
@@ -663,11 +663,11 @@ label start:
 
 
 
-        c "Ok, so the powers the book mentions are hypnosis, bat transformation, and flight."
+        c smile "Ok, so the powers the book mentions are hypnosis, bat transformation, and flight."
 
         c "Hypnosis is something Bran Velcant mentions a lot, but i'm not exactly sure what it entails or how to do it. He says something about looking people in the eye, so maybe try that on me?"
 
-        c "Don't make me do anything weird, just test it out ok? I trust you"
+        c wink "Don't make me do anything weird, just test it out ok? I trust you"
 
         "You do as she says and stare into her eyes. There's something so reassuring about those big purple eyes of hers."
 
@@ -1295,6 +1295,7 @@ label start:
         a angry "To think you could hide from us- what hubris! No one can hide from our incredible acumen and refined senses!"
         "As she boasts, Laila and Cassandra run away. You seize upon the opportunity and run as well."
         hide a with dissolve
+        hide h with dissolve
         "Cassandra and Laila are splitting up in the woods. You  don't know who to chase after."
         "This is a matter of life and death."
 

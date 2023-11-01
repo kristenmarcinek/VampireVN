@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/laila route.rpy", line 395: Indentation mismatch.
+File "game/cass route.rpy", line 1066: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "You drag Cassandra’s unconscious body into the vampire hideout."
+    ^
 
-Ren'Py Version: Ren'Py 8.1.2.23090503
-Mon Oct 30 23:47:53 2023
+Ren'Py Version: Ren'Py 7.6.3.23091805
+Tue Oct 31 21:36:17 2023

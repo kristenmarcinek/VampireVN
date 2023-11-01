@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1054, in script
-    $ cas_affection -=2
-  File "game/script.rpy", line 1054, in <module>
-    $ cas_affection -=2
-NameError: name 'cas_affection' is not defined
+  File "game/cass route.rpy", line 1573, in script
+    image white = "#fffff"
+Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1054, in script
-    $ cas_affection -=2
-  File "renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 1054, in <module>
-    $ cas_affection -=2
-NameError: name 'cas_affection' is not defined
+  File "game/cass route.rpy", line 1573, in script
+    image white = "#fffff"
+  File "renpy/ast.py", line 1241, in execute
+    renpy.exports.image(self.imgname, img)
+  File "renpy/exports.py", line 335, in image
+    d = renpy.easy.displayable(d)
+  File "renpy/easy.py", line 126, in displayable
+    return renpy.store.Solid(d)
+  File "renpy/display/imagelike.py", line 51, in __init__
+    self.color = renpy.easy.color(color)
+  File "renpy/color.py", line 167, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string u'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.3.23091805
 Crimson Nights 1.0
-Tue Oct 31 17:49:57 2023
+Tue Oct 31 22:22:32 2023

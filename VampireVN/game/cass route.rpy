@@ -2,9 +2,9 @@
 
 label cass_chapter4:
     # Tense Music
-    play music "Ominous Forest.mp3" fadein 1 fadeout 1
+    play music "Snow Forest.mp3" fadein 1 fadeout 1
     "You lose sight of Cass after a while, but for some reason you can still tell where she is."
-    "It’s as if you can sense her, hear her heartbeat in the air"
+    "It’s as if you can sense her, hear her heartbeat in the air."
     "You hear the Velsings gaining on you, and you remember the powers Cassandra mentioned earlier."
     show a angry with dissolve
     "You see Anne Velsing chasing after you with ferocity."
@@ -33,7 +33,7 @@ label anne4fight:
 
         "Try floating" if not a2:
             window show
-            "You jump as high as you can but you can’t get yourself to float"
+            "You jump as high as you can but you can’t get yourself to float."
             "You trip and fall, causing Anne to gain on you."
 
             show a neutral with dissolve
@@ -76,12 +76,13 @@ label anne4fight:
 
     "You take the moment to let Anne go and dash into the bushes."
     #Batbashers are just like standin name
+    play music "Caravan.mp3" fadein 1 fadeout 1
     h "The heir to the Velsing bloodline, head of the Batbashers, and you couldn’t even kill a day old vamp?"
 
     show a annoyed
     a " I got caught off guard ok! Don’t tell the others."
     show h unsure
-    h "Like you didn’t tell dad about Ren? Oh wait…"
+    h "Like you didn’t tell dad about Adrian? Oh wait…"
     show a frown
     a "We were young ok! It was ages ago! Why are you still fixated on that!"
     show a annoyed
@@ -188,10 +189,16 @@ label anne4fight:
 
             window show
             "You wait in the tree hoping for an opening."
+            show a neutral at left with dissolve
+            show h neutral at right with dissolve
+
             a "Anyways, who’s the girl?"
-            h "She’s a human. She seems to be close to some of the vampires, but…"
+            h smile"She’s a human. She seems to be close to some of the vampires, but…"
             h "... she’s not a vampire yet. I’ve been cooking up a plan for her."
-            h "For tonight though, I just wanted to get her to safety."
+            h neutral "For tonight though, I just wanted to get her to safety."
+            show a neutral at Position(xalign = 0.1) with ease
+            show h neutral at center with ease
+            show c doubt at Position(xalign = 0.9) with dissolve
             c "Wha… Whats going on?"
             a "Ahh, she’s awake! Now what?"
             h "Now we find the other vamps. She can find her way back home."
@@ -202,24 +209,28 @@ label anne4fight:
             "Once you made sure the Velsings were far enough away, you followed Cassandra as she ran home."
             "What was Han talking about? What did he have planned for her?"
             scene street with fade
-            "As You both finally get back in town, you turn back into a human."
+            "As you both finally get back in town, you turn back into a human."
+            show c smile with dissolve
             mc "Cassandra! It's me."
             c "[player]! I’m so happy you’re ok! That was terrifying!"
 
 
     # Neutral Music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
 
     #CHANGE: i don't know where this line of dialogue goes, it was originally after the last line of dialogue in the attack option but also after the jump to the main script
     #---resolved
 
     "You walk as fast as you can until you get out of the woods and re-enter the town."
     scene street with fade
+    show c doubt with dissolve
     "You both walk down the street, catching your breath after the trauma you just experienced."
     "It all slowly starts to sink in."
     "You’re being hunted. Hunted by trained professionals."
     "Laila hasn’t been returning your calls, she might be dead."
-    "Who knows what could have happened to Cassandra?"
-    "You look at her, thinking about everything that happened so far"
+    "Who knows what would have happened to Cassandra?"
+    "You look at her, thinking about everything that happened so far..."
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
 
     #Want to have a couple variables here, need help.
     #If you chose kiss:
@@ -243,9 +254,9 @@ label anne4fight:
             show c doubt with dissolve
             "What… look i knew you being a vampire was dangerous from the get go, ok?"
             c "I’m not going to let you die just so I can be safe ok!"
-            c "You know me. You know I’d never give up on you. Because I care about you!"
+            c smile "You know me. You know I’d never give up on you. Because I care about you!"
             c "Because I lo-"
-            c "Because I like you!"
+            c doubt "Because I like you!"
             "You heard that. You heard what she wanted to say."
             "But why is she holding back?"
             "Is it fear of losing a friendship?"
@@ -263,14 +274,14 @@ label anne4fight:
             "She was right. You remember nights in middle school where you played vampires and werewolves together."
             "Reading the Moonlight trilogy… watching Nosferatu…"
             c "But…"
-            "Cassandra seems conflicted, lost in thought"
+            "Cassandra seems conflicted, lost in thought..."
             "Clearly something is holding her back… but what?"
             "You decide not to press her on it. It's been a long night."
 
     scene apartment with fade
     "You finally make it home and the exhaustion starts to hit."
     "You let Cassandra stay over, knowing she wouldn’t leave you alone after all this."
-    "In exhaustion you fall asleep in each other’s arms."
+    "In exhaustion, you fall asleep in each other’s arms."
     "You drift away, anxious for what comes next."
 
 ##---CHAPTER 5---
@@ -278,9 +289,12 @@ label anne4fight:
 label cass_chapter5:
 
     #CHANGE: where the fuck are we
+    scene black with fade
     # Tense Music
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
     "You feel it. The hunger."
     "It grows every day, tormenting you, torturing you."
+    scene apartment with fade
     "You haven’t heard from Laila since the night of the attack, and you have no idea how to get blood otherwise."
     "Well… except for the obvious."
     "But you wouldn’t do that…Would you?"
@@ -312,11 +326,13 @@ label cass_chapter5:
             mc "Umm… No?"
             $ cass_affection-=3
             mc "Anyway… Why did you call me here?"
+            play music "Strange Guide.mp3" fadein 1 fadeout 1
 
 
         "Leave them alone":
             window show
             "You leave them knocked out and rush to the library."
+            play music "Strange Guide.mp3" fadein 1 fadeout 1
             scene library with fade
             show c smile with dissolve
             c "Hi [player]!"
@@ -330,17 +346,17 @@ label cass_chapter5:
     c doubt "It does not end well…"
     c "Bran Velcant’s brother, Abram, always had a contentious relationship with him."
     c neutral "They used to be a part of this group of vampire hunters called Batbashers."
-    c "But when Bran turned, Abram was unwilling to sell out his own brother."
+    c smile "But when Bran turned, Abram was unwilling to sell out his own brother."
     c "I was kind of hoping that Abram would learn to accept Bran…"
     c doubt "But he didn’t."
     c neutral "The diary stops abruptly, it was never finished."
     c "But in this book.."
 
     "Cassandra pushes another huge book titled A Historie of the Order of the Batbasher towards you"
-    c " Someone named Abram kills his own vampire brother to found this order."
-    c "And look at his last name"
+    c doubt" Someone named Abram kills his own vampire brother to found this order."
+    c smile"And look at his last name.."
     "You open the book and see Abram’s full name."
-    c "Abram Van Velsing."
+    c wink "Abram Van Velsing."
     c "Abram killed Bran, and coined the motto \"firmitas voluntatis in fraudem.\""
 
     c smile "It’s been a while since I took Latin, so it’s a little rusty…"
@@ -351,8 +367,9 @@ label cass_chapter5:
     c wink "You’re so sharp, [player]!"
     c smile "So, I grabbed every book I could find with any relevance."
     "You eye Cassandra’s mountain of books…"
-    "This is going to be a really long day isn’t it."
-    c "Let’s get researching!"
+    "This is going to be a really long day isn’t it..."
+    c wink"Let’s get researching!"
+    show c smile
     "You toil through the mountain of books, hoping to find more information about the Batbashers."
 
     "After a while, you start to get into a groove."
@@ -372,7 +389,7 @@ label cass_chapter5:
 
         "Brorple Smorp":
             pass
-        "That one trans flavor you forget the name of, but it has baby blue and hot pink on it":
+        "That one trans flag looking flavor you forget the name of.":
             $ cass_affection+=1
 
     window show
@@ -390,7 +407,7 @@ label cass_chapter5:
     c "I feel like I’d love to be called something like Sand Pie, or Cutums, or something cool like C-sharp!"
 
     #Save this as $casspetname variable except honeybun
-    "You feel like what suits you the most is…"
+    "You feel like what suits Cassandra the most is…"
 
     #CHANGE: you need to review this later bc while i'm 99% sure text works with variables i'm not 100% sure... so... look at that.
 
@@ -444,11 +461,11 @@ label cass_petchoice:
             $ petname = "Cutums"
 
         "\"Actually, I feel like I just like being called by my first name.\"":
-            $ petname == "[player]"
+            $ petname = player
 
     window show
     show c smile with dissolve
-
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
     c smile "[petname] suits you best of all, for sure."
     c "I’m sure your next partner would love calling you that, it really suits you."
     c doubt "I know your last relationship didn’t go so well…"
@@ -465,14 +482,14 @@ label cass_petchoice:
     "You go back to reading the huge pile of books."
     "Hours go by and you don’t find anything really useful until Cassandra pushes an open book towards you."
     "You read the chapter heading…"
-
+    play music "Strange Guide.mp3" fadein 1 fadeout 1
     "\"The Church at Stephan Lane\""
     "\"In the early 1800’s, the old church had a bat infestation…\""
-    "\"Shutting it down permanently…\""
-    "\"But it was restored partially in the 80’s\""
-    "\" By Logan \"Gan\" Velsing, hunting gear mogul.\""
+    "\"...shutting it down permanently…\""
+    "\"...but it was restored partially in the 80’s...\""
+    "\"...by Logan \"Gan\" Velsing, hunting gear mogul.\""
     mc "VELSING!"
-
+    show c wink with dissolve
     "Cassandra beams at you."
     mc "This has to be their hideout!"
     mc "We should go check it out tonight!"
@@ -486,6 +503,7 @@ label cass_petchoice:
     mc "Yeah, don’t worry. I’ll just turn into a bat and watch from afar."
     mc "It’ll be fine!"
     c "Ok… If you.. *yawn*... insist."
+    hide c with dissolve
 
     "Cassandra rests her head on the table and takes a nap."
     "The library is 24/7, so she should be fine."
@@ -497,6 +515,7 @@ label cass_petchoice:
 label cass_chapter6:
     scene forest with fade
     # Tense Music
+    play music "Strange Forest.mp3" fadein 1 fadeout 1
     "You fly as a bat through the thick forest trees."
     "Thanks to training with Cassandra, you’ve gotten pretty good at flying."
     "It’s a lot easier than you may have imagined."
@@ -510,21 +529,24 @@ label cass_chapter6:
 
     scene church with fade
     "You perch at the very height of the church, getting a good vantage point on the meeting."
-    show a neutral at left
-    show h smile at right
+    show a neutral at right
+    show h smile at left
+    play music "Caravan.mp3" fadein 1 fadeout 1
     with dissolve
 
     "Sure enough, you see Anne and Han at the front, and a crowd of masked vampire hunters watching them."
     a "Glad to see you all here. Plenty of unfamiliar faces, I assume, beneath the mask."
     "The crowd chuckles. Damn, they must be easy to please."
     a "For those of you who were at the culling of the vampire hideout, a toast!"
-    "Thunderous applause"
+    "*Thunderous applause*"
+    show h neutral at center with ease
+    hide a with dissolve
     h "Our organization has a proud history, and a success rate beyond any other."
     h "Looking today, you may not know that this town used to be a huge center for vampire activity!"
-    h "There were shops, schools, communities…more than anywhere else in the south "
+    h "There were shops, schools, communities…more than anywhere else in the South!"
     "This stuns you. Cassandra theorized that there was an old vampire community here, but a hub?"
 
-    h sigh " And then came my ancestor. He killed the monstrous Bran Velcant, founded the ______, and brought the vampire community to its knees."
+    h sigh " And then came my ancestor. He killed the monstrous Bran Velcant, founded the Order of the Batbashers, and brought the vampire community to its knees."
     #CHANGE: i'm going to assume this isn't meant to be blank
 
     h neutral "And now, here we are. Us an organization sprawling across Georgia, Alabama, Mississippi, Tennessee, The Virginias…"
@@ -536,14 +558,15 @@ label cass_chapter6:
     "This must be about the relationship Anne mentioned earlier? The nosy in you needs more information."
     h neutral "Yeah I was complacent. I let myself be manipulated. But so have we all."
     h sigh "We’ve grown complacent. We’ve let vampires not a day old slip through our fingers."
-    "The crown murmurs. It seems the news of you escaping Anne has gone out."
+    "The crowd murmurs. It seems the news of you escaping Anne has gone out."
     h neutral "We cannot rest until every last one of them is stamped out."
     h smile "The escapees have a camp in the deep woods. Tomorrow, we strike, and kill them all."
     "Relief and fear twirl into you. Laila and the others might be safe… But…"
     "You thought a few dozen people raiding you last time was bad…"
     "There’s over a hundred vampire hunters in this room right now."
     "If they weren’t wiped out now, after another attack they very well might be."
-
+    show h smile at left with ease
+    show a neutral at right with dissolve
     a neutral "Anyway, enough speeches. One of our proudest sponsors, Fish-Fil-A, has graciously given us free sandwiches for this meeting!"
     a "Chow down!"
     "The meeting adjourns as ravenous vampire hunters descend upon the catering."
@@ -551,7 +574,7 @@ label cass_chapter6:
     hide a with dissolve
     show h at center with ease
 
-    "Anne joins them, but Han wanders off , bringing one of the hunters with him."
+    "Anne joins them, but Han wanders off, bringing one of the hunters with him."
     "You fly closer to Han, still out of sight."
     h sigh "We need to talk."
     # reveal thing
@@ -566,6 +589,7 @@ label cass_chapter6:
     show c doubt at right with dissolve
     "The figure takes off her mask to reveal Cassandra."
     # Sad Music
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
     "Cassandra?!?"
     "What is she… Why is she…"
 
@@ -577,9 +601,9 @@ label cass_chapter6:
     h sigh "I was in love once. Adrian Lansberry. He was handsome, devoted, kind."
     h smile "We did everything together. I hid it from my dad, but my sis knew."
     h sigh "It was just lovely… until he got bit."
-    h unsure "At first, i loved him so much, I betrayed the whole organization for him. Covered for him."
+    h unsure "At first, I loved him so much, I betrayed the whole organization for him. Covered for him."
     h "My father disowned me. I was meant to take over as head but Anne seized the opportunity. I was alone and scared and we only had each other."
-    h "But i noticed he was different. He wasn’t the man I fell in love with anymore."
+    h "But I noticed he was different. He wasn’t the man I fell in love with anymore."
     h "He grew violent. His bloodlust grew and grew. He… tried to bite me."
     h neutral "That’s what vampirism is, Kalluri. A disease."
 
@@ -596,17 +620,23 @@ label cass_chapter6:
         c "They’ve been acting the exact same as long as i’ve known [pronoun]!"
         h "That’s how it starts. Pretty soon the bloodsucker will be.."
         c "Pretty soon what? Don’t think I don’t see you trying to worm your way back to the top!"
-        C"You killed your boyfriend to get your old job back!"
+        c "You killed your boyfriend to get your old job back!"
         h surprise " Kalluri, Kalluri, I get you’re upset but no need to get emotional!"
         h unsure "You’re going through a lot right now, I get it. I’ve helped dozens of people like you. Like me."
-        h "take your time. You’ll realize sooner or later."
+        h "Take your time. You’ll realize sooner or later."
+        c "I need some air…"
+        h smile "Whatever you need, friend."
+        "Cassandra runs out, leaving the church."
+        "You don’t know how to feel."
+        "The situation is difficult to process."
+        "You zoom out of a window to follow her and confront her."
 
     if cass_affection <= 5:
 
         c "Well, they have been acting a bit different… but.. "
         h surprise "How different?"
         #pronoun obj
-        c "A little more aggressive, but that’s not [pronoun] fault! There has to be a better way!"
+        c "A little more aggressive, but that’s not [player]'s fault! There has to be a better way!"
         h unsure "I’ve been where you are! I’ve said what you’ve said, I’ve done what you’ve done."
         h "You’re going through a lot right now, I get it. I’ve helped dozens of people like you. Like me."
         h "Take your time. You’ll realize sooner or later."
@@ -626,10 +656,9 @@ label cass_chapter6:
 
 label cass_chapter7:
 
-    # Sad Music
+    play music "Monologue.mp3" fadein 1 fadeout 1
     scene forest with fade
-    show c doubt
-    with fade
+    show c doubt with dissolve
     "Once you are both far enough away, you poof back to confront her."
     c smile "[player]! I’m so happy to see you!"
 
@@ -674,7 +703,7 @@ label cass_chapter7:
     c "I am prohibited from discussing the organization… I would get hurt if I did."
     c "I want to help you as best as I could, but I can't tell you anything."
     "Cassandra seems to be struggling, but her precise words seem to be mostly avoiding the curse."
-    c "If I disobey, If i reveal a secret, if I do anything… "
+    c "If I disobey, If I reveal a secret, if I do anything… "
     "She doesn’t finish, but you get the implication. She would die."
     c "I didn’t think it was real. I’ve joined larps and role plays and conventions all the time…"
     c neutral "So I took the oath no problem."
@@ -695,15 +724,16 @@ label cass_chapter7:
         jump cass_bad
 
     c smile"But I know you! You’re still the sweet beautiful person I've known forever!"
-    c "Vampire’s aren’t a danger!"
+    c "Vampires aren’t a danger!"
     c "You aren’t a danger!"
     c doubt "You’re…"
     "She hesitates again, but this time it doesn’t seem like the curse."
-    c "You're my rock, [player]. When was bullied, when I came out, when I transitioned, you were always there for me."
-    c neutral"And i tried so hard to repay that, repay everything you’ve done for me but in the end i keep hurting you."
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
+    c smile "You're my rock, [player]. When I was bullied, when I came out, when I transitioned, you were always there for me."
+    c neutral"And I tried so hard to repay that, repay everything you’ve done for me but in the end I keep hurting you."
     c doubt"I don’t deserve your friendship… so why do I…"
     "She pauses again."
-    c "I love you, [player]."
+    c smile"I love you, [player]."
     c neutral "I wanted to tell you before this whole thing, but now it's too late."
     c "Now we’re on opposite sides of this war."
     c doubt "And I can’t fight them without dying… But I can’t fight you without wishing I was dead."
@@ -749,8 +779,9 @@ label cass_chapter7:
     #hear voice without seeing person?
     # Tense Music
     h "Oh Kalluri… I’m disappointed."
-    show c at left with ease
-    show h neutral at right with dissolve
+    play music "Ominous Forest.mp3" fadein 1 fadeout 1
+    show c doubt at left with ease
+    show h surprise at right with dissolve
 
     h "After all my precautions, you led the bloodsucker right to us."
     "A net falls over you, barely missing Cassandra."
@@ -781,27 +812,27 @@ label cass_chapter7:
     "Rage boils in you. You burst through the net to attack Han."
     "A stake grazes your side and you fall down again."
 
-    show h at left with ease
+    show h surpriseat left with ease
     show a neutral at right with dissolve
     a "Heh.. I got you! Finally! Wait till the Batbashers hear about this!"
     h "Step aside Anne, this is my business."
-    a "That bloodsucker was going to kill you, idiot!"
+    a angry "That bloodsucker was going to kill you, idiot!"
     "As they bicker, you stumble to grab Cassandra and crawl away."
     "Anne points a shotgun at you."
-    a "Hannn, he’s getting away."
+    a annoyed "Hannn, it’s getting away."
 
     "Han walks behind Anne."
     #pronoun obj
     h neutral "Then shoot [pronoun]."
     "Anne pulls the trigger. Pain shoots through your arm as you look behind you to see Han shoot Anne with a net gun."
-    #Hide A with dissolve.
+    hide a with dissolve
 
     a annoyed "What the hell, Han?"
-    h " Vampire, you’re weak, you need blood… kill her."
-    a "What?"
+    h surprise" Vampire, you’re weak, you need blood… kill her."
+    a angry"What?"
     h "Kill her, and you’ll heal enough to escape."
     h "You wrestled the net gun from her, killed her, and I found her dead."
-    h "Catch my drift?"
+    h smile "Catch my drift?"
     "You hate to admit it, but he’s right about you needing blood."
     "You wouldn’t make it a few feet without healing, much less to a hospital."
     "But you don’t like being a pawn in Han’s game."
@@ -862,7 +893,7 @@ label cass_bad:
     c "There's so many violent mean things you’ve done that the old you wouldn’t have done…"
     c "I didn’t want to believe it, but you’ve changed."
     c " I was selfish. I thought I was living my fun vampire dream, and I didn’t consider that I would lose my best friend."
-    "You have been acting more aggressive lately."
+    "You have been acting more aggressive lately..."
     "Was Cassandra right? Were you not the same person you were before the bite?"
     "You have the same memories, but.."
     c "I’m sure there’s a way to bring you back, I just know it."
@@ -878,6 +909,7 @@ label cass_bad:
 
     "But Cassandra was the one who showed you that there’s beauty in vampirism…"
     "Maybe you can convince her that you aren’t dangerous…"
+    play music "Snow Forest.mp3" fadein 1 fadeout 1
     show c at left with ease
     show h neutral at right with dissolve
     h "Ahh, what have we here…"
@@ -894,6 +926,7 @@ label cass_bad:
     scene dungeon
     show h smile
     with fade
+    play music "Caravan.mp3" fadein 1 fadeout 1
 
     h "Hey buddy."
     h "Your girlfriend is safe right now, don’t worry."
@@ -923,12 +956,13 @@ label cass_bad:
             "You bite your teeth into him, sucking his blood."
 
             show c doubt with dissolve
+            play music "Ominous Forest.mp3" fadein 1 fadeout 1
             c "Han, I can’t let you do this… What…"
             c "[player], no…"
 
             $ cass_affection-=10
-            "It's the first time you’ve really drank someone's blood."
-            "You feel like the numbness you’ve felt for a while has gone away."
+            "It's the first time you’ve really killed someone."
+            "As you drink his blood, you feel like the numbness you’ve felt for a while has gone away."
             "You’re alert, like you’ve drunk four latte’s all at once."
             c "This isn’t you, please, I know [player] would never murder someone…"
             "You run away, out of the cellar, away from Cassandra."
@@ -1026,19 +1060,19 @@ label cass_chapter8:
     scene forest with fade
     # Tense Music
 
-    if $ dying_mc:
-        pass
+    
 
-    else:
-        "You drag Cassandra’s unconscious body into the vampire hideout."
-        mc "I need a doctor! Please!"
-        "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
-        "You fall asleep, the long run sinking in…"
-        scene forest with fade
+ 
+    "You drag Cassandra’s unconscious body into the vampire hideout."
+    mc "I need a doctor! Please!"
+    "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
+    "You fall asleep, the long run sinking in…"
+    scene forest with fade
 
     show l smile with dissolve
     "You wake up to see Laila, at long last."
     # Neutral Music
+    play music "Slow Life.mp3" fadein 1 fadeout 1
     hide l with dissolve
     window hide
 
@@ -1070,6 +1104,7 @@ label cass_chapter8:
 
 
     scene clinic with fade
+    play music "Monologue.mp3" fadein 1 fadeout 1
     show c doubt with dissolve
     # Tense Music
     "You see her, awake but tired."
@@ -1090,7 +1125,7 @@ label cass_chapter8:
     c "I’m dying. And the spell is going to keep hurting me until… until…"
     c "Han told me that  being bit would trigger the curse and kill me, but the doctor says that vampire healing may be the only way I live."
     c "Maybe Han lied. Maybe he didn’t, I don't know. But it’s my only shot."
-    "You didn’t truly expect the vampires to have a 100% solution."
+    "You didn’t truly expect the vampires to have a foolproof solution."
     "Turning Cassandra into a vampire could kill her…"
     "But what other option was there?"
     "Maybe you could beat the solution out of Han.."
@@ -1124,7 +1159,7 @@ label cass_chapter8:
             $ cass_vamp = True
 
         "Try to find a cure":
-            "You kiss her one more time"
+            "You kiss her one more time."
             $ cass_affection+=1
             mc "I’m sorry Cassandra, I don’t want to risk you dying by my hand."
             mc "I’ll find Han and get him to stop the spell somehow."
@@ -1139,6 +1174,7 @@ label cass_chapter8:
     show l away with dissolve
     "You leave the clinic, emotional, and run into Laila."
     l neutral "[player], are you ok?"
+    play music "One Small Light.mp3" fadein 1 fadeout 1
 
     hide l with dissolve
     window hide
@@ -1165,19 +1201,19 @@ label cass_chapter8:
     l neutral "This camp is in a valley."
     l neutral "If we set some traps here before we leave, we can take a bunch of these hunters out, maybe scare them away, make it harder for them to follow us."
     l neutral "After what happened at the Blood Bank, I had an idea."
-    L smile "If we set a bunch of kegs on fire, we could give the Velsings a taste of their own medicine for once."
+    l smile "If we set a bunch of kegs on fire, we could give the Velsings a taste of their own medicine for once."
     l away "We just need someone to stay put and trigger the trap."
     # if( $cassvamp) jump Cassfight
     # if( !$cassvamp) jump MCfight
     #CHANGE: this was the original variable jump, but i'm going to assume the mc is fighting if cass isn't a vampire. check in later.
 
     if cass_vamp:
-        show c confident with dissolve
         c "I’ve got this."
-        "You see Cassandra, fit as a fiddle, awake and filled with vampiric energy."
+
         mc "Cassandra!"
-        show c at left with ease
+        show c confident at left with ease
         show l neutral at right with dissolve
+        "You see Cassandra, fit as a fiddle, awake and filled with vampiric energy."
         "You rush to give her a hug before kissing her. Her lips feel different now, colder, but still lovely as ever."
         l neutral "Don’t let me interrupt you love birds."
         "You pull apart, acutely aware of your surroundings."
@@ -1186,15 +1222,17 @@ label cass_chapter8:
         l smile "I would stay, but I’ve lived through this kind of thing too many times already. I can’t bear to witness it again. I wish you luck, [player]. Your nobility is touching."
         "You say goodbye to Laila and prepare for the fight. With Cassandra at your side, you feel ready for anything."
         hide l with dissolve
+        show c smile at center with dissolve
         # Label fightalongCass
         "As the town evacuates, you and Cassandra stand next to the empty clinic."
         # Romantic Music
+        play music "Someday's Dream.mp3" fadein 1 fadeout 1
         c smile "You know, It's really sinking in how, this might be our last day.."
         "Cassandra moves closer to you."
-        c smile "And I’m so glad I get to spend it with you."
+        c wink "And I’m so glad I get to spend it with you."
         "Cassandra gives you a little kiss on the neck."
-        c "You know, the clinic is empty…"
-        c "Nobody would bother us if we wanted to.. You know…"
+        c smile "You know, the clinic is empty…"
+        c wink"Nobody would bother us if we wanted to.. You know…"
 
         hide c with dissolve
         window hide
@@ -1288,13 +1326,14 @@ label cass_chapter8:
         # Exciting Music
 
         scene forest with fade
+        play music "Caravan.mp3" fadein 1 fadeout 1
         "After a while, the battle begins."
         "You stand in the center of the hideout."
         "You watch as dozens of Batbashers rush towards you."
         "You gesture to  Cassandra at the right moment."
-        "She uses a lighter to set a string near a blood moonshine keg on fire"
+        "She uses a lighter to set a string near a Blood Moon-Shine keg on fire."
         "She speeds towards you, pushing you to the ground as…"
-        scene fire with fade
+        #scene fire with fade
         "BOOOM"
         "The kegs explode, lighting most of the batbashers on fire."
         "As the survivors rush to fight you, you and Cass go on a rampage."
@@ -1400,19 +1439,20 @@ label cass_chapter8:
     #CHANGE: i'm going to assume that this is label cassgoodending, but i'm not sure.
     scene diner with fade
     # Romantic Music
-    "ONE MONTh LATER"
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
+    "ONE MONTH LATER"
     "You rush into the town Waffle Home."
     "You hope you aren’t too late for your date with…"
     show c wink with dissolve
     c "[player]!!!"
     "Cassandra pulls you into an embrace"
     c "Oh my god it's been so long!"
-    mc "[Casspetname], it's been two days."
+    mc "[casspetname], it's been two days."
     "Cassandra giggles."
     c "I’m so happy to see you though!"
     c smile "We’ve been so busy helping rebuild the local vampire community, we’ve haven’t had time for a date like this!"
 
-    mc "I guess this is technically our first real date as a couple, huh"
+    mc "I guess this is technically our first real date as a couple, huh..."
     c smile "What are you gonna have, [petname]? I’m thinking strawberry pancakes and some whisky."
 
     hide c with dissolve
@@ -1439,6 +1479,8 @@ label cass_chapter8:
             pass
         "A fruity cocktail":
             pass
+        "Water":
+            pass
 
     window show
     show c wink with dissolve
@@ -1453,10 +1495,12 @@ label cass_chapter8:
     $ cass_affection+=1
 
     $ persistent.ending = 1
+    return
     # END OF PART 8 GOOD ENDING
 
 label fightalone:
     #exciting music
+    play music "Caravan.mp3" fadein 1 fadeout 1
     "After a while, the battle begins."
     "You stand in the center of the hideout."
     "You watch as dozens of Batbashers rush towards you."
@@ -1474,8 +1518,8 @@ label fightalone:
     scene forest with fade
     show h smile with dissolve
     h smile "Ahh, bloodsucker. There you are."
-    h "Let me guess, you want to get me to let Kalluri free from the spell."
-    h "That’s not going to happen."
+    h neutral "Let me guess, you want to get me to let Kalluri free from the spell."
+    h surprise "That’s not going to happen."
     "Han stabs you, and you fall to the side."
     "You see a book strapped to his pants."
     "Maybe the book has something to save Cass."
@@ -1490,6 +1534,7 @@ label fightalone:
             "You’re pretty strong with your vampire powers…"
             "But Han is a trained fighter."
             "He pins you down and stabs you in the chest with a stake."
+            play music "Monologue.mp3" fadein 1 fadeout 1
             "As you lie, bleeding out, you see Han get up and brush himself off."
             show h surprise with dissolve
             h surprise "Damn, that’s crazy."
@@ -1524,9 +1569,15 @@ label fightalone:
                     "But to your horror…"
                     "The sun starts to rise."
                     #CHANGE: still no graphic for this
-                    scene forest with fade
+                    scene forest with dissolve
+                    play music "Monologue.mp3" fadein 1 fadeout 1
+                    #image white = "#ffffff"
+                    #scene white with Dissolve(5.0)
+
                     "You start to feel sharp, agonizing pain throughout your body."
+                    
                     "You duck under the shade of a lone tree."
+                    
                     "Trapped."
                     "Waiting, knowing you have the very thing that can save Cassandra and can’t get it to her."
                     "As the sun rises, your future falls."
@@ -1539,12 +1590,13 @@ label fightalone:
     "You zoom through the shortcut until you can’t see Han behind you anymore."
     "You sense where the new vampire hideout is and dash towards it."
     "Just as you make it, you feel a stake puncture your foot."
+    play music "One Small Light.mp3" fadein 1 fadeout 1
     show h sigh with dissolve
-    h sigh "looks like you led me right to them."
+    h sigh "Looks like you led me right to them."
     "Han cocks his shotgun at you."
     h "Say your prayers, bloodsucker."
     "Suddenly, bats swarm all around Han."
-    h suprise "GET OFF ME GET OFF ME GET OFF ME!"
+    h surprise "GET OFF ME GET OFF ME GET OFF ME!"
     "As the bats bite and peck at Han, you feel yourself slipping from consciousness."
     "Quick, say something cool before you die!"
     hide h with dissolve
@@ -1567,6 +1619,7 @@ label fightalone:
     scene diner with fade
     "THREE MONTHS LATER"
     # Romantic Music
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
     "You stumble into the town Waffle Home."
     "You hope you aren’t too late for your date with…"
 
@@ -1575,11 +1628,11 @@ label fightalone:
     "Cassandra pulls you into an embrace."
     c smile "Oh my god it's been so long!"
     "You’ve both been in recovery for the last couple months, but you’ve both finally healed enough to go on a real date!"
-    "You smile. With the Vellsings and the Batbashers dealt with, [townname] has become a new safe haven for the vampire community."
+    "You smile. With the Vellsings and the Batbashers dealt with, our town has become a new safe haven for the vampire community."
 
     #CHANGE: i'm 99% sure we don't have a townname variable
 
-    c "What are you gonna have, $petname? I’m thinking strawberry pancakes and some whisky."
+    c "What are you gonna have, [petname]? I’m thinking strawberry pancakes and some whisky."
     mc "Hmm, I’ll have…"
     hide c with dissolve
     window hide
@@ -1597,11 +1650,11 @@ label fightalone:
     window hide
 
     menu:
-        "Whisky":
+        "Water":
             pass
         "Moonshine":
             pass
-        "A fruity cocktail":
+        "A fruity lemonade":
             pass
 
     window show
@@ -1613,7 +1666,7 @@ label fightalone:
     "You nod, smiling."
     mc "The world feels safe for once."
     "As you finish your meal, you hold Cassandra’s hand."
-    "She looks lovely in the fluorescent lights of the waffle home."
+    "She looks lovely in the fluorescent lights of the Waffle Home."
     c "I’m so happy with you, [player]."
     mc "Me too."
     "You both lean in for a kiss."
@@ -1628,10 +1681,14 @@ label evilCass:
     "You crawl into the vampire camp, wounded beyond belief."
     "Exhausted, you pass out."
     scene clinic with fade
+    play music "One Small Light.mp3" fadein 1 fadeout 1
     # Tense Music
     "You wake up in a clinic, but noone is there…"
     "How strange…"
-    scene fire with fade
+    #scene fire with fade
+    scene forest with fade
+
+    play music "One Small Light.mp3" fadein 1 fadeout 1
     "You walk outside the clinic and see fire."
     "Raging fire."
     "The moonshine kegs must have exploded again."
@@ -1657,11 +1714,13 @@ label evilCass:
     "After months of desperate fleeing, you received a letter from a mysterious fellow vampire, promising a reunion."
     "Could it be Laila?"
     # Romantic Music
+    play music "Slow Life.mp3" fadein 1 fadeout 1
     "You wait at the spot they mentioned, anxious."
     "You see them appear from the shadows."
     "It’s…"
 
     show h smile with dissolve
+    play music "Caravan.mp3" fadein 0 fadeout 0
     #Neutral Music or Goofy music
     h "Howdy, bloodsucker."
     mc "HAN?"
@@ -1678,10 +1737,10 @@ label evilCass:
     h "I just wanted to make killing him easier, you know?"
     h "Anyway, now Cassandra thinks you aren’t you."
     h "That you are the reason why her best friend/crush is dead."
-    "\" Crush?"
+    mc "Crush?"
     h smile"Yeah, it’s really obvious."
     h "The will they won’t they of it all was getting deeply annoying."
-    h "Like, make out already! You know?"
+    h surprise "Like, make out already! You know?"
     h unsure "Anyway…"
     h "Now that I'm a vampire, I feel really guilty about everything."
     h "Kalluri, I hate to admit, is much better at vampire hunting than I ever was."
@@ -1693,16 +1752,18 @@ label evilCass:
     "This is a real sad state of affairs."
 
     mc "Okay, I guess i don’t have another choice…"
-    h surprised "Really? Wow, honestly expected you to tell me to fuck off or something…"
+    h surprise "Really? Wow, honestly expected you to tell me to fuck off or something…"
     h smile "Don’t worry, I won’t let you down."
     "Filled with new found confidence, you both head towards the church."
 
     scene church with fade
     # Tense Music
+    play music "Snow Forest.mp3" fadein 1 fadeout 1
     show h smile with dissolve
     "You feel anxious and afraid."
     h "Cassandra Kalluri, I challenge you to a Velsing Valorian for the title of head of the Batbashers!"
-    show c doubt with dissolve
+    show h at left with ease
+    show c doubt at right with dissolve
     "Cassandra appears from the shadows."
     "She looks depressed, broken."
     c "You can’t do that as a vampire, as you well know, Han."
@@ -1715,6 +1776,7 @@ label evilCass:
 
     "Han looks at you."
     h "You’re going to fight for me, friend!"
+    play music "Strange Guide.mp3" fadein 0 fadeout 0
     "Wait what?"
     mc "That was never part of the plan!"
 
@@ -1725,6 +1787,7 @@ label evilCass:
     mc "Screw you…"
 
     hide h with dissolve
+    play music "Snow Forest.mp3" fadein 1 fadeout 1
     "Soon enough, you face off against Cassandra."
     "You don’t want to hurt her…"
     "Maybe you can convince her somehow…"
@@ -1734,13 +1797,15 @@ label evilCass:
         "\"You can make it different…\"":
 
             window show
+            play music "Strange Guide.mp3" fadein 0 fadeout 1
             mc "You can make it right,"
             mc "You can make it better!"
             mc "We don’t have to fi-"
-
+            play music "Monologue.mp3" fadein 0 fadeout 1
             "Cassandra stabs you in the chest with a stake."
             "She starts crying."
-            show c doubt with dissolve
+
+            show c doubt at center with dissolve
             c "I know this isn’t you, [player]."
             c "But I don't know who to say this to…"
             c "Now that [player] is gone…"
@@ -1759,6 +1824,7 @@ label evilCass:
             c "I just hope now, [player]’s soul will finally rest."
             "You fade into death, Cassandra’s tears the last thing you see before you die."
             $ persistent.ending = 3
+            return
             # END OF GAME BAD ENDING
 
         "\"I am the same as [player]! I can prove it!\"":
@@ -1781,6 +1847,7 @@ label evilCass:
                     "You take advantage of the weak point and punch Cassandra."
                     "But you don’t know your own vampiric strength."
                     "You kill her."
+                    play music "Monologue.mp3" fadein 1 fadeout 1
 
                     "As she dies, you hold her in your arms."
                     "You didn’t mean for this to happen."
@@ -1808,6 +1875,7 @@ label evilCass:
                     "You try your best…"
                     "But in the end, Cassandra stabs you in the chest with a stake."
                     "She starts crying."
+                    play music "Monologue.mp3" fadein 1 fadeout 1
                     c "I know this isn’t you, [player]."
                     c "But I don't know who to say this to…"
                     c "Now that [player] is gone…"
@@ -1831,6 +1899,7 @@ label evilCass:
     c "Prove it? Prove it how?"
     mc "Ask me anything. Anything you think the real [player] would know."
     c "Fine… what’s my favorite color?"
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
 
     #CHANGE: THERE IS NO SUCH THING AS QUIZDEATH. THIS IS HUGE.
 
@@ -1903,6 +1972,7 @@ label evilCass:
     "You try to run after her, but…"
 
     show h smile with dissolve
+    play music "Caravan.mp3" fadein 1 fadeout 1
     h "What do you think of that, Batbashers?"
     h "This is my perfect victory!"
     h sigh "That’s right, I win!"
@@ -1915,10 +1985,12 @@ label evilCass:
     "You scamper out of the church."
 
     scene forest with fade
+    play music "Snow Forest.mp3" fadein 1 fadeout 1
     "You try to find Cassandra, but she’s gone, long gone."
     "You hear the marching of the Batbashers as they hunt you down, and you run. "
     "Back into hiding again."
     "Alone once more."
+    scene black with fade
     "ONE YEAR LATER"
 
     #sad music
@@ -1928,6 +2000,7 @@ label evilCass:
     mc "Cassandra."
     "You’ve tried confronting her before, but she’s always slipped away."
     "But now, in the light of the moon, she finally says."
+    play music "Someday's Dream.mp3" fadein 1 fadeout 1
     c "[player]."
     "You look at each other, tears in both of your eyes."
     c "I… I’m sorry for running."
@@ -1966,7 +2039,7 @@ label evilCass:
                     mc "Please, I need you."
                     mc "I’ve lost so much already, I can’t lose you too."
                     mc "You mean so much to me."
-                    mc "I miss meeting you in the library"
+                    mc "I miss meeting you in the library..."
                     mc "I miss seeing you smile after geeking out about something."
                     mc "I miss being with you."
                     mc "I… "
@@ -2024,7 +2097,7 @@ label cass_best:
     c "Oh my god, It’s like Sophomore Lit when Mr. Stoker.."
     c "Wait, I’m going off on a tangent… I love you too."
     c confident "I love you most ardently."
-    c "You mean the world to me."
+    c wink"You mean the world to me."
     c doubt "When I thought you were gone… It broke my heart."
     c smile "If you really mean it, that you forgive me…"
     c wink "I’d love to be your girlfriend."
