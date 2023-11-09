@@ -944,7 +944,7 @@ label cass_bad:
     window hide
 
     menu:
-        "Break free and Attack Han":
+        "Break free and attack Han":
 
             window show
             "You  burst free from your net and maul Han."
@@ -1060,9 +1060,9 @@ label cass_chapter8:
     scene forest with fade
     # Tense Music
 
-    
 
- 
+
+
     "You drag Cassandra’s unconscious body into the vampire hideout."
     mc "I need a doctor! Please!"
     "It’s all a blur. Someone takes Cassandra away and you collapse from exhaustion."
@@ -1575,9 +1575,9 @@ label fightalone:
                     #scene white with Dissolve(5.0)
 
                     "You start to feel sharp, agonizing pain throughout your body."
-                    
+
                     "You duck under the shade of a lone tree."
-                    
+
                     "Trapped."
                     "Waiting, knowing you have the very thing that can save Cassandra and can’t get it to her."
                     "As the sun rises, your future falls."
@@ -1868,7 +1868,7 @@ label evilCass:
                     $ persistent.ending = 3
                     return
 
-                    "Don’t use the weak point."
+                "Don’t use the weak point.":
                     window show
                     "You miss the chance to hurt Cass."
                     "You tussle for a bit…"
@@ -1994,6 +1994,7 @@ label evilCass:
     "ONE YEAR LATER"
 
     #sad music
+    play music "Monologue.mp3" fadein 1 fadeout 1
     scene street with fade
     "After a year of searching, you finally find her."
     show c doubt with dissolve

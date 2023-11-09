@@ -910,19 +910,19 @@ label laila_chapter8:
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
 
-    if laila_affection > 12 and drank_blood == True:
+    if laila_affection >=4 12 and drank_blood == True:
         jump lailaTrueEnding
 
-    if laila_affection > 6 and drank_blood == True:
+    elif laila_affection >= 6 and drank_blood == True:
         jump lailaGoodEndingA
 
-    if laila_affection > 6 and drank_blood == False:
+    elif laila_affection >= 6 and drank_blood == False:
         jump lailaGoodEndingB
 
-    if laila_affection < 7 and drank_blood == True:
+    elif laila_affection < 6 and drank_blood == True:
         jump lailaBadEndingA
 
-    if laila_affection < 7 and drank_blood == False:
+    elif laila_affection < 6 and drank_blood == False:
         jump lailaBadEndingB
 
 label lailaTrueEnding:
@@ -975,7 +975,7 @@ label lailaTrueEnding:
             l smile "That means the world to me."
 
 
-    l excited "You know player, let’s leave this all behind. This town, these people. We can go someplace new and be ourselves. Come with me back to New Mexico."
+    l excited "You know [player], let’s leave this all behind. This town, these people. We can go someplace new and be ourselves. Come with me back to New Mexico."
     mc "Really?"
     l excited "Really! So what if we can’t live by day, we’ll be together. Even at night, the desert is beautiful."
     mc "Alright, let’s do it."
@@ -992,6 +992,8 @@ label lailaTrueEnding:
     "Laila’s dissatisfaction with the vampiric life rapidly fades as the stability of your new lives becomes evident. She is happy and safe with the one she loves, far from the worries that once plagued her."
     "You, too, are content, living a life you could have once only imagined, with the woman you love by your side."
     "And so it was, you and Laila together, into the future, forever."
+    $persistent.ending = 2
+    return
 
 
 label lailaGoodEndingA:
@@ -1129,6 +1131,7 @@ label lailaBadEndingA:
 
 label lailaBadEndingB:
     #sad music
+    play music "Monologue.mp3" fadein 1 fadeout 1
     "Laila looks at you firmly."
     l angry "No [player], I don’t have anything left to live for. I get you might feel deeply for me, but I can’t say I feel the same way. This is it."
     "She lets out a rough cough, and a stream of blood spews forth."
