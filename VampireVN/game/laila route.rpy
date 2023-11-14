@@ -590,7 +590,7 @@ label laila_chapter6:
 
     # tense music
     show l neutral with dissolve
-    "You and Laila proceed through the aged doors of the manner, closing them behind you."
+    "You and Laila proceed through the aged doors of the manor, closing them behind you."
     "You find yourself in a grand hall, filled with antique furniture and suits of armor, walls bedecked by renaissance paintings, lit by oil lamps and candles. A balcony overlooks the room from the second floor. Laila takes a few steps forward."
     l neutral "Hello? Is anyone here?"
     "There is no response to Laila’s inquiry."
@@ -810,7 +810,7 @@ label laila_chapter7:
 
         "\"I have a better idea. What if you and I became… lovers?\"":
             window show
-            "Anne stares at you, baffled"
+            "Anne stares at you, baffled."
             show a confused with dissolve
             a confused "What? Where is this coming from?"
             "She looks as if she is about to shout at you, then relaxes."
@@ -869,7 +869,7 @@ label laila_chapter7:
                     "With the Velsing taken care of, you turn your attention to Laila."
                     hide a with dissolve
 
-    "Before you approach Laila, quickly examine Anne’s corpse, finding the reverse echolocator and disabling it. Without the interference you hope to better help Laila."
+    "Before you approach Laila, you quickly examine Anne’s corpse, finding the reverse echolocator and disabling it. Without the interference you hope to better help Laila."
     "As you step towards Laila, you realize things are worse than you thought. There is a concerning amount of blood pooled on the floor around her, and Laila looks even paler than she normally does. The sword remains lodged in her."
     "You’re not sure how, but you can sense that Laila is dying."
 
@@ -910,19 +910,19 @@ label laila_chapter8:
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
 
-    if laila_affection > 14:
+    if laila_affection >=4 12 and drank_blood == True:
         jump lailaTrueEnding
 
-    if laila_affection > 6 and drank_blood == True:
+    elif laila_affection >= 6 and drank_blood == True:
         jump lailaGoodEndingA
 
-    if laila_affection > 6 and drank_blood == False:
+    elif laila_affection >= 6 and drank_blood == False:
         jump lailaGoodEndingB
 
-    if laila_affection < 7 and drank_blood == True:
+    elif laila_affection < 6 and drank_blood == True:
         jump lailaBadEndingA
 
-    if laila_affection < 7 and drank_blood == False:
+    elif laila_affection < 6 and drank_blood == False:
         jump lailaBadEndingB
 
 label lailaTrueEnding:
@@ -975,7 +975,7 @@ label lailaTrueEnding:
             l smile "That means the world to me."
 
 
-    l excited "You know player, let’s leave this all behind. This town, these people. We can go someplace new and be ourselves. Come with me back to New Mexico."
+    l excited "You know [player], let’s leave this all behind. This town, these people. We can go someplace new and be ourselves. Come with me back to New Mexico."
     mc "Really?"
     l excited "Really! So what if we can’t live by day, we’ll be together. Even at night, the desert is beautiful."
     mc "Alright, let’s do it."
@@ -992,6 +992,8 @@ label lailaTrueEnding:
     "Laila’s dissatisfaction with the vampiric life rapidly fades as the stability of your new lives becomes evident. She is happy and safe with the one she loves, far from the worries that once plagued her."
     "You, too, are content, living a life you could have once only imagined, with the woman you love by your side."
     "And so it was, you and Laila together, into the future, forever."
+    $persistent.ending = 2
+    return
 
 
 label lailaGoodEndingA:
@@ -1022,7 +1024,7 @@ label lailaGoodEndingA:
     l neutral "Before we go any further, let’s do something about the corpse. Even dead the bitch is spoiling my fun."
 
     "She casts a somewhat rueful gaze towards Anne’s body."
-    "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
+    "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and into a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
 
     scene black with fade
 
@@ -1068,7 +1070,7 @@ label lailaGoodEndingB:
     "After a couple minutes pass- during which your kiss almost certainly became a makeout session- Laila stops you, gasping for breath."
     l neutral "Before we go any further, let’s do something about the corpse. Even dead the bitch is spoiling my fun."
     "She casts a somewhat rueful gaze towards Anne’s body."
-    "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
+    "Laila, now fully healed it seems, assists you in dragging the huntress’s corpse out of the grand hall and into a remote drawing room- where you also happen to find the levers which deactivate the mansion’s lockdown mechanism."
 
     scene black with fade
     "Afterwards, you and Laila spend some time discussing your future."
@@ -1129,6 +1131,7 @@ label lailaBadEndingA:
 
 label lailaBadEndingB:
     #sad music
+    play music "Monologue.mp3" fadein 1 fadeout 1
     "Laila looks at you firmly."
     l angry "No [player], I don’t have anything left to live for. I get you might feel deeply for me, but I can’t say I feel the same way. This is it."
     "She lets out a rough cough, and a stream of blood spews forth."
