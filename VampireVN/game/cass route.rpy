@@ -717,10 +717,10 @@ label cass_chapter7:
     #Code in depending on affinity level either $ cass_affection >5 jump highcassaffection
     # or if  $ cass_affection <=5 jump lowcassaffection
 
-    if cass_affection > 5:
+    if cass_affection >= 0:
         pass
 
-    if cass_affection <= 5:
+    if cass_affection < 0:
         jump cass_bad
 
     c smile"But I know you! You’re still the sweet beautiful person I've known forever!"
