@@ -910,7 +910,7 @@ label laila_chapter8:
     l away "I told you, I don’t want to go on."
     mc "Please, just try, for me."
 
-    if laila_affection >=4 12 and drank_blood == True:
+    if laila_affection >=4 and drank_blood == True:
         jump lailaTrueEnding
 
     elif laila_affection >= 6 and drank_blood == True:
